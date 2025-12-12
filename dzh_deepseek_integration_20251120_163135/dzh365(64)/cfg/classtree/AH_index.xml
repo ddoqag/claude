@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="港股行情"  local="1">
+		<subclass name="AH股" node="900002" scriptfile="hk_ah"/>
+	</class>  
+</classes>

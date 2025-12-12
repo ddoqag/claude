@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="涉股衍生品" scriptfile="gzqh" local="1">
+		<subclass name="股指期货" node="800002" scriptfile="gzqh">
+		</subclass>
+	</class>  
+</classes>

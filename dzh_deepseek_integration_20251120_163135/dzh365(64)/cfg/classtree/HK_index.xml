@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="港股行情"  local="1">
+		<subclass name="香港主板" node="900000" scriptfile="hk_zb"/>
+		<subclass name="香港创业板" node="900001" scriptfile="hk_cy"/>
+		<subclass name="红筹股" node="900002" scriptfile="hk_hc"/>
+		<subclass name="国企股" node="900003" scriptfile="hk_gq"/>
+	</class>  
+</classes>

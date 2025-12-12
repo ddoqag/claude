@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root name="marketgroupcfg">
+ <marketgroup name="沪深A股">SH上证A股,SH科创板,SH上证风险,SH上证退市,SH上证创新,SH未上市,SH已退市,SZ深证A股,SZ深证主板,SZ创业板,SZ深证风险,SZ深证退市,SZ创业板核准,SZ创业板注册,SZ未上市,SZ已退市,SH上证主板,SH上证主板注册,SH上证主板核准,SH上证CDR,SZ深证主板核准,SZ深证主板注册,SH上证主板风险,SH科创板风险,SH科创成长层,SZ深证主板风险,SZ创业板风险</marketgroup>
+ <marketgroup name="可转债">SH上证转债,SZ深证转债,BJ北证转债</marketgroup>
+ <marketgroup name="ETF基金">SHETF基金,SZETF基金,SH上证LOF,SZ深证LOF,上证REITs,深证REITs</marketgroup>
+ <marketgroup name="国内商品">SC上海期货,SC期指,DC大连商品,DC期指,ZC郑州商品,ZC期指,NC能源中心,NC期指,GF广期所</marketgroup>
+ <marketgroup name="上海黄金">SG上海黄金,SD现货仓单</marketgroup>
+ <marketgroup name="股指期货">SF金期指,SF国债期货</marketgroup>
+ <marketgroup name="港股">HK香港主板,HK香港创业板,HK香港债券,HK香港信托,HK港股通</marketgroup>
+ <marketgroup name="板块指数">B$地域板块,B$行业板块,B$概念板块,B$其它概念,B$板块指数,B$风格概念,B$科创板专属,K$HK行业板块,$$自定指数,K$HK指数板块,K$其它板块指数</marketgroup>
+ <marketgroup name="沪深指数">SH上证指数,SZ深证指数,SH中证指数,ZI中证指数,GZ国证指数,SW申万指数,BJ北证指数</marketgroup>
+ <marketgroup name="京市A股">BJ北证A股,BJ北证要约,BJ北证发行,BJ北证转债,BJ优先股,SO挂牌公司,SO两网及退市,SO三板指数,SO基础层,SO创新层,SO优先股,SO做市,SO集合竞价,SO基础做市,SO创新做市,SO基础集合竞价,SO创新集合竞价,SO连续竞价,SO三板发行,SO发行询价,SO发行申购,SO三板要约,SO要约收购,SO要约回购,SO可转债</marketgroup>
+ <marketgroup name="美股">NS纳斯达克,NY纽交所,AM股票</marketgroup>
+ <marketgroup name="全球指数">HI恒生指数,HK香港指数,IX美洲指数,XE欧洲指数,XE欧洲其它,XM美洲指数,XM美洲其它</marketgroup>
+ <marketgroup name="回购">SH上证回购,SZ深证回购</marketgroup>
+ <marketgroup name="海外商品">FX主要外汇,FX人民币系列,FX人民币系列,FX国际贵金属,FX指数,FX其他外汇,ICICE软商品,IC美元期指,IC罗素期指,IC外汇期货,ICICE农产品,SM富时A50指数,NXNYMEX汽油,NX原油波动率,NXNYMEX贵金属,NXNYMEX汽油,NXNYMEX钢材,NXNYMEX煤炭,NXNYMEX铀,NXNYMEX电力,NXNYMEX其它,CBCBOT农产品,CBCBOT乙醇,CBCBOT农产品,CB美国国债,CB美利率掉期,CB道琼斯期指,CB美联邦基金,CXCOMEX黄金,CXCOMEX白银,CXCOMEX黄金,CXCOMEX铜,CX黄金波动率,CXCOMEX上海金,IPICE原油,IPICE燃料油,IPICE柴油,IPICE汽油,IPICE天然气,IPICE煤炭,IPICE电力,IPICE碳排放,IPICE原油指数</marketgroup>
+ <marketgroup name="基金净值">OF股票基金,OF债券基金,OF混合型基金,OF保本型基金,OF货币基金,OF货币净值基金,OF短期理财基金,OFQDII基金</marketgroup>
+ <marketgroup name="期权">HO上证期权,SF股指期权,DO大连期权,EO郑州期权,AO上期期权,ZO深证期权,HK香港权证,HK牛熊证,HF港股期权</marketgroup>
+ <marketgroup name="债券">SH上证债券,BZ深证债券</marketgroup>
+ <marketgroup name="因子">YI全部因子,YI板块,YI行情,YI技术,YI财务,YI公告,YI研报,YI研院,YI资金,YI经营,YI特色,YI共建,YI其他</marketgroup>
+</root>
+

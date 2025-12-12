@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="ETF基金" local="1">
+		<subclass name="沪深ETF" node="4" scriptfile="jjbk"/>
+		<subclass name="上证ETF" node="5" scriptfile="jjbk"/>
+		<subclass name="深证ETF" node="6" scriptfile="jjbk"/>
+		<subclass name="跨境ETF" node="7" scriptfile="jjbk"/>
+		<subclass name="债券ETF" node="8" scriptfile="jjbk"/>
+		<subclass name="货币ETF" node="9" scriptfile="jjbk"/>
+		<subclass name="黄金ETF" node="10" scriptfile="jjbk"/>
+	</class>
+</classes>

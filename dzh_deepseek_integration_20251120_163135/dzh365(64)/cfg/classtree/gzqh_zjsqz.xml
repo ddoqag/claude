@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="中金所期指" local="1">
+		<subclass name="中金所期指" node="113074" scriptfile="zjsqz"/>
+		<subclass name="沪深300期货" node="113074" scriptfile="spbk"/>
+		<subclass name="上证50期货" node="107642" scriptfile="spbk"/>
+		<subclass name="中证500期货" node="107643" scriptfile="spbk"/>
+	</class>
+</classes>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="新近挂牌" local="1">
+		<subclass name="新近挂牌" node="107648" scriptfile="gpfl"/>
+		<subclass name="新近做市" node="107650" scriptfile="gpfl"/>
+	</class>
+</classes>

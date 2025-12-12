@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="基金"  local="1" scriptfile="fjjj_a">
+      		<subclass name="分级A" node="109914">
+			<group name="分级基金-优先份额" node="109914" />
+			<group name="分级基金-进取份额" node="109915" />
+     		 </subclass>
+	</class>  
+</classes>

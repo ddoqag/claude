@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1" scriptfile="index_s" >	    
+	    <subclasses name="成份股指数" node="108783" >
+				<subclass name="深证规模指数" node="104437" />
+				<subclass name="深证风格指数" node="104438" />
+				<subclass name="深证主题指数" node="104439" />
+				<subclass name="深证策略指数" node="108782" />
+				<subclass name="深证行业指数" node="108785" />				
+		</subclasses>
+		<subclasses name="综合指数" node="108784" >
+				<subclass name="深证市场指数" node="104436" />
+				<subclass name="深证基金指数" node="104440" />
+				<subclass name="深证行业指数" node="104441" />	
+		</subclasses>					 		  
+  </class>
+</classes>

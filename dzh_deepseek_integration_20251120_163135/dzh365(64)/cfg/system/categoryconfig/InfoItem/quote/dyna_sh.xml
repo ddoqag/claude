@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="GB2312"?>
+  <list type="single" format="quote_dyna" desc="一般股票" ver="1" >
+		<!-- 以下配置已成功 -->
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>-1</prop><drawPos>head</drawPos><line>solid</line><direct>horizotal</direct></INFO_ITEM>
+		<INFO_ITEM><type>II_VERTLINE</type><pos>POS1</pos><offset>20</offset><prop>10</prop><line>solid</line><direct>vert</direct></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    5"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>sellprice</columnname><deep>0</deep><arrayindex>4</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>sellvolume</columnname><deep>0</deep><arrayindex>4</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"卖  4"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>sellprice</columnname><deep>0</deep><arrayindex>3</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>sellvolume</columnname><deep>0</deep><arrayindex>3</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    3"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>sellprice</columnname><deep>0</deep><arrayindex>2</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>sellvolume</columnname><deep>0</deep><arrayindex>2</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"盘  2"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>sellprice</columnname><deep>0</deep><arrayindex>1</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>sellvolume</columnname><deep>0</deep><arrayindex>1</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    1"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>sellprice</columnname><deep>0</deep><arrayindex>0</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>sellvolume</columnname><deep>0</deep><arrayindex>0</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><prop>0</prop><line>solid</line><direct>horizotal</direct></INFO_ITEM>
+		<INFO_ITEM><type></type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    1"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>buyprice</columnname><deep>0</deep><arrayindex>0</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>buyvolume</columnname><deep>0</deep><arrayindex>0</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"买  2"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>buyprice</columnname><deep>0</deep><arrayindex>1</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>buyvolume</columnname><deep>0</deep><arrayindex>1</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    3"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>buyprice</columnname><deep>0</deep><arrayindex>2</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>buyvolume</columnname><deep>0</deep><arrayindex>2</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"盘  4"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>buyprice</columnname><deep>0</deep><arrayindex>3</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>buyvolume</columnname><deep>0</deep><arrayindex>3</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    5"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>buyprice</columnname><deep>0</deep><arrayindex>4</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><offset>-60</offset><prop>V_DYNA</prop><columnname>buyvolume</columnname><deep>0</deep><arrayindex>4</arrayindex><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>0</prop><line>solid</line><direct>horizotal</direct></INFO_ITEM>
+		<INFO_ITEM><type></type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"最新"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>new</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"均价"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_OBJINFO</prop><columnname>avgprice</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"涨跌"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_OBJINFO</prop><columnname>updn</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"换手"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_OBJINFO</prop><columnname>exchange</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"涨幅"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_OBJINFO</prop><columnname>updnratio</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"开盘"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_DYNA</prop><columnname>open</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"总手"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>volume</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"最高"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_DYNA</prop><columnname>high</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"现手"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>nowvol</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"最低"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_DYNA</prop><columnname>low</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"总额"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>amount</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"量比"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_OBJINFO</prop><columnname>volratio</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"涨停"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>advstop</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"跌停"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_DYNA</prop><columnname>decstop</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"总笔"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>tickcount</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"每笔"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_OBJINFO</prop><columnname>volpertick</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"内盘"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_DYNA</prop><columnname>inner</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"外盘"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_DYNA</prop><columnname>outter</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>0</prop><line>solid</line><direct>horizotal</direct></INFO_ITEM>
+		<INFO_ITEM><type></type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"总卖"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_OBJINFO</prop><columnname>allsellvol</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"均价"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_OBJINFO</prop><columnname>avgsell</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>0</prop><line>solid</line><direct>horizotal</direct></INFO_ITEM>
+		<INFO_ITEM><type></type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+		
+		<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"总买"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS2</pos><prop>V_OBJINFO</prop><columnname>allbuyvol</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"均价"</prop><align>left</align></INFO_ITEM>
+		<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_OBJINFO</prop><columnname>avgbuy</columnname><deep>0</deep><align>right</align></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>0</prop><line>solid</line><direct>horizotal</direct></INFO_ITEM>
+		<!--案例右INDICATOR-->
+	
+
+  </list>
+  

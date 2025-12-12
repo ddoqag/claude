@@ -1,0 +1,24 @@
+<rules target="objinfo">
+	<rule id="rule2" target="none">
+		<conditions>
+			<condition>market=.{2}</condition>
+			<condition>type=0</condition>
+		</conditions>
+		<actions>
+			<action type="desc">一般指数</action>
+			<action type="MINCross">valuewnd\MINCross_2.xml</action>
+			<action type="KCross">valuewnd\KCross_2.xml</action>
+		</actions>
+	</rule>
+	<rule id="rule1" target="none">
+		<conditions>
+			<condition>market=.{2}</condition>
+			<condition>type=\d+</condition>
+		</conditions>
+		<actions>
+			<action type="desc">一般股票</action>
+			<action type="MINCross">valuewnd\MINCross_1.xml</action>
+			<action type="KCross">valuewnd\KCross_1.xml</action>
+		</actions>
+	</rule>
+</rules>

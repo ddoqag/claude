@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="贵金属"  local="1">
+		<subclass name="行情总览" node="109692" scriptfile="gjs_gjs"/>
+	</class>  
+</classes>

@@ -1,0 +1,26 @@
+function xgsc()
+	{this.DeleteAllColumn();}
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+
+	end
+	
+
+	table =['IXSPX.index','IXDJIA.index','IXNDX.index'];
+	this.SetStocks(table,1);
+
+
+	table =['SH000300.index','HIHSI.index','IXN225.index','IXKS11.index','IXFTSTI.index','IXSENSEX.index','IXKLSE.index','IXXJO.index','IXTWII.index'];
+	this.SetStocks(table,1);
+
+	table =['IXFTSE.index','IXSX5E.index','IXGDAXI.index','IXFCHI.index','IXAEX.index','IXIBEX.index','IXS30.index','IXRTS.index'];
+	this.SetStocks(table,1);
+
+
+	table =['IXUDI.index','FXXAUUSD.frx','IPBY0.cmdty'];
+	this.SetStocks(table,1);
+
+
+end
+

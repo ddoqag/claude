@@ -1,0 +1,13 @@
+function listBondhbsc()
+	params = '{"fids":"C1,C2,C3,C16,C8","dcategory":"1","skip":0,"amount":20,"menuid":"000001007"}';
+	params = util::Base64Encode(params);
+
+	req = 'service=rpc&so=jso-ui-zhpnews.jar&function=gw.sh.func.SearchNewsFromSolrRequest&paraencode=base64&parameter=';
+	req = req + params;
+	req = req + '&response_times=1&response_mode=0';
+	data = data::RequestData(req);
+	result = data(2);
+
+	this.Send(result);
+end
+

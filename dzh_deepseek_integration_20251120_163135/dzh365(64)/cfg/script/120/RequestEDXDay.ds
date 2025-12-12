@@ -1,0 +1,82 @@
+{请求EDX日线，获取数据表并发回客户端
+参数：
+	obj					股票代码，例如'SH510300.fnd'
+	period 			周期，例如'1d'
+	starttime 	起始时间,例如'20130507103028000000'
+	endtime 		结束时间,例如'20130807103028000000'
+	obj2				股票代码，例如'SH510050.fnd'
+	chn					1:使用obj2 其它:使用obj
+}
+function RequestEDXDay(obj, period, starttime, endtime, obj2, chn)
+	if(chn == 1)
+		obj = obj2;
+	end
+	{首次加载获取历史数据并保存到数据层缓存}
+	if this.FirstLoad()
+		{注册最新数据推送请求}
+		this.Regist('service=did&did=100131&field&response_times=-1&response_mode=0&cache_timeout=0&where=obj=' + obj,'RequestEDXDay' + obj,0);
+		{保存空数据层缓存}
+		result =  table::Create('',0,'data');
+		this.SaveBuffer(result, 'RequestEDXDay' + obj);
+		return;
+	end
+	
+
+	{获取推送数据}
+	data0 = this.GetPushData('RequestEDXDay' + obj);
+	{收到推送数据，更新缓存表中最新数据，发回缓存表}
+	if(util::GetRows(data0) > 0)
+		data = data0(1,2);
+		lines = util::GetRows(data);
+		{加载缓存数据表}
+		result = this.LoadBuffer('RequestEDXDay' + obj);
+		n = util::GetRows(result);
+		if(n == 0) {第一次全量数据}
+			{保存data最后两行以备日后计算}
+			this.SaveBuffer(data(lines-1:lines,1:2), 'RequestEDXDay2' + obj);
+			{计算差分}
+			result =  table::Create('updateTime:T;data:v',lines-1,'data');
+			for i = 2:lines
+				result(i-1,1) = data(i,1);
+				result(i-1,2) = data(i,2);
+				result(i-1,2) = result(i-1,2) - data(i-1,2);
+				result(i-1,2) = result(i-1,2) / '10000.0';
+			end
+			{保存到数据层缓存}
+			this.SaveBuffer(result, 'RequestEDXDay' + obj);			
+		else {推送增量数据}
+			t = data(lines,1);
+			str = util::TimetToString(t,'%%Y%%m%%d');
+			t = util::StringToTimet(str,'%%Y%%m%%d',0);
+			{加载最后两行数据}
+			lastdata = this.LoadBuffer('RequestEDXDay2' + obj);
+			if( t > result(n,1)) {得到下一天数据}
+				{增长数据表}
+				result2 =  table::Create('updateTime:T;data:v',n + 1,'data');
+				result2(1:n,:) = result;
+				lastdata(1,1:2) = lastdata(2,1:2);
+				lastdata(2,1:2) = data(lines,1:2);
+				this.SaveBuffer(lastdata, 'RequestEDXDay2' + obj);
+				result2(n+1,1) = t;
+				result2(n+1,2) = (lastdata(2,2) - lastdata(1,2)) / '10000.0';
+				result = result2;
+				{保存到数据层缓存}
+				this.SaveBuffer(result, 'RequestEDXDay' + obj);
+			else	{仍是当天数据}
+				lastdata(2,1:2) = data(lines,1:2);
+				this.SaveBuffer(lastdata, 'RequestEDXDay2' + obj);
+				{计算最后一列数据}
+				result(n,2) = (data(lines,2) - lastdata(1,2)) / '10000.0';
+			end
+		end
+		n = util::GetRows(result);
+		t = table::Create('updateTime:T;data:v',n + 1,'data');
+		t(1:n,:) = result;
+		time = result(n,1);
+		str = util::TimetToString(time,'%%Y%%m%%d%%H');
+		t(n+1,1) = util::StringToTimet(str + '30','%%Y%%m%%d%%H%%M',480);
+		t(n+1,2) =  '0';
+		{发回缓存表}
+		this.Send(t);
+	end
+end

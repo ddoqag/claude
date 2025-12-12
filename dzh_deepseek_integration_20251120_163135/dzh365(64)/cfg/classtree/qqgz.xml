@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="全球股指" scriptfile="qqgz" local="1">
+		<subclass name="全球指数" node="700001"/>
+	</class>  
+</classes>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<root name="system">
+    <section name="switchs">
+        <entry name="relpace_ie_with_chrome">1</entry>
+        <entry name="setcookie_debug">0</entry>
+    </section>
+    <section name="ShowDevTools">
+        <entry name="ShowDevTools">0</entry>
+    </section>
+	 <section name="Navigate">
+        <section name="Navigate1">
+            <entry name="Select">1</entry>
+            <entry name="TitleName">千元终端</entry>
+            <entry name="Path">cfg\Navigate.xml</entry>
+            <entry name="CusPath">USERDATA\Navigate\CusNavigate.xml</entry>
+        </section>
+    </section>
+	<section name="update">
+        <entry name="type">1</entry>
+    </section>
+	<section name="HK_CONFIG">
+        <entry name="SHOW_LIMIT_NUM">20</entry>
+        <entry name="SHOW_LIMIT_TIP">温馨提示：据香港联交所要求,免费行情权限用户至多可揭示20只港股。&#x000D;&#x000A;如需查看港股全量实时行情，请参看大智慧官网购买港股通专业版产品或更高权限产品。咨询热线：021-20219999</entry>
+        <entry name="SELFSTOCK_LIMIT_TIP">据港交所要求,港股免费实时行情,自选股最多添加20只港股。</entry>
+    </section>
+    <section name="InfoCollect">
+    		<entry name="url">http://my.dzh.com.cn/jci/collectUserData</entry>
+    		<entry name="interval">30</entry>
+    		<entry name="random">30</entry>
+    		<entry name="maximum">1000</entry>
+    </section>
+           <section name="keyboard">
+		<entry name="param">/keyspirit/search?key=%s&amp;f=0&amp;l=20&amp;e=C2&amp;__encoding=utf-8</entry>
+	</section>
+	<section name="mine_setting"> 
+		<entry name="mine_view_type">1</entry> 
+		<entry name="dlgnamecontent">minewndcontent</entry>
+		<entry name="dlgnamelist">minewndlist</entry>
+		<entry name="life">FBROWSE?URL=&apos;http://tide.dzh.com.cn/#MARKET#/#LABEL#/LIFE/#MINEID#.html&apos;&amp;KEY=&apos;#DLGNAMECONTENT#&apos;&amp;SIZE=&apos;800,670&apos;&amp;ALIGN=&apos;LT&apos;&amp;ANCHOR=&apos;100,100&apos;</entry> 
+		<entry name="tide">FBROWSE?URL=&apos;http://tide.dzh.com.cn/#MARKET#/#LABEL#/TIDE/#MINEID#.html&apos;&amp;KEY=&apos;#DLGNAMECONTENT#&apos;&amp;SIZE=&apos;860,670&apos;&amp;ALIGN=&apos;LT&apos;&amp;ANCHOR=&apos;100,100&apos;</entry>
+		<entry name="lifes">FBROWSE?URL=&apos;http://tide.dzh.com.cn/#MARKET#/#LABEL#/LIFE/#MINEID#.html&apos;&amp;BORDER=1&amp;KEY=&apos;#DLGNAMELIST#&apos;&amp;SIZE=&apos;507,379&apos;&amp;ALIGN=&apos;LT&apos;&amp;ANCHOR=&apos;383,184&apos;</entry>
+		<entry name="tides">FBROWSE?URL=&apos;http://tide.dzh.com.cn/#MARKET#/#LABEL#/TIDE/#MINEID#.html&apos;&amp;BORDER=1&amp;KEY=&apos;#DLGNAMELIST#&apos;&amp;SIZE=&apos;507,379&apos;&amp;ALIGN=&apos;LT&apos;&amp;ANCHOR=&apos;383,184&apos;</entry>
+		<entry name="list">FBROWSE?URL=&apos;http://tide.dzh.com.cn/#MARKET#/#LABEL#/TIDE/#MINEID#.html&apos;&amp;BORDER=1&amp;KEY=&apos;#DLGNAMELIST#&apos;&amp;SIZE=&apos;854,504&apos;&amp;ALIGN=&apos;LT&apos;&amp;ANCHOR=&apos;383,184&apos;</entry>
+	</section>
+	<section name="DD_PROFFIN">
+		<entry name="url">http://level2.dzh.com.cn/platform</entry>
+	</section>
+	<section name="dzhyun">
+        <entry name="server_url">ws://gw.yundzh.com/ws</entry>
+		<entry name="short_id">0000001b</entry>
+    </section>
+</root>

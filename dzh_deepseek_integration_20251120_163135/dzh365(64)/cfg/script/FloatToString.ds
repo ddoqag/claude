@@ -1,0 +1,45 @@
+{浮点数字符串转换函数，小数位数不足时用0填充}
+{参数：  f 浮点数}
+{参数：  n 小数点位数}
+{返回值: n位小数字符串}
+function FloatToString(f,n)
+	fs = f + 'f';
+	if(fs == 'f')
+		fs = '0f';
+	end
+	r = '';
+	for i=1:100
+		s = StringUtil::Mid(fs,i,i);
+		if s == '.'
+			r = r + s;
+			{加入小数点后数据}
+			for j=1:n
+				s1 = StringUtil::Mid(fs,i+j,i+j);
+				if s1 == 'f'
+					{补完后方的0}
+					for j = j:n
+						r = r + '0';
+					end
+					break;
+				else
+					r = r + s1;
+				end
+			end
+			break;
+		else
+			if s == 'f'
+				{加入小数点后数据}
+				r = r + '.';
+				for j=1:n
+					r = r + '0';
+				end
+				break;
+			else
+				{加入数字}
+				r = r + s;
+			end
+		end
+	end
+	return r;
+end
+

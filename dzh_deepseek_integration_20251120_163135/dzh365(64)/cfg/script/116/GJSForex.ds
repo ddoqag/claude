@@ -1,0 +1,41 @@
+function GJSForex()
+	this.ResetStocks();
+
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',60,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',180,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',90,0,0);  
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',90,0,0); 
+	end
+	
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('直盘');
+	table =['FXUSDCNY.stk','FXEURUSD.stk','FXUSDJPY.stk','FXGBPUSD.stk','FXUSDCAD.stk','FXAUDUSD.stk','FXNZDUSD.stk','FXUSDCHF.stk','FXUSDDKK.stk','FXUSDNOK.stk','FXUSDSEK.stk'];
+	this.SetStocks(table(1,:),1);
+
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('交叉盘');
+	table =['FXCNYEUR.stk','FXCNYJPY.stk','FXCNYGBP.stk','FXEURJPY.stk','FXEURGBP.stk','FXEURCAD.stk','FXEURAUD.stk','FXEURCHF.stk','FXEURNOK.stk','FXEURSEK.stk','FXJPYCNY.stk','FXJPYEUR.stk','FXJPYGBP.stk','FXJPYCAD.stk','FXGBPJPY.stk','FXGBPCAD.stk','FXGBPAUD.stk','FXGBPCHF.stk','FXCADCNY.stk','FXCADEUR.stk','FXAUDCNY.stk','FXAUDJPY.stk','FXAUDCAD.stk','FXAUDNZD.stk','FXCHFJPY.stk'];
+	this.SetStocks(table,1);
+	
+	
+end
+

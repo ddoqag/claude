@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="涉股衍生品" scriptfile="fjjj2" local="1">
+		<subclass name="分级基金" node="800001" scriptfile="fjjj2">
+		</subclass>
+	</class>  
+</classes>

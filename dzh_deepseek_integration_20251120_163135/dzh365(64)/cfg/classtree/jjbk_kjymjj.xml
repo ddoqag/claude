@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="基金板块" local="1">
+		<subclass name="可交易母基金" node="23" scriptfile="jjbk"/>
+	</class>
+</classes>

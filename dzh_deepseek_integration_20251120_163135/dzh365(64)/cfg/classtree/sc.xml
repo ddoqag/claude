@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+  <class name="上海期货"  local="1">
+
+        <subclass name="上海期货" node="700001" scriptfile="sc" />
+
+  </class>
+ </classes>

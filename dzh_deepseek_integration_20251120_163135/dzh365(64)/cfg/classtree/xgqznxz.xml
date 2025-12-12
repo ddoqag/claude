@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="香港权证牛熊证" local="1">
+                <subclass name="香港权证" node="10" scriptfile="xgqz"/>
+				<subclass name="香港牛熊证" node="10" scriptfile="xgnxz"/>
+	</class>
+</classes>

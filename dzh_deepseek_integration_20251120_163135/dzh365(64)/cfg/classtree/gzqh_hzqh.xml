@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="恒指期货" local="1">
+		<subclass name="恒生期指" node="1" scriptfile="hsqz"/>
+		<subclass name="恒指期货" node="112698" scriptfile="spbk"/>
+		<subclass name="小恒指期货" node="112700" scriptfile="spbk"/>
+		<subclass name="H股指期货" node="112699" scriptfile="spbk"/>
+		<subclass name="小H指期货" node="112701" scriptfile="spbk"/>
+	</class>
+</classes>

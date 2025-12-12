@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="指数成份股" local="1">
+                <subclass name="沪深300" node="107592" scriptfile="gpfl" datasource="1" indexcode="SH000300"/>
+                <subclass name="上证50" node="107596" scriptfile="gpfl" datasource="1" indexcode="SH000016"/>
+                <subclass name="上证180" node="107595" scriptfile="gpfl" datasource="1" indexcode="SH000010"/>
+                <subclass name="上证380" node="104275" scriptfile="gpfl" datasource="1" indexcode="SH000009"/>
+                <subclass name="超大盘" node="102317" scriptfile="gpfl" datasource="1" indexcode="SH000043"/>
+                <subclass name="上证中盘" node="102318" scriptfile="gpfl" datasource="1" indexcode="SH000044"/>
+                <subclass name="上证小盘" node="102319" scriptfile="gpfl" datasource="1" indexcode="SH000045"/>
+                <subclass name="上证中小" node="102320" scriptfile="gpfl" datasource="1" indexcode="SH000046"/>
+                <subclass name="上证全指" node="102321" scriptfile="gpfl" datasource="1" indexcode="SH000047"/>
+                <subclass name="深证100" node="107597" scriptfile="gpfl" datasource="1" indexcode="SZ399330"/>
+                <subclass name="中小板指" node="104309" scriptfile="gpfl" datasource="1" indexcode="SZ399005"/>
+                <subclass name="创业板指" node="104190" scriptfile="gpfl" datasource="1" indexcode="SZ399006"/>
+	</class>
+</classes>

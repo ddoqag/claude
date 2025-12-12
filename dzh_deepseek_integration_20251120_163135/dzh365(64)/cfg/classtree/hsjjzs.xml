@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="沪深基金指数" scriptfile="ec_jjzs" local="1">
+		<subclass name="基金指数" node="600001" />
+	</class>
+</classes>

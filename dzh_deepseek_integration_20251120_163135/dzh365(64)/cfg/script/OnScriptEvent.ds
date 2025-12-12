@@ -1,0 +1,25 @@
+{/script?script=OnScriptEvent('connectfinished');&response_times=1}
+function OnScriptEvent(eventstr)
+	eventparam = StringUtil::StringSplit(eventstr,',');
+	if util::GetRows(eventparam) > 0
+		event = eventparam(1,1);
+		if event == 'connectfinished'
+			kv::ClearKey('yiziyuqi*');
+		end
+		if event == 'clearmarket'
+			if util::GetRows(eventparam) > 1
+				market_label = eventparam(2,1);
+				kv::ClearKey('yiziyuqi'+market_label+'*');
+			end
+		end
+		if event == 'refreshobj'
+			if util::GetRows(eventparam) > 1
+				obj = eventparam(2,1);
+				kv::ClearKey('yiziyuqi'+obj+'*');
+			end		
+		end				
+	end
+	r = table::Create('r:s',1,'ret');
+	r(1,1) = 'OnScriptEvent: ' + eventstr;
+	this.Send(r);
+end

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<rules target="quote_dyna">
+	<rule id="rule_dyna1">
+		<conditions>
+			<condition>matchtype=col</condition>
+			<condition>tablename=.*</condition>
+			<condition>tabletype=.*</condition>
+			<condition>colname=transfer_type</condition>
+		</conditions>
+		<actions>
+			<action type="need_fmt">1</action>
+			<action type="func_param">{"T":"协议转让","M":"做市转让","B":"集合与连续","C":"集合竞价","O":"其他类型"}</action>
+			<action type="fmt_func">cfmt_directory</action>           
+			<action type="new_name">转让方式</action>
+		</actions>
+	</rule>
+	<rule id="rule_dyna2">
+		<conditions>
+			<condition>matchtype=col</condition>
+			<condition>tablename=.*</condition>
+			<condition>tabletype=.*</condition>
+			<condition>colname=level</condition>
+		</conditions>
+		<actions>
+			<action type="need_fmt">1</action>
+			<action type="func_param">{"1":"基础层","2":"创新层"}</action>
+			<action type="fmt_func">cfmt_directory</action>           
+			<action type="new_name">分层信息</action>
+		</actions>
+	</rule>
+</rules>

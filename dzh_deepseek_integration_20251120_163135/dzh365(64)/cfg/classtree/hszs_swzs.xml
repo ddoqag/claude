@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="申万指数" local="1">
+                <subclass name="SW市场表征" node="112502" scriptfile="gpfl"/>
+                <subclass name="SW量化策略" node="112503" scriptfile="gpfl"/>
+                <subclass name="SW风格指数" node="112508" scriptfile="gpfl"/>
+                <subclass name="SW主题指数" node="112509" scriptfile="gpfl"/>
+                <subclass name="SW定制指数" node="112510" scriptfile="gpfl"/>
+                <subclass name="SW一级行业" node="112504" scriptfile="gpfl"/>
+                <subclass name="SW二级行业" node="112505" scriptfile="gpfl"/>
+	</class>
+</classes>

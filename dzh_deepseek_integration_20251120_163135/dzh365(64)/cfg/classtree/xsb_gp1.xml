@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="首日挂牌" local="1">
+		<subclass name="首日挂牌" node="Y" scriptfile="gp"/>
+	</class>
+</classes>

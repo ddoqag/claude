@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="GB2312" ?>
+ <root name="commoncfg">
+ <kv key="FUNC_BLK_EXCLUDE">市场分类 沪市指数 中证指数 申万指数 证监会行业 深市指数 其它板块</kv>
+ <kv key="DZHYUN_HTTP_URL">gw.yundzh.com</kv>
+ <kv key="ADDUPDOWN">1</kv>
+ <kv key="USE_SYNC_PHONESELF">1</kv>
+ <kv key="SBMARKET">SH,SZ</kv>
+ <kv key="SBINDEX">000001,399001</kv>
+ <kv key="SBURL">http://t.dzh.com.cn/guba/pc/#UNILABEL#?client=6&amp;dataType=html</kv>
+ <kv key="ADV_MMP_URL">https://pay.dzh.com.cn/pay-mall/gateway?method=activity.activity20240401&amp;s=wudang&amp;token=#V3TOKEN#</kv>
+ <kv key="yunbasic">1</kv>
+ <kv key="sssver">1</kv>
+ <kv key="OneMrkFullDynaPushStkNum">60000</kv>
+ <kv key="dbvolmarket">DO,DC,SC,NC,AO,EO,ZC</kv>
+ <kv key="NEWSURL">http://mnews.dzh.com.cn/pczixun/news/index.html?bkstyle=##BKSTYLE##&amp;context=##BASE64{##CONTEXT##}##&amp;#DZHPOPUP(854,504)#</kv>
+ <kv key="blocksync">1</kv>
+ <kv key="nolistviewpict">0</kv>
+ <kv key="showstklstvwpic">0</kv>
+ <kv key="financesync">SH:full_sh,fullblock_sh;SZ:full_sz,fullblock_sz;</kv>
+ <kv key="splitsync">SH:full_sh;SZ:full_sz;</kv>
+ <kv key="histdatamode">1</kv>
+ <kv key="gcdrlist">代码:s:1001:70:-1,名称:s:1002:80:-1,最新:s:1003:70:-1,涨幅:s:1004:80:-1,转换比例:s:2001:100:1,CDR市值:s:2005:120:1,前收盘份额:s:2010:120:1,增量:s:2011:80:2,折合基础券:s:2002:120:1,溢价率:s:2004:100:1,溢价:s:2003:120:1,市盈率:s:2006:80:5,成交量:s:1006:80:11,成交额:s:1007:80:12,换手:s:1005:80:5,量比:s:1011:60:13,行业:s:1012:80:14,内盘:s:1013:60:15,外盘:s:1014:60:16,代码:b:1001:120:-1,名称:b:1002:80:-1,最新:b:1003:80:-1,涨幅:b:1004:80:-1,换手:b:1005:80:5,市盈率:b:1009:80:5,成交量:b:1006:80:17,成交额:b:1007:80:18</kv>
+ <kv key="gcdrsplitindex">20</kv>
+ <kv key="gcdrrelatedlist">代码:s:1001:100:-1,名称:s:1002:100:-1,最新:s:1003:100:-1,涨幅:s:1004:100:-1,换手:s:1005:100:3,成交量:s:1006:100:1,成交额:s:1007:100:0,市盈率:s:1009:80:5,市净率:s:1010:80:6,流通市值:s:1019:100:7,总市值:s:1008:100:8,振幅:s:1015:100:9,委比:s:1016:60:10,量比:s:1011:60:11</kv>
+ <kv key="gcdrexchangelist">代码:s:1001:100:-1,名称:s:1002:160:-1,最新:s:1003:100:-1,涨幅:s:1004:100:5,最高:s:1017:100:12,最低:s:1018:100:13,振幅:s:1015:100:14</kv>
+ <kv key="xwfx">1</kv>
+ <kv key="cybsubmarket">创业板注册,创业板CDR,创业板核准,创业板风险</kv>
+ <kv key="ChangeVolAmtSubMkt">创业板注册,创业板CDR,创业板核准,深证CDR,深证创新,科创板CDR,科创成长层,深证主板,深证风险,上证主板风险,科创板风险,上证B股风险,深证主板风险,创业板风险,深证B股风险,上证主板,上证主板注册,上证主板核准,深证主板注册,深证主板核准,深证主板CDR</kv>
+ <kv key="hscommonstockmarket">上证A股,深证A股,中小企业,创业板,上证风险,上证退市,深证退市,科创板,科创成长层,创业板注册,创业板核准,创业板CDR,深证CDR,深证创新,深证主板,深证风险,上证主板风险,科创板风险,上证B股风险,深证主板风险,创业板风险,深证B股风险,上证主板,上证主板注册,上证主板核准,深证主板注册,深证主板核准,深证主板CDR</kv>
+ <kv key="DefaultSound">\AlarmSound\喇叭.wav</kv>
+ <kv key="downtick">1</kv>
+ <kv key="CorrectVolRatio">1</kv>
+ <kv key="FPTJTip">点击了解功能详情</kv>
+ <kv key="FPTJBuyURL">https://webrelease.dzh.com.cn/ads/znfptj/index.html?token=#V3TOKEN#</kv>
+ <kv key="UseNewServerSort">1</kv>
+ <kv key="StkToolBarShowJHJJ">1</kv>
+ <kv key="UseNewPMD">1</kv>
+ <kv key="ChangeVolAmt">1</kv>
+ <kv key="chrome2">1</kv>
+ <kv key="WatchClipboardRange">SZ#深证A股,SZ#深圳退市,SZ#深证风险,SH#上证A股,SH#SH科创板,SH#上证风险,SH#上证退市,BJ#北证A股</kv>
+ <kv key="klinemode">1</kv>
+ <kv key="uasklinemarket">SH,SZ,B$,FI,HF,HI,HK,HO,WI,OF,SF,SO,SW,X1,ZH,ZI,BZ,SG,SC,ZC,DC,IX,FX,DO,EO,NC,XE,EP,NS,NX,NY,CX,CB,IC,SM,IP,CM,AM,AO,LT,LS,XM,BJ,GF,GT,JZ,K$,GZ,XA</kv>
+ <kv key="usenew80">1</kv>
+ <kv key="new80adv">立即购买</kv>
+ <kv key="shszclosetime">1500</kv>
+ <kv key="UseNewSSJP">1</kv>
+ <kv key="SSJPHomeUrl">https://pmd.dzh.com.cn/pcssjp/index3.html#DZHPOPUP(1080,600)#</kv>
+ <kv key="cdrlist">代码:s:1001:60:-1,名称:s:1002:60:-1,最新:s:1003:60:-1,涨幅:s:1004:60:-1,换手:s:1005:60:5,转换比例:s:2001:100:1,折合基础券:s:2002:100:1,溢价率:s:2004:80:1,溢价:s:2003:80:1,市盈率:s:2006:80:5,市值:s:2005:80:4,代码:b:1001:80:-1,名称:b:1002:80:-1,最新:b:1003:80:-1,涨幅:b:1004:80:-1,换手:b:1005:80:5,市盈率:b:1009:80:5,总市值:s:3002:120:-1</kv>
+<kv key="cdrsplitindex">12</kv>
+<kv key="cdrrelatedlist">代码:s:1001:100:-1,名称:s:1002:100:-1,最新:s:1003:100:-1,涨幅:s:1004:100:-1,换手:s:1005:100:3,成交量:s:1006:100:1,成交额:s:1007:100:0</kv>
+<kv key="cdrexchangelist">代码:s:1001:100:-1,名称:s:1002:160:-1,最新:s:1003:100:-1,涨幅:s:1004:100:5</kv>
+<kv key="usenewcallauctionmarket">上证A股,深证A股,中小企业,创业板,上证风险,上证退市,深证退市,科创板,科创成长层,创业板注册,创业板核准,创业板CDR,深证CDR,深证创新,深证主板,深证风险,上证主板风险,科创板风险,上证B股风险,深证主板风险,创业板风险,深证B股风险,上证主板,上证主板注册,上证主板核准,深证主板注册,深证主板核准,深证主板CDR,北证A股</kv>
+ <kv key="ecvalue">UEVWRFZtRnNkV1UrQ2drOGEzWWdhMlY1UFNKRFFrWkNYMUJKUkNJK056TXNPREVzT0RNc01UQXdMREV4TXl3eE1UWXNNVEkxTERFeU5qd3ZhM1krQ2drOGEzWWdhMlY1UFNKNWRXNUJkWFJvWDNwb2RXSnBJajQ0TVN3NE15d3hNVE1zTVRJMVBDOXJkajRLQ1R4cmRpQnJaWGs5SW5Wd1kyaHBibUZmYzJWamNtVjBJajVrZW1oZmRYQmZWMjlhY1c5d1ZHWlVkRmhxUEM5cmRqNEtQQzlGUTFaaGJIVmxQZz09</kv>
+ <kv key="ecvalue2">PEVDVs6hiVpqrKqM+1iXIpemBIL/ddULIKLhGNERlDIv5JzmS9V7NSphZh7pMTvjoMTIuPP0QVXJPTPNn2XQQ7vcxS5VDRuSNNE0qjpr9JaDDTI+vB4PjPvhDg/Jqt1RPC4jrig9ALyzmjHrwzDQmVoYvwjpjL7dsWXgN2WlhV5bnAjPWfLwfVCLwNdJ/aExO/unp/nDU+Tg9xsOcgvTaadyOFi15Wgs8O+IX6nHKio9z0gIBZnyQeCPcBgKFcvYcJHHEHxz9BaZANEU3UWpmynjtHxsjEsOEiEDGfkp7UTmiNJt2HdShXZQwQl/7JztRkUpXsVtayNOX6OptwOlMXMrn9aHdEnxm3oBLjlaVkmVDoWUiMupihbN4/wtYzCiuOkAInjwXjimLadiVpas3Qh6fqC31b5SIcrcGH8msrcBh6rFFlZTWZbDpihaKv9ShM9wXEd6mo7xP1P/xGQbTIQc9bEM4dnFNk4iL2ENVt3qB/F1lOm0/MPwRNdJSrKWSFCuN6y1nm6Uep5wQK8FJlPNRk+Blkenyv2lQl+EkNlbzu5wyR5RIjoYZDxbBkfGBsk4fw==
+</kv>
+ </root>

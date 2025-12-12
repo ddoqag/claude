@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="当日涨跌停" local="1">
+		<subclass name="当日涨停"  node="1" scriptfile="drzt"/>
+		<subclass name="当日跌停"  node="1" scriptfile="drdt"/>
+		<!-- 新加-->
+    <subclass name="昨日涨停"  node="1" scriptfile="zrzt"/>
+    <subclass name="昨日跌停"  node="1" scriptfile="zrdt"/>
+	</class>
+</classes>

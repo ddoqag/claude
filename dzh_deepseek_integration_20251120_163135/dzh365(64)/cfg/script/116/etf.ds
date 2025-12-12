@@ -1,0 +1,39 @@
+function etf()
+	this.ResetStocks();
+
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',60,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',180,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',90,0,0);  
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',90,0,0); 
+	end
+
+	this.AddStringLine('活跃品种');
+	table = data::RequestData('service=webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_ETF_1');
+	this.SetStocks(table(:,1),1);
+
+	this.AddStringLine('沪深ETF');
+	table = data::RequestData('service=blockinfo&type=leaf&source=local&block=ETF基金&querypath=全部板块/市场/SH&response_times=1&response_mode=0');
+	this.SetStocks(table(:,1),1);
+
+	table = data::RequestData('service=blockinfo&type=leaf&source=local&block=ETF基金&querypath=全部板块/市场/SZ&response_times=1&response_mode=0');
+	this.SetStocks(table(:,1),1);
+
+end
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="小币种外汇行情"  local="1">
+		<subclass name="亚太小币种" node="114015" scriptfile="ytxbz"/>
+		<subclass name="欧洲小币种" node="114014" scriptfile="ozxbz"/>
+		<subclass name="美洲小币种" node="114016" scriptfile="mzxbz"/>
+		<subclass name="非洲小币种" node="114017" scriptfile="fzxbz"/>
+	</class>  
+</classes>

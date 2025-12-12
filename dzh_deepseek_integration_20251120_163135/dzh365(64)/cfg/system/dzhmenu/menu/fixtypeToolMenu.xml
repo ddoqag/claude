@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Config>
+  <menu code="ALARM" disp="预警(&amp;Y)" />
+  <menu code="NEWS" disp="公司公告(&amp;CA)" />
+  <menu code="SEPARATOR" />
+  <submenu name="分析工具" >
+      <menu code="PATTERNDEF" disp="模式匹配设计(&amp;D)" />
+      <menu code="RELATE" disp="相关性分析(&amp;R)" />
+      <menu code="RELATETABLE" disp="相关表(&amp;T)" />
+      <menu code="POSIBLE" disp="预测分析设计(&amp;C)" />
+      <menu code="DOPOSIBLE" disp="预测分析(&amp;F)" />
+      <menu code="DIFMATRIX" disp="套利分析矩阵" />
+      <menu code="DIFSTOCK" disp="套利分析(&amp;H)" />
+      <menu code="CEANA" disp="定位分析(&amp;O)" />
+      <menu code="BLOCKANY" disp="板块分析(&amp;L)" />
+      <menu code="CYQ" disp="移动成本分布(&amp;Q)" />
+      <menu code="STOCKSYNC" disp="联动分析(&amp;Y)" />
+      <menu code="NEWTABLE" disp="新建数据表(&amp;A)" />
+      <menu code="TABLEOPEN" disp="打开数据表(&amp;B)" />
+      <submenu name="星空图" >
+        <menu code="STARMENUNEW" disp="新建星空图" />
+      </submenu>
+    </submenu>
+  <menu code="INFO" disp="短线精灵(&amp;O)" />
+  <!--“短线精灵”快捷键由I改为O-->
+  <menu code="COMMENT" disp="实时观察(&amp;G)" />
+  <!--“实时观察”快捷键由C改为G-->
+  <menu code="QL81" disp="综合排名(&amp;M)" />
+  <!--“综合排名”快捷键由H改为M-->
+  <menu code="CALC" disp="计算器(&amp;J)" />
+  <menu code="NOTE" disp="备忘录(&amp;W)" />
+  <menu code="INVESTMAN" disp="投资管理(&amp;Z)" />
+  <menu code="SEPARATOR" />
+  <menu code="HIGHLIGHT" disp="系统指示(&amp;H)" />
+  <menu code="ZONE" disp="区域指示(&amp;P)" />
+  <menu code="DELEXP" disp="删除系统指示(&amp;D)" />
+  <!--“删除系统指示”快捷键由L改为D-->
+  <menu code="INDITEST" disp="优选交易系统(&amp;X)" />
+  <!--“优选交易系统”快捷键由N改为X-->
+  <!--未改 <menu code="INFO" disp="短线精灵(&amp;I)" />
+  <menu code="COMMENT" disp="实时观察(&amp;C)" />
+  <menu code="QL81" disp="综合排名(&amp;H)" />
+  <menu code="CALC" disp="计算器(&amp;J)" />
+  <menu code="NOTE" disp="备忘录(&amp;W)" />
+  <menu code="INVESTMAN" disp="投资管理(&amp;Z)" />
+  <menu code="SEPARATOR" />
+  <menu code="HIGHLIGHT" disp="系统指示(&amp;H)" />
+  <menu code="ZONE" disp="区域指示(&amp;P)" />
+  <menu code="DELEXP" disp="删除系统指示(&amp;L)" />
+  <menu code="INDITEST" disp="优选交易系统(&amp;N)" />-->
+</Config>

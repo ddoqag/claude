@@ -1,0 +1,69 @@
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width, 4294967295, 0); 
+end
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width, 4294967295, 0); 
+end
+
+{设置列元素值
+matrixdata 列数据
+colname    列名
+id         识别码
+start      起始数据行号，从1开始}
+function SetStatic(matrixdata, colname, id, start)
+	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end
+
+function SetStatis2(matrixdata, colname, id, start)
+ 	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end 
+
+function CurrencyFund()
+	this.DeleteAllColumn();
+
+	this.ResetStocks();
+
+{插入数据列}
+	InsertQuotation('序号','',35);
+	InsertQuotation('代码','S',100);
+	InsertQuotation('名称','S',150);
+{插入静态列}
+	InsertStatic('截止日期',  1, 'S', 100);
+	InsertStatic('七日年化(%%)',  2, '', 100);
+	InsertStatic('(百)万份收益(元)',  3, '',120);
+	InsertStatic('成立日期',4, 'S', 120);
+
+	this.AddStringLine('货币基金');
+	t = data::RequestData('/webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_currency_fund');
+	this.SetStocks(t(:,1),2);
+    {设置静态列}
+	this.SetGroup('最新',3,5);
+	SetStatic(t(:, 3), '截止日期', 1, 1);
+	SetStatic(t(:, 4), '七日年化(%%)', 2, 1);
+	SetStatic(t(:, 5), '(百)万份收益(元)', 3, 1);
+	SetStatic(t(:, 6), '成立日期', 4, 1);
+	
+	this.AddStringLine('短期理财');		
+	t1 = data::RequestData('/webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_short_financial');
+	this.SetStocks(t1(:,1),2);
+	x = util::GetRows(t)+2;
+    {设置静态列}
+	this.SetGroup('最新',3,5);
+	SetStatic(t1(:, 3), '截止日期', 1, x);
+	SetStatic(t1(:, 4), '七日年化(%%)', 2, x);
+	SetStatic(t1(:, 5), '(百)万份收益(元)', 3, x);
+	SetStatic(t1(:, 6), '成立日期', 4, x);
+end
+

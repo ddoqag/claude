@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="外围市场B股" scriptfile="sp1" local="1">
+		<subclass name="上证B股" node="800007" scriptfile="shb">
+		</subclass>
+		<subclass name="深证B股" node="800008" scriptfile="szb">
+		</subclass>
+	</class>  
+</classes>

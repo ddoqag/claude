@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="GB2312" ?> 
+<movetool>
+	<!--
+	区域1
+	滚动资讯+监控
+	-->
+	<region1 show="1">
+		<!--
+		滚动新闻
+		-->
+		<moveinfo show="1">
+			<entry name="InfoClass" type="STRING">infoclass.cfg</entry><!--配置-->
+			<entry name="InfoBarShow" type="INT">1</entry><!--显示？隐藏滚动资讯-->
+			<entry name="InfoBarHeight" type="INT">82</entry><!--滚动资讯高度-->
+			<entry name="OrderBarHeight" type="INT">300</entry><!--无-->
+			<entry name="RoundSetting" type="STRING">03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,</entry><!--滚动资讯过滤-->
+			<entry name="NewsLang" type="INT">1</entry><!--语言-->
+		</moveinfo>
+		
+		<!--
+		监控
+		暂时无过滤
+		-->
+		<monitor show="0"></monitor>
+	</region1>
+	
+	<!--
+	区域2
+	主要指数+跑马灯
+	-->
+	<region2 show="1">
+		<!--
+		主要指数
+		显示时，使用ShowIndex，ShowIndexxx
+		-->
+		<mainindex show="0">
+			<entry name="ShowIndex" type="INT">3</entry><!--主要指数个数-->
+			<entry name="ShowIndex1" type="STRING">SH</entry><!--主要指数1-->
+			<entry name="ShowIndex2" type="STRING">SH</entry><!--主要指数2-->
+			<entry name="ShowIndex3" type="STRING">SH</entry><!--主要指数3-->
+		</mainindex>
+		
+		<!--
+		跑马灯
+		存在url时，使用chrome打开
+		否则默认
+		-->
+		<marquee show="1">
+			<entry name="Did" type="INT">DID</entry><!--跑马灯DID-->
+			<entry name="Url" type="STRING">http:....</entry><!--url-->
+		</marquee>
+	</region2>
+	
+	<!--
+	区域3
+	全球指数+短信精灵
+	-->
+	<region3 show="1">
+		<!--
+		全球指数
+		使用INDEX_WATCH，ShowGlobalIndex
+		-->
+		<globalindex show="0">
+			<entry name="INDEX_WATCH" type="STRING">SH600004</entry><!--新增的全球指数滚动-->
+			<entry name="ShowGlobalIndex" type="INT">0</entry><!--显示全球指数？红绿军-->
+		</globalindex>
+		
+		<!--
+		短信精灵
+		存在url时，使用chrome打开
+		否则使用Filter过滤
+		-->
+		<notice show="0">
+			<entry name="Filter" type="INT"></entry><!--短信精灵过滤，默认没有-->
+			<entry name="Url" type="STRING">http:....</entry><!--url-->
+		</notice>
+	</region3>
+
+</movetool>

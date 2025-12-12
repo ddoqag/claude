@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<AppendCmd>   
+	<SelfStock cmd="FBROWSE?URL='https://mnews.dzh.com.cn/pcdata/top.html'&amp;SIZE='0,0'&amp;KEY='wnd1'&amp;ALIGN='RB'&amp;ANCHOR='0,-84'" />
+	<startupcmd v3token=1 delay=10><![CDATA[CMD?GWCHAT&TYPE=AutoStart]]></startupcmd>
+</AppendCmd>

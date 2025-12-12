@@ -1,0 +1,22 @@
+function listReport(obj)
+
+	params = '{"type":6,"range":3,"page":1,"pagesize":20,"keyword":"'+obj+'"}';
+	params = util::Base64Encode(params);
+
+	req = 'service=rpc&so=jso-html5-stockrr.jar&function=gw.sh.func.StockRRSearchRequest&paraencode=base64&parameter=';
+	req = req + params;
+	req = req + '&response_times=1&response_mode=0';
+	data = data::RequestData(req);
+	result = data(2);
+	rows = system::LineNum(result);
+
+	display = table::Create('Id:s;Category:s;Title:s;Time:s;Org:s', rows, 'data');
+	for i=1:1:rows
+		display(i,1) = data(i,19); {取字段19:bgnm}
+		display(i,2) = '9'; {写死}
+		display(i,3) = data(i,5); {取字段5:bt}
+		display(i,4) = StringUtil::Mid(data(i,9),1,4)+StringUtil::Mid(data(i,9),6,7)+StringUtil::Mid(data(i,9),9,10)+'000000';  {取字段9:rq，转格式}
+		display(i,5) = data(i,4); {取字段4:yjjg}
+	end
+	this.Send(display);
+end

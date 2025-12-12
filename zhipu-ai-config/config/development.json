@@ -1,0 +1,46 @@
+{
+  "zhipu_ai": {
+    "api_key": "${ZHIPU_AI_API_KEY}",
+    "endpoint_url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "model_name": "glm-4.6",
+    "max_retries": 3,
+    "timeout": 30,
+    "rate_limit": 100,
+    "organization_id": null,
+    "project_id": null
+  },
+  "security": {
+    "encryption_key": "${ENCRYPTION_KEY}",
+    "allowed_origins": ["http://localhost:3000", "http://localhost:8080"],
+    "allowed_ips": ["127.0.0.1", "::1"],
+    "jwt_secret": "${JWT_SECRET}",
+    "session_timeout": 3600,
+    "enable_audit_log": true
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "zhipu_ai_dev",
+    "username": "dev_user",
+    "password": "${DB_PASSWORD}",
+    "ssl_mode": "prefer",
+    "pool_size": 5,
+    "max_overflow": 10
+  },
+  "cache": {
+    "host": "localhost",
+    "port": 6379,
+    "db": 0,
+    "password": null,
+    "ttl": 300
+  },
+  "logging": {
+    "level": "DEBUG",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file_path": "./logs/development.log",
+    "max_file_size": "10MB",
+    "backup_count": 5,
+    "enable_audit": true,
+    "audit_file_path": "./logs/audit.log"
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="全部美股" local="1">
+                <subclass name="全部美股" node="107660" scriptfile="gpfl"/>
+                <subclass name="知名美股" node="107663" scriptfile="gpfl"/>
+                <subclass name="纽交所" node="106546" scriptfile="gpfl"/>
+                <subclass name="纳斯达克" node="106545" scriptfile="gpfl"/>
+                <subclass name="标普500 " node="107664" scriptfile="gpfl"/>
+                <subclass name="纳斯达克100" node="107665" scriptfile="gpfl"/>
+                <subclass name="道琼斯成份" node="107666" scriptfile="gpfl"/>
+	</class>
+</classes>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="新股" scriptfile="unssxg" local="1">
+		<subclass name="未上市新股" node="700001"/>
+	</class>  
+</classes>

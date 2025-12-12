@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+	<class name="品种报价" local="1"  scriptfile="gs12">
+		<subclass name="菜籽粕" node="110284" />
+		<subclass name="白糖" node="109736" />
+		<subclass name="PTA" node="109739" />
+		<subclass name="玻璃" node="110256" />
+		<subclass name="菜籽油" node="109738" />
+		<subclass name="棉花" node="109732" />
+		<subclass name="强麦" node="109734" />
+		<subclass name="油菜籽" node="110283" />
+		<subclass name="早籼稻" node="109731" />
+		<subclass name="甲醇" node="109737" />
+		<subclass name="普麦" node="109733" />
+		<subclass name="动力煤" node="107457" />
+		<subclass name="粳稻" node="107546" />
+	</class>
+</classes>

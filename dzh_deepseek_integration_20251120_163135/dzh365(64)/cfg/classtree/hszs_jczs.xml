@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="巨潮指数" local="1">
+                <subclass name="巨潮规模" node="112492" scriptfile="gpfl"/>
+                <subclass name="巨潮风格" node="112494" scriptfile="gpfl"/>
+                <subclass name="巨潮主题" node="112495" scriptfile="gpfl"/>
+                <subclass name="巨潮区域" node="112496" scriptfile="gpfl"/>
+                <subclass name="巨潮行业" node="112493" scriptfile="gpfl"/>
+                <subclass name="巨潮策略" node="112497" scriptfile="gpfl"/>
+                <subclass name="巨潮综合" node="112498" scriptfile="gpfl"/>
+                <subclass name="巨潮定制" node="112499" scriptfile="gpfl"/>
+	</class>
+</classes>

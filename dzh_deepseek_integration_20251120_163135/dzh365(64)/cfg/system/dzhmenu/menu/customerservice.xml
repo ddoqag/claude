@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Config>
+	<menu code="COMMAND" cmd="cmd?GWCHAT&amp;TYPE=OPENCONVERSATION&amp;CONVTYPE=Single&amp;ConvID=dzhkf80100" disp="在线客服" />
+	<menu code="COMMAND" cmd="CHROME?URL='http://help123.dzh.com.cn/help123/index.php?_url=/index/single&amp;post_id=11280'" disp="常见问答"/>
+	<menu code="COMMAND" cmd="XBROWSE?URL='https://pay.dzh.com.cn/pay-mall/gateway?method=personal.powerlist&amp;token=#V3TOKEN#'" disp="个人中心"/>
+	<menu code="COMMAND" cmd="XBROWSE?URL='http://ke.dzh.com.cn/'" disp="技术讲堂"/>
+	<menu code="SEPARATOR"/>
+	<menu code="COMMAND" cmd="navigate?'https://pay.dzh.com.cn/pay-mall/client/product.html?s=1&amp;token=#V3TOKEN#/#DZHPOPUP(80,80,860,600)#'" disp="优惠续费" os="win7" />
+	<menu code="COMMAND" cmd="XBROWSE?URL='https://pay.dzh.com.cn/extbuy.jsp?token=#V3TOKEN#&amp;op=renew'" disp="优惠续费" os="xp" />  
+	<menu code="COMMAND" cmd="XBROWSE?URL='https://pay.dzh.com.cn/pay-mall/gateway?method=personal.powerlist&amp;token=#V3TOKEN#'" disp="我的产品"/>
+	<menu code="COMMAND" cmd="CHROME?URL=https://pay.dzh.com.cn/pay-mall?token=#V3TOKEN#'" disp="软件商城"/>
+	<menu code="COMMAND"  cmd="CHROME?URL='https://webrelease.dzh.com.cn/lhjy_index'" disp="策略交易简介" />
+	<menu code="SEPARATOR"/>
+	<menu code="COMMAND"  cmd="navigate?'http://help123.dzh.com.cn/help123/index.php?_url=/index/single&amp;post_id=11478#DZHPOPUP(860,600)#'" disp="高级资讯专家服务" />
+	<menu code="COMMAND" cmd="" disp="客服电话 021-20219997" />
+	<menu code="COMMAND" cmd="" disp="投诉电话 021-20219952" />
+	<menu code="COMMAND" cmd="" disp="客服邮箱 dzhts@gw.com.cn" />
+</Config>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="GB2312"?>
+  <list desc="深圳股票">		
+		<INFO_ITEM><type>II_VERTLINE</type><pos>SMPOS0+2</pos><prop>10</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    5"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_SELLPRICE5</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_SELLVOL5</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"卖  4"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_SELLPRICE4</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_SELLVOL4</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    3"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_SELLPRICE3</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_SELLVOL3</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"盘  2"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_SELLPRICE2</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_SELLVOL2</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    1"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_SELLPRICE1</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_SELLVOL1</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    1"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_BUYPRICE1</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_BUYVOL1</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"买  2"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_BUYPRICE2</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_BUYVOL2</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    3"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_BUYPRICE3</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_BUYVOL3</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"盘  4"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_BUYPRICE4</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_BUYVOL4</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS1</pos><prop>"    5"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_BUYPRICE5</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_BUYVOL5</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LVALUENAME</type><pos>POS0</pos><prop>V_NOWPRICE</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_NOWPRICE</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUENAME</type><pos>POS4</pos><prop>V_AVGPRICE</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_AVGPRICE</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LVALUENAME</type><pos>POS0</pos><prop>V_UPDN</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_UPDN</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"换手"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_EXCHANGE</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LVALUENAME</type><pos>POS0</pos><prop>V_UPDNRATIO</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_UPDNRATIO</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUENAME</type><pos>POS4</pos><prop>V_OPEN</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_OPEN</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LVALUENAME</type><pos>POS0</pos><prop>V_VOLUME</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_VOLUME</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUENAME</type><pos>POS4</pos><prop>V_HIGH</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_HIGH</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LVALUENAME</type><pos>POS0</pos><prop>V_NOWVOL</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_NOWVOL</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUENAME</type><pos>POS4</pos><prop>V_LOW</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_LOW</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LVALUENAME</type><pos>POS0</pos><prop>V_AMOUNT</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_AMOUNT</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUENAME</type><pos>POS4</pos><prop>V_VOLRATIO</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_VOLRATIO</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LVALUENAME</type><pos>POS0</pos><prop>V_ADVSTOP</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_ADVSTOP</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUENAME</type><pos>POS4</pos><prop>V_DECSTOP</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_DECSTOP</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LTEXT</type><pos>POS0</pos><prop>"总笔"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_TICKCOUNT</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_TEXT</type><pos>POS4</pos><prop>"每笔"</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_VOLPERTICK</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_LVALUENAME</type><pos>POS0</pos><prop>V_INNER</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS2</pos><prop>V_INNER</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUENAME</type><pos>POS4</pos><prop>V_OUTTER</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_VALUE</type><pos>POS3</pos><prop>V_OUTTER</prop></INFO_ITEM>
+		<INFO_ITEM><type>II_HORILINE</type><pos>0</pos><prop>0</prop></INFO_ITEM>
+  </list>
+  

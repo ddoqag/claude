@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <root name="commoncfg">
+	<kv key="indiVerForCloud">9.87</kv>
+	<kv key="allowCloudIndi">true</kv>
+    <kv key="cloudIndiAgreementUrl"><![CDATA[https://mpay.dzh.com.cn/micropayw/jsp/square/protocol.html]]></kv>
+</root>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<rules target="quote_dyna">
+  <rule id="rule_dyna1">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+	  <condition>colname=tradestatus</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="func_param">{"S":"开市前","C":"集合竞价","T":"连续交易","B":"休市","E":"闭市","V":"波动性中断","P":"临时停牌","U":"收盘集合竞价"}</action>
+      <action type="fmt_func">cfmt_directory</action>           
+      <action type="new_name">交易状态</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna2">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=exercise_date|contractMultiplierUnit|K</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="func_param">{"sc":"LST_data","digit":"4","prefix":"&lt;*sf=PLUG_data*&gt;&lt;*b=1*&gt;"}</action>
+      <action type="fmt_func">cfmt_default_volume</action>           
+      <action type="new_name">行权</action>
+    </actions>
+  </rule>  
+</rules>

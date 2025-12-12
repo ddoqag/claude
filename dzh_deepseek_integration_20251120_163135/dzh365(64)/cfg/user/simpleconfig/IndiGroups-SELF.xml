@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<root>
+    <section name="IndiGroups">
+        <section name="五彩K线" />
+        <section name="交易系统" />
+        <section name="技术指标">
+            <entry name="其它" type="STRING"></entry>
+            <entry name="7.主图指标" type="STRING"></entry>
+            <entry name="D.特色指标" type="STRING"></entry>
+            <entry name="1.趋向指标" type="STRING"></entry>
+            <entry name="相关性公式" type="STRING"></entry>
+            <entry name="B.统计指标" type="STRING"></entry>
+            <entry name="3.能量指标" type="STRING"></entry>
+            <entry name="6.大盘指标" type="STRING"></entry>
+            <entry name="2.反趋向指标" type="STRING"></entry>
+            <entry name="A.摆动指标" type="STRING"></entry>
+            <entry name="4.量价指标" type="STRING"></entry>
+            <entry name="E.强弱指标" type="STRING"></entry>
+            <entry name="8.成交量指标" type="STRING"></entry>
+            <entry name="5.压力支撑指标" type="STRING"></entry>
+            <entry name="C.多空势力对比指标" type="STRING"></entry>
+            <entry name="9.超买超卖指标" type="STRING"></entry>
+            <entry name="F.分时指标" type="STRING"></entry>
+            <entry name="J.Level-2特色指标" type="STRING"></entry>
+            <entry name="H.龙系指标" type="STRING"></entry>
+            <entry name="I.神系指标" type="STRING"></entry>
+            <entry name="G.鬼系指标" type="STRING"></entry>
+            <entry name="期货指标" type="STRING"></entry>
+        </section>
+        <section name="条件选股" />
+    </section>
+</root>

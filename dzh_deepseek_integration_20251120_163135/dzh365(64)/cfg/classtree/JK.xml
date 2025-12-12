@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="日韩市场" scriptfile="defaultMarket" >
+        <subclass name="东京证券交易所" node="107322"  />
+        <subclass name="JASDAQ证券交易所" node="107326"  />
+        <subclass name="名古屋证券交易所" node="107327"  />
+        <subclass name="韩国证券交易所" node="107324"  />
+  </class>
+</classes>

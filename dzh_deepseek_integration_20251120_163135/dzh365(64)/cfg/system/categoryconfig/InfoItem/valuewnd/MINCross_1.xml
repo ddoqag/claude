@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="GB2312"?>
+  <list desc="一般股票">
+	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  时 间"</prop><align>left</align></INFO_ITEM>  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_TIME</prop><align>right</align></INFO_ITEM>  	  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>6</prop></INFO_ITEM>  	
+  	
+  	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  价 格 "</prop><align>left</align></INFO_ITEM>  
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_NOWPRICE</prop><align>right</align></INFO_ITEM>  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>6</prop></INFO_ITEM>  	
+  	
+  	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  均 价"</prop><align>left</align></INFO_ITEM>  
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_AVGPRICE</prop><align>right</align></INFO_ITEM>  	  	  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>6</prop></INFO_ITEM>  	
+  	
+  	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  涨 跌"</prop><align>left</align></INFO_ITEM>  
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_UPDN</prop><align>right</align></INFO_ITEM>  	  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>6</prop></INFO_ITEM>  	
+  	
+  	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  幅 度"</prop><align>left</align></INFO_ITEM>  
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_UPDNRATIO</prop><align>right</align></INFO_ITEM>  	  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>6</prop></INFO_ITEM>  	
+  	
+  	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  成交量"</prop><align>left</align></INFO_ITEM>  
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_VOLUME</prop><align>right</align></INFO_ITEM>  	  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>6</prop></INFO_ITEM>  	
+  	
+  	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  成交额"</prop><align>left</align></INFO_ITEM>  
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_AMOUNT</prop><align>right</align></INFO_ITEM>  	  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>6</prop></INFO_ITEM>  	
+  	
+  	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  委卖量"</prop><align>left</align></INFO_ITEM>  
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_ALLSELLVOL</prop><align>right</align></INFO_ITEM>  	  	
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>6</prop></INFO_ITEM>  	
+  	
+  	<INFO_ITEM><type>II_TEXT</type><pos>POS0</pos><prop>"  委买量"</prop><align>left</align></INFO_ITEM>  
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>0</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_NEWLINE</type><pos>POS0</pos><prop>2</prop></INFO_ITEM>
+  	<INFO_ITEM><type>II_SERVICE</type><pos>POS3</pos><prop>V_ALLBUYVOL</prop><align>right</align></INFO_ITEM>  
+  </list>
+  

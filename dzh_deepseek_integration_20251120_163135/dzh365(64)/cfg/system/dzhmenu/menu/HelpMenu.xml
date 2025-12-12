@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Config>
+  <menu code="COMMAND" cmd="XBROWSE?URL='https://help335.dzh.com.cn/'" disp="帮助主题" />   
+  <menu code="FUNCREF" disp="技术指标参考(&amp;R)" />
+  <menu code="HOTKEYREF" disp="快捷键参考(&amp;H)" />
+  <menu code="SEPARATOR" />
+  <menu code="COMMAND" cmd="navigate?'https://pay.dzh.com.cn/pay-mall/client/product.html?s=1&amp;token=#V3TOKEN#/#DZHPOPUP(80,80,860,600)#'" disp="产品购买" os="win7" />
+  <menu code="COMMAND" cmd="XBROWSE?URL='https://pay.dzh.com.cn/extbuy.jsp?token=#V3TOKEN#&amp;op=renew'" disp="产品购买" os="xp" />
+  <menu code="SEPARATOR" />
+  <menu code="COMMAND" cmd="XBROWSE?URL='http://ke.dzh.com.cn/'" disp="技术讲堂"/>
+  <menu code="COMMAND" cmd="navigate?'http://help123.dzh.com.cn/help123/index.php?_url=/index/single&amp;post_id=11219#DZHPOPUP(200,80,800,650)#'" disp="版本更新日志(&L)" />
+  <menu code="COMMAND" cmd="XBROWSE?URL='https://www.gw.com.cn/rules.html'" disp="隐私政策" />
+  <menu code="APPABOUT" disp="关于大智慧(&amp;A)..." />
+  <menu code="SEPARATOR" />
+  <menu code="COMMAND"  cmd="BROWSEDLG?URL='http://pcengine.dzh.com.cn/jt-html/up_popup/index.html?check=true#DZHPOPUP(570,330)#'&amp;TYPE=5" disp="检查更新" />
+</Config>

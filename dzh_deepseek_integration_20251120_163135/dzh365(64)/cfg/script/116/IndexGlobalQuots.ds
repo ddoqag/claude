@@ -1,0 +1,46 @@
+function IndexGlobalQuots()
+	{this.DeleteAllColumn();}
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',60,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',180,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',90,0,0);  
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',90,0,0); 
+	end
+	
+	this.AddStringLine('美国市场');
+	table =['IXSPX.index','IXDJIA.index','IXNDX.index'];
+	this.SetStocks(table,1);
+
+	this.AddStringLine('亚太市场');
+	table =['SH000300.index','HKHSI.index','IXN225.index','IXKS11.index','IXFTSTI.index','IXSENSEX.index','IXKLSE.index','IXXJO.index','IXTWII.index','IXXIN9.index'];
+	this.SetStocks(table,1);
+
+	this.AddStringLine('欧洲市场');
+	table =['IXFTSE.index','IXSX5E.index','IXGDAXI.index','IXFCHI.index','IXAEX.index','IXIBEX.index','IXS30.index','IXRTS.index'];
+	this.SetStocks(table,1);
+
+	this.AddStringLine('其它市场');
+	table =['IXUDI.index','FXXAUUSD.frx','IPBY0.cmdty'];
+	this.SetStocks(table,1);
+
+
+end
+

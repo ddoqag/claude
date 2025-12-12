@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!--
+底部状态栏配置
+	网页不优先显示（如果显示格式设置超过默认个数，忽略网页）
+	区域2和区域3是左右分开，如果其中一个不显示，另外一个将覆盖显示
+	如果所有都不设置显示，区域2和区域3存在，但是没有内容
+区域1：
+	内容：
+		滚动资讯,监控,网页
+	说明：
+		默认个数2个（左右分开）
+		网页显示时会自动填充到其中一个不显示的区域
+
+区域2：
+	内容：
+		主要指数，跑马灯，网页
+	说明：
+		默认个数2个（上下分开）
+		网页显示时会自动填充到其中一个不显示的区域
+
+区域3：
+	内容：
+		全球指数,短信精灵,网页
+	说明：
+		默认个数2个（上下分开）
+		网页显示时会自动填充到其中一个不显示的区域
+	
+-->
+<statusbar enable="1">
+    <!--
+	区域1
+	滚动资讯,监控,网页
+	-->
+    <region1 enable="1">
+        <!--滚动新闻-->
+        <moveinfo enable="1" />
+        <!--监控-->
+        <monitor enable="0" />
+        <!--网页-->
+        <url enable="1">root://bond/gjsscreen/gjs59.html</url>
+        <InfoBarShow>1</InfoBarShow>
+        <!--显示？隐藏滚动资讯-->
+        <InfoBarHeight>145</InfoBarHeight>
+        <!--滚动资讯高度-->
+        <OrderBarHeight>300</OrderBarHeight>
+        <Width>55</Width>
+    </region1>
+    <!--
+	区域2
+	主要指数，跑马灯，网页
+	-->
+    <region2 enable="1">
+        <!--主要指数-->
+        <mainindex enable="1">
+            <ShowIndex>FXUDI,IPBY0,FXXAGUSD</ShowIndex>
+            <!--指数-->
+            <ShowIndexCount>3</ShowIndexCount>
+        </mainindex>
+        <!--跑马灯-->
+        <pmd enable="1" />
+        <!--网页-->
+        <url enable="0"></url>
+    </region2>
+    <!--
+	区域3
+	全球指数,短信精灵,网页
+	-->
+    <region3 enable="0">
+        <!--全球指数-->
+        <globalindex enable="0">
+            <!--显示全球指数？红绿军-->
+            <ShowGlobalIndex>1</ShowGlobalIndex>
+            <INDEX_WATCH>SH000001,IXAEX,IXATX,IXDJIA,IXEFC1,IXFTSE,IXH25,IXIPI,IXKS11,IXNDX,IXPLYI,IXS30,IXSMI,IXSXXP,IXTSX,IXUDI</INDEX_WATCH>
+        </globalindex>
+        <!--短信精灵-->
+        <notice enable="0" />
+        <!--网页-->
+        <url enable="1">file://#DZH2#/cfg/Pages/backup_pages_temp-2.html</url>
+    </region3>
+    <ShowStatusBar>3</ShowStatusBar>
+</statusbar>

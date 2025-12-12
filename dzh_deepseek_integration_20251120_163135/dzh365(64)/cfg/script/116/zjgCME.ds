@@ -1,0 +1,63 @@
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{设置列元素值
+matrixdata 列数据
+colname    列名
+id         识别码
+start      起始数据行号，从1开始}
+function SetStatic(matrixdata, colname, id, start)
+	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end
+
+function zjgCME()
+
+	this.ResetStocks();
+	{插入数据列}
+	InsertQuotation('序号','',35);
+	InsertQuotation('代码','S',100);
+	InsertQuotation('名称','S',150);
+	InsertQuotation('最新','',85);
+	InsertQuotation('现手','',85);
+	InsertQuotation('涨跌','',85);
+	InsertQuotation('涨幅','',85);
+	InsertQuotation('买一价','',85);
+	InsertQuotation('买一量','',85);
+	InsertQuotation('卖一价','',85);
+	InsertQuotation('卖一量','',85);
+	InsertQuotation('总手','',85);
+	InsertQuotation('持仓量','',85);
+	InsertQuotation('总额','',85);
+	InsertQuotation('昨结算价','',85);
+	InsertQuotation('量比','',85);
+	InsertQuotation('涨速','',85);
+	InsertQuotation('今开','',85);
+	InsertQuotation('最高','',85);
+	InsertQuotation('最低','',85);
+
+	table = data::RequestData('/blockinfo/leaf?source=local&block=CME棕榈油&depth=-1&response_times=1&response_mode=0');
+	this.SetStocks(table,1);
+	
+
+	table = data::RequestData('/blockinfo/leaf?source=local&block=CME畜产&depth=-1&response_times=1&response_mode=0');
+	this.SetStocks(table,1);
+
+
+end
+

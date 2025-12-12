@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="纽约NYMEX" local="1">
+		<subclass name="纽约NYMEX" node="1" scriptfile="nyNYMEX"/>
+		<subclass name="美原油" node="112900" scriptfile="spbk"/>
+		<subclass name="布伦特原油" node="112901" scriptfile="spbk"/>
+		<subclass name="美天然气" node="112902" scriptfile="spbk"/>
+		<subclass name="美燃料油" node="112903" scriptfile="spbk"/>
+		<subclass name="RBOB汽油" node="112905" scriptfile="spbk"/>
+	</class>
+</classes>

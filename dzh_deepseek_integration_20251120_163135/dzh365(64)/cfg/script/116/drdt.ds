@@ -1,0 +1,35 @@
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{设置列元素值
+matrixdata 列数据
+colname    列名
+id         识别码
+start      起始数据行号，从1开始}
+function SetStatic(matrixdata, colname, id, start)
+	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end
+
+function drdt()
+	this.ResetStocks();
+	table = DZH::requestyundatapb('/markettrend/block?field=DieTingGuPiaoLieBiao&output=pb');
+	index = table::GetColumnIndex(table, 'DieTingGuPiaoLieBiao');
+	this.SetStocks(table(1,index),1);
+end
+

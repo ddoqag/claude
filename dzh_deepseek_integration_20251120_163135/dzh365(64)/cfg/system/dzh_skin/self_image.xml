@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<images>
+<imagelist name="list1" file="C:\prop24.bmp" width="30" height="30">
+	<image name="open1" />
+	<image name="open2" />
+	<image name="open3" />
+	<image name="open4" />
+	<image name="open5" />
+</imagelist>
+<imagelist name="list2" file="C:\prop24.bmp">
+	<image name="open6" />
+</imagelist>
+<image name="FXJBTN" file="cfg\dzh_skin\fxjbtn.bmp" />
+<image name="image2" file="C:\prop24.bmp" />
+</images>

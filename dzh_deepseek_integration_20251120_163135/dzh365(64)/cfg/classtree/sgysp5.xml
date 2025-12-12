@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="涉股衍生品" scriptfile="hg" local="1">
+		<subclass name="回购" node="800005" scriptfile="hg">
+		</subclass>
+	</class>  
+</classes>

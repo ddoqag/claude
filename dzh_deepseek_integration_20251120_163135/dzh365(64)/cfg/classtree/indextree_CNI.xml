@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1" scriptfile="index_s" >	 
+		<subclasses name="成份股指数" node="108787" >
+				<subclass name="巨潮规模指数" node="104443" />
+				<subclass name="巨潮风格指数" node="104444" />
+				<subclass name="巨潮主题指数" node="104445" />
+				<subclass name="巨潮区域指数" node="104447" />
+				<subclass name="巨潮行业指数" node="108786" />
+		</subclasses>
+		<subclasses name="综合指数" node="108788" >
+				<subclass name="巨潮市场指数" node="104442" />
+				<subclass name="巨潮企债指数" node="104446" />
+		</subclasses>
+  </class>
+</classes>

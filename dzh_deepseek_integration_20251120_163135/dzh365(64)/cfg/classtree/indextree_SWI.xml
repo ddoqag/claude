@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1" scriptfile="index_s" >
+				<subclass name="申万300行业指数" node="100653" />
+				<subclass name="申万一级行业指数" node="104460" />
+				<subclass name="申万二级行业指数" node="104461" />
+				<subclass name="申万市场表征指数" node="104463" />
+				<subclass name="申万量化策略指数" node="104464" />
+				<subclass name="申万商品指数"  local="0" node="109497" scriptfile="index1" />  
+  </class>
+</classes>

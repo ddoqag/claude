@@ -1,0 +1,22 @@
+/*
+ Name:yangsen
+*/
+@charset "utf-8";
+*{padding: 0;margin: 0;}
+html,body{height: 100%;width: 100%;overflow: hidden;}
+body{background:#000 url(bg.png);}
+.top{height:5%;}
+.main{width:90%;height:90%;max-width: 1260px;max-height: 700px;overflow: hidden;margin:0 auto 0;position: relative;}
+.main_side{box-shadow: inset 0 0 8px #000, inset 0 -1px 0px #808080;width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 20}
+.img_list{width: 10080px;height: 100%;overflow: hidden;position: absolute;top: 0;left: 0px;z-index: 10;}
+.img_list li{float: left;height: 100%;list-style: none;}
+.img_list li img{height: 100%}
+.step_btn{background: url(arrow.png) no-repeat left top;width: 53px;height: 106px;position: absolute;top:50%;margin-top:-53px;z-index: 30;cursor: pointer;box-shadow: 3px 0 0px rgba(0,0,0,.2) inset;}
+.step_btn:hover{background-position: left bottom;}
+.step_last{left: 0px;}
+.step_next{right: 0px;-webkit-transform: rotate(180deg); }
+.page_btn{position: absolute;width: 250px;height: 20px;z-index: 50;bottom:20px;left:50%;font-size: 0;margin-left: -105px}
+.page_btn li{display: inline-block;width: 15px;height:15px;background: #8e8f90;border-radius: 10px;margin-right: 15px;box-shadow: inset 0 1px 2px rgba(0,0,0,.5);cursor: pointer;}
+.page_btn li.onthis{background: #00dcff;}
+.down_box{position: absolute;top:-24px;left: 30px;background:url(download_PDF.png);width: 41px;z-index: 50;font-size: 14px;font-family: "Microsoft YaHei";padding-top: 24px;height: 20px;color: #fff;text-align: center;opacity: .5;-webkit-transition: top .3s ease-in;display: block;text-decoration: none;}
+.down_box:hover {opacity: .8;top: 0;-webkit-transition: all .3s ease-in;}

@@ -1,0 +1,64 @@
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{设置列元素值
+matrixdata 列数据
+colname    列名
+id         识别码
+start      起始数据行号，从1开始}
+function SetStatic(matrixdata, colname, id, start)
+	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end
+
+function sc()
+	this.DeleteAllColumn();
+	this.ResetStocks();
+	{插入数据列}
+	InsertQuotation('序号','',35);
+	InsertQuotation('代码','S',75);
+	InsertQuotation('名称','S',130);
+	InsertQuotation('最新','',75);
+	InsertQuotation('现手','',75);
+	InsertQuotation('买一价','',75);
+	InsertQuotation('买一量','',75);
+	InsertQuotation('卖一价','',75);
+	InsertQuotation('卖一量','',75);
+	InsertQuotation('涨跌','',75);
+	InsertQuotation('涨幅','',75);
+	InsertQuotation('今开','',75);
+	InsertQuotation('最高','',75);
+	InsertQuotation('最低','',75);
+	InsertQuotation('昨收','',75);
+	InsertQuotation('昨结算价','',75);
+	InsertQuotation('总手','',75);
+	InsertQuotation('持仓量','',75);
+	InsertQuotation('增仓','',75);
+	InsertQuotation('日增仓','',75);
+	InsertQuotation('昨持仓量','',75);
+	InsertQuotation('结算价','',75);
+	InsertQuotation('外盘','',75);
+	InsertQuotation('内盘','',75);
+	InsertQuotation('开平','',75);
+	this.AddStringLine('有色金属指数');
+	this.SetStocks(['SCIMCI'],1);
+	this.AddStringLine('上海期货');
+	table = data::RequestData('/blockinfo/leaf?source=local&block=上海期货&depth=-1&response_times=1&response_mode=0');
+	this.SetStocks(table(:,1),1);
+end
+

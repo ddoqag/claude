@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Config>
+  <menu code="COMMAND" disp="备份还原工具" cmd="cmd?备份还原"/>
+  <menu code="SELFSTK" disp="自选股"/>
+  <menu code="RECENT" disp="近期"/>
+  <menu code="SWITCHWKS" disp="切换工作区"/>
+  <!-- <menu code="COMMON" disp="常用功能"/>,需要dzh2pri程序设置生成一个配置文件发到用户本地，供用户使用，功能鸡肋，故注释掉20130314-->
+  <menu code="SEPARATOR" />
+  <menu code="COMMONWKS" disp="常用工作区"/>
+  <submenu name="工作区管理">
+    <menu code="NEWWORKSPACE" disp="新开主窗口"/>
+    <menu code="SAVEWORKS" disp="保存工作区"/>
+    <menu code="DELWORKS" disp="删除工作区..."/>
+    <menu code="CLOSEWORKS" disp="关闭工作区"/>
+  </submenu>
+  <menu code="SAVEFREWORKS" disp="存为常用工作区"/>
+  <menu code="STARTPC" disp="设置开机工作区"/>
+  <menu code="SEPARATOR" />
+  <menu code="ADDFREQCOL" disp="添加到常用栏目..."/>
+  <menu code="MANFREQCOL" disp="整理常用栏目..."/>
+  <menu code="NEWWINDOW" disp="新建窗口" />
+</Config>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Config>
+	<menu code="SYNCDATA" disp="下载数据"/>
+	<menu code="EDITCOPY" disp="复制到剪切板(&amp;F)" />
+	<menu code="WATCHCLIPBOARD" disp="监控剪贴板(&amp;C)" />
+	<menu code="DATAMAN" disp="数据管理中心"/>
+	<menu code="SEPARATOR" />
+	<menu code="EXPLORE" disp="条件选股(&amp;C)" />
+	<menu code="FUNCTION" disp="公式管理(&amp;F)"/>
+	<menu code="ALARM" disp="预警(&amp;Y)" />
+	<menu code="INFO" disp="短线精灵(&amp;O)" />
+	<menu code="FLOATFRAME" disp="浮动窗口(&amp;F)"/>
+	<menu code="DRAWTOOL" disp="画线工具(&amp;D)"/>
+	<menu code="SEPARATOR" />
+	<menu code="OPTION" disp="系统选项(&amp;O)"/>
+	<submenu name="终端字体设置">
+    <menu code="NOFIX" disp="原始大小"/>
+    <menu code="SEPARATOR" />
+    <menu code="FIX480" disp="特大字符"/>
+    <menu code="FIX640" disp="大字符"/>
+    <menu code="FIX800" disp="中等字符"/>
+    <menu code="FIX1024" disp="中小字符"/>
+    <menu code="FIX1280" disp="小字符"/>
+    <menu code="FIX1600" disp="特小字符"/>
+    </submenu>
+	<!-- <menu code="SETRECEIVER" disp="接收系统(&amp;R)..."/> -->
+	<submenu name="工作区管理">
+    <menu code="NEWWORKSPACE" disp="新开主窗口"/>
+    <menu code="SAVEWORKS" disp="保存工作区"/>
+    <menu code="DELWORKS" disp="删除工作区..."/>
+    <menu code="CLOSEWORKS" disp="关闭工作区"/>
+    </submenu>
+	<menu code="AUTOPAGE" disp="自动换页(&amp;P)"/>
+	<menu code="CALC" disp="计算器(&amp;J)" />
+	<menu code="SEPARATOR" />
+	<menu code="SELFSTK" disp="自选股"/>
+	<menu code="SETSELF" disp="自选股管理" />
+	<menu code="COMMAND" disp="自选股导入" cmd="STKTRANSPORT" />
+	<!-- <menu code="SETORDER" disp="委托设置"/> -->
+	<!-- <menu code="COMMAND" disp="千档委托监控" cmd="cmd?QxpkMonitor"/> -->
+	<menu code="SEPARATOR" />
+	<menu code="COMMAND" disp="备份还原工具" cmd="cmd?备份还原"/>
+	<menu code="PATTERNDEF" disp="模式匹配设计(&amp;D)" />
+	<!-- <menu code="COMMAND" disp="灵活屏" cmd="CMD?OPENDOCUMENT&amp;TYPE=SPLIT"/> -->
+	<!-- <menu code="NOTE" disp="备忘录(&amp;W)" /> -->
+	<menu code="RECENT" disp="近期"/>
+</Config>
+
+
+
+
+
+	

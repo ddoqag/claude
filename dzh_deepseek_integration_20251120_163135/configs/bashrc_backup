@@ -1,0 +1,349 @@
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export ANTHROPIC_AUTH_TOKEN="716242aa1d2f49a891c36f9d2c10af29.VYpxXUtMkScUf0Q4"
+export ANTHROPIC_BASE_URL="https://open.bigmodel.cn/api/paas/v4"
+
+# 智谱AI GLM-4.6 模型配置
+export GLM_MODEL_DEFAULT="glm-4.6"
+export GLM_MODEL_CODING="glm-4.6-coding"
+export GLM_API_TIMEOUT=120
+export GLM_MAX_TOKENS=8192
+export GLM_TEMPERATURE=0.7
+export GLM_TOP_P=0.9
+
+export PATH="/home/ddo/.local/bin:/home/ddo/.nvm/versions/node/v24.11.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python311/Scripts/:/mnt/c/Program Files/Python311/:/mnt/c/Program Files/Java/jdk-17.0.4/bin:/mnt/c/Users/ddo/AppData/Roaming/java/jdk1.8.0_201/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/TortoiseGit/bin:/mnt/c/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/gradle-8.14.1/bin:/mnt/c/Program Files/Redis/:/mnt/c/Program Files/Apache/maven/apache-maven-3.9.10/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/snap/bin"
+
+# WSL2高性能环境变量
+export CCACHE_DIR="/tmp/wsl_cache/ccache"
+export CCACHE_MAXSIZE="5G"
+export CCACHE_COMPRESS=1
+export PYTHONPYCACHEPREFIX="/tmp/wsl_cache/python"
+export PYTHONDONTWRITEBYTECODE=0
+export NODE_OPTIONS="--max-old-space-size=4096"
+export npm_config_cache="/tmp/wsl_cache/node_modules"
+export GIT_CACHE_PREFIX="/tmp/wsl_cache/git"
+
+# 性能优化
+export OMP_NUM_THREADS=12
+export MKL_NUM_THREADS=12
+export OPENBLAS_NUM_THREADS=12
+
+umask 027
+
+# ============================
+# 安全配置 (由安全加固脚本添加)
+# ============================
+
+# 安全的umask设置
+umask 027
+
+# 命令历史安全设置
+export HISTCONTROL=ignoreboth
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+export HISTTIMEFORMAT="%F %T "
+shopt -s histappend
+
+# 敏感命令不记录历史
+export HISTIGNORE="history*:sudo *:rm *:chmod *:chown *"
+
+# 路径安全检查
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ln='ln -i'
+
+# 防止误删除重要目录
+alias rm='rm -I --preserve-root'
+
+# 网络安全检查
+alias netstat='ss -tuln'
+alias listen='ss -tuln'
+
+# 安全检查快捷命令
+alias sec-check='~/security/scripts/security-check.sh'
+alias sec-monitor='~/security/scripts/security-monitor.sh'
+alias sec-backup='~/security/scripts/backup-security-configs.sh'
+
+# 文件完整性检查快捷命令
+alias integrity-check='~/security/scripts/integrity-check.sh'
+
+# 会话超时设置 (5分钟)
+export TMOUT=300
+
+# 安全函数
+secure_delete() {
+    if command -v shred >/dev/null 2>&1; then
+        shred -vfz -n 3 "$@"
+    else
+        rm -f "$@"
+        log_warning "shred未安装，使用普通删除"
+    fi
+}
+
+# 安全信息显示
+security_status() {
+    echo "=== 安全状态概览 ==="
+    echo "当前用户: $(whoami)"
+    echo "当前umask: $(umask)"
+    echo "SSH状态: $(systemctl is-active ssh 2>/dev/null || echo '未运行')"
+    echo "防火墙状态: $(ufw status 2>/dev/null | head -1 || echo '未配置')"
+    echo "最后登录: $(last -n 1 -w | head -1)"
+    echo "==================="
+}
+
+umask 027
+
+# ============================
+# 安全配置 (由安全加固脚本添加)
+# ============================
+
+# 安全的umask设置
+umask 027
+
+# 命令历史安全设置
+export HISTCONTROL=ignoreboth
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+export HISTTIMEFORMAT="%F %T "
+shopt -s histappend
+
+# 敏感命令不记录历史
+export HISTIGNORE="history*:sudo *:rm *:chmod *:chown *"
+
+# 路径安全检查
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ln='ln -i'
+
+# 防止误删除重要目录
+alias rm='rm -I --preserve-root'
+
+# 网络安全检查
+alias netstat='ss -tuln'
+alias listen='ss -tuln'
+
+# 安全检查快捷命令
+alias sec-check='~/security/scripts/security-check.sh'
+alias sec-monitor='~/security/scripts/security-monitor.sh'
+alias sec-backup='~/security/scripts/backup-security-configs.sh'
+
+# 文件完整性检查快捷命令
+alias integrity-check='~/security/scripts/integrity-check.sh'
+
+# 会话超时设置 (5分钟)
+export TMOUT=300
+
+# 安全函数
+secure_delete() {
+    if command -v shred >/dev/null 2>&1; then
+        shred -vfz -n 3 "$@"
+    else
+        rm -f "$@"
+        log_warning "shred未安装，使用普通删除"
+    fi
+}
+
+# 安全信息显示
+security_status() {
+    echo "=== 安全状态概览 ==="
+    echo "当前用户: $(whoami)"
+    echo "当前umask: $(umask)"
+    echo "SSH状态: $(systemctl is-active ssh 2>/dev/null || echo '未运行')"
+    echo "防火墙状态: $(ufw status 2>/dev/null | head -1 || echo '未配置')"
+    echo "最后登录: $(last -n 1 -w | head -1)"
+    echo "==================="
+}
+
+umask 027
+
+# ============================
+# NVM与NPM最佳实践函数
+# ============================
+
+# NVM状态检查函数
+nvm_status() {
+    echo "=== NVM与NPM状态 ==="
+    echo "NVM版本: $(nvm --version 2>/dev/null || echo '未加载')"
+    echo "Node.js版本: $(node --version 2>/dev/null || echo '未安装')"
+    echo "NPM版本: $(npm --version 2>/dev/null || echo '未安装')"
+    echo "当前NVM版本: $(nvm current 2>/dev/null || echo '无')"
+    echo "NPM前缀: $(npm config get prefix 2>/dev/null || echo '未知')"
+    echo "NPM缓存: $(npm config get cache 2>/dev/null || echo '未知')"
+}
+
+# 冲突检测函数
+check_nvm_npm_conflict() {
+    if [[ -f ~/.npmrc ]] && grep -q "prefix=" ~/.npmrc; then
+        echo "⚠️  检测到.npmrc中的prefix配置可能导致NVM冲突"
+        echo "建议: 移除prefix配置，让NVM管理路径"
+        return 1
+    else
+        echo "✅ 无NVM/NPM配置冲突"
+        return 0
+    fi
+}
+
+# NVM/NPM健康检查快捷命令
+alias nvm-health='~/nvm_npm_health_check.sh'
+alias nvm-check='~/nvm_npm_health_check.sh check'
+alias nvm-report='~/nvm_npm_health_check.sh report'
+
+# 快速NVM状态别名
+alias quick-nvm-check='source ~/.nvm/nvm.sh && nvm --version && node --version && npm --version'
+alias nvm-alias-fix='sed -i "/^prefix=/d" ~/.npmrc && source ~/.nvm/nvm.sh && nvm use v24.11.0'
+export CLAUDE_PROJECT_RESTRICT=true
+export CLAUDE_ALLOWED_PATHS="/mnt/d/data/dzh"
+export CLAUDE_FILE_ACCESS_MODE="restricted"
+source /mnt/d/data/dzh/.claude_restrict_config
+
+export PG_PASSWORD="362232"
+. "$HOME/.cargo/env"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$HOME/.local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+export BIGMODEL_API_KEY="2e88f9da97334650a91c8c0eb6e0e17a.Kr7jEQtx7xst10ZK"
+export PYTHONPATH="/home/ddo/quant_dependencies:$PYTHONPATH"
+export PYTHONPATH="$HOME/quant_dependencies:$PYTHONPATH"
+
+# TDX Docker服务开机自启
+/home/ddo/start_tdx_service.sh
+export PATH="/home/ddo/.claude-tools:$PATH"
+alias switch-model="switch-model.sh"
+export PATH="/home/ddo/.local/bin:$PATH"
+alias qs="quick-switch.sh"
+alias ds-analyze="/home/ddo/.local/bin/deepseek-analyze"
+alias deepseek="/home/ddo/.local/bin/deepseek-analyze"
+alias deepseek="/home/ddo/.local/bin/deepseek-a"
+alias ds="/home/ddo/.local/bin/deepseek-a"
+alias da="/home/ddo/.local/bin/deepseek-a"
+# DZH DeepSeek自然语言对话别名
+alias ds-chat="/home/ddo/.local/bin/deepseek-chat"
+alias deepseek-chat="/home/ddo/.local/bin/deepseek-chat"
+alias dsc="/home/ddo/.local/bin/deepseek-chat"
+alias ds-i="deepseek-chat --interactive"
+alias ds-stock="deepseek-chat --analyze"
+alias ds-market="deepseek-chat --market"

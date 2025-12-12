@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1" scriptfile="index_l" >   
+	<subclasses name="中信标普指数" node="100071">
+				<subclass name="标普综合指数" node="109117" />
+				<subclass name="标普全球指数" node="109118" />
+				<subclass name="标普中信指数" node="109116" />
+				<subclass name="标普国债指数" node="109132" />
+				<subclass name="标普GSCI指数" node="109119" />
+				<subclass name="标普CBOE波搏动指数" node="109120" />
+				<subclass name="标普美国行业指数" node="109121" />
+				<subclass name="标普BMI指数" node="109122" />
+				<subclass name="标普全球1200指数" node="109123" />
+				<subclass name="标普欧洲行业指数" node="109124" />
+				<subclass name="标普货币指数" node="109125" />
+				<subclass name="标普金砖四国指数" node="109126" />
+				<subclass name="标普HAREL指数" node="109127" />
+				<subclass name="标普瑞士信贷指数" node="109128" />
+				<subclass name="标普罗杰斯商品指数" node="109129" />
+				<subclass name="标普IPOX指数" node="109130" />
+				<subclass name="标普其他指数" node="109131" />
+
+	</subclasses>	  	
+  </class>
+</classes>

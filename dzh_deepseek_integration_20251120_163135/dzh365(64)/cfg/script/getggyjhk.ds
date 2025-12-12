@@ -1,0 +1,18 @@
+function getggyjhk(obj)
+			
+	params = ['1','000000030006',obj,'20','1,2,3,6,8'];
+	for i=1:5 
+		tmp = util::Base64Encode(params(1,i));
+		param = param + tmp;
+		if( i ~= 5)
+			param = param + ',';
+		end
+	end
+	
+	req = 'service=rpc&so=libNewsAdvisory.so&function=NewsAdvisory&paraencode=base64&parameter=';
+	req = req + param;
+	req = req + '&response_times=1&response_mode=0';
+	
+	data = data::RequestData(req);
+	this.Send(data);
+end

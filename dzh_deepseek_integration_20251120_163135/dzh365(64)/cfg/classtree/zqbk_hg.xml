@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="债券板块" local="1">
+		<subclass name="回购" node="107659" scriptfile="zqbk"/>
+	</class>
+</classes>

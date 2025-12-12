@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<root>
+    <section name="indigroups">
+        <section name="五彩K线">
+            <entry name="其它" type="STRING">KDJ0&#x09;W&amp;R0&#x09;RSI&#x09;QSZL&#x09;RSI0&#x09;W&amp;R&#x09;KDJ&#x09;</entry>
+            <entry name="1.K线模式" type="STRING">K290&#x09;K180&#x09;K390&#x09;K280&#x09;K170&#x09;K380&#x09;K270&#x09;K160&#x09;K370&#x09;K260&#x09;K150&#x09;K360&#x09;K250&#x09;K140&#x09;K350&#x09;K240&#x09;K130&#x09;K340&#x09;K230&#x09;K120&#x09;K330&#x09;K220&#x09;K165&#x09;K132&#x09;K110&#x09;K320&#x09;K210&#x09;K310&#x09;K200&#x09;K134&#x09;K300&#x09;K400&#x09;K190&#x09;</entry>
+            <entry name="2.上涨K线模式" type="STRING">U300&#x09;U190&#x09;U290&#x09;U180&#x09;U280&#x09;U170&#x09;U380&#x09;U270&#x09;U370&#x09;U260&#x09;U150&#x09;U360&#x09;U250&#x09;U140&#x09;U350&#x09;U240&#x09;U130&#x09;U340&#x09;U230&#x09;U120&#x09;U330&#x09;U220&#x09;U110&#x09;U320&#x09;U210&#x09;U100&#x09;U310&#x09;U200&#x09;</entry>
+            <entry name="3.下跌K线模式" type="STRING">D300&#x09;D190&#x09;D290&#x09;D180&#x09;D280&#x09;D170&#x09;D270&#x09;D160&#x09;D260&#x09;D150&#x09;D360&#x09;D250&#x09;D140&#x09;D350&#x09;D240&#x09;D130&#x09;D340&#x09;D230&#x09;D120&#x09;D330&#x09;D220&#x09;D110&#x09;D320&#x09;D210&#x09;D100&#x09;D310&#x09;D200&#x09;</entry>
+            <entry name="4.反转K线模式" type="STRING">R220&#x09;R110&#x09;R210&#x09;R100&#x09;R200&#x09;R190&#x09;R180&#x09;R170&#x09;R160&#x09;R150&#x09;R140&#x09;R130&#x09;R120&#x09;</entry>
+        </section>
+        <section name="交易系统">
+            <entry name="1.指标交易系统" type="STRING">PSY&#x09;ROC&#x09;MTM&#x09;RSI&#x09;MA&#x09;CCI&#x09;MACD&#x09;BIAS&#x09;KD&#x09;W&amp;R&#x09;VR&#x09;KDJ&#x09;DMI&#x09;BOLL&#x09;SAR&#x09;</entry>
+            <entry name="sjp" type="STRING">SP&#x09;T1&#x09;</entry>
+            <entry name="其它" type="STRING"></entry>
+        </section>
+        <section name="技术指标">
+            <entry name="其它" type="STRING">涨幅&#x09;MASS&#x09;CNP&#x09;VHF&#x09;WCNP&#x09;VOLATI&#x09;LCNP&#x09;WAD&#x09;换手率&#x09;STD&#x09;</entry>
+            <entry name="7.主图指标" type="STRING">K&#x09;PRICE&#x09;BAR&#x09;CNDEQV&#x09;TWR&#x09;</entry>
+            <entry name="D.特色指标" type="STRING">PR&#x09;MARKET&#x09;DKX&#x09;ZHPS&#x09;VOH&#x09;ZHSAR&#x09;QSS&#x09;SCR&#x09;PROFIT&#x09;ABV&#x09;QHLSR&#x09;LSZJ&#x09;ASR&#x09;SHX&#x09;ZLJC&#x09;ZLMM&#x09;DBGC&#x09;HOLDING&#x09;KCX&#x09;ZLGJ&#x09;</entry>
+            <entry name="1.趋向指标" type="STRING">BBI&#x09;PRICEOSC&#x09;DMI&#x09;MACD&#x09;SAR&#x09;TRIX-4.0&#x09;DMI-4.0&#x09;TWRF&#x09;DMA&#x09;DMI-QL&#x09;EXPMA&#x09;MTM&#x09;DDI&#x09;MA&#x09;VMACD&#x09;TRIX&#x09;PBX&#x09;FSL&#x09;M1&#x09;ZIG&#x09;</entry>
+            <entry name="相关性公式" type="STRING">RANGE_R&#x09;COV_R&#x09;PATTERN_R&#x09;UPDOWN_R&#x09;</entry>
+            <entry name="B.统计指标" type="STRING">DDBS&#x09;ZAMOUNT&#x09;ZHSL&#x09;ZUPR&#x09;PJMBCJ&#x09;ZVOL&#x09;</entry>
+            <entry name="3.能量指标" type="STRING">VR&#x09;PSY&#x09;ARBR&#x09;CR&#x09;</entry>
+            <entry name="6.大盘指标" type="STRING">OBOS&#x09;MCO&#x09;BTI&#x09;BT&#x09;STIX&#x09;CHAIKIN&#x09;ADL&#x09;A/D&#x09;ADR&#x09;ABI&#x09;TBR&#x09;</entry>
+            <entry name="2.反趋向指标" type="STRING">DBCD&#x09;VRSI&#x09;CCI&#x09;ROC&#x09;BIAS&#x09;B3612&#x09;RSI&#x09;LW&amp;R&#x09;STOCKRSI&#x09;MJR&#x09;KST&#x09;SI&#x09;CCI-4.0&#x09;SLOWKD&#x09;RMI&#x09;RS&#x09;KDJ&#x09;SRDM&#x09;RSI1&#x09;VROC&#x09;ALF&#x09;SMI&#x09;W&amp;R&#x09;DPO&#x09;KD&#x09;</entry>
+            <entry name="A.摆动指标" type="STRING">OSC&#x09;MI&#x09;MICD&#x09;AD&#x09;RC&#x09;UOS&#x09;RCCD&#x09;ATR&#x09;SRMI&#x09;</entry>
+            <entry name="4.量价指标" type="STRING">VPT&#x09;CHAKIN&#x09;SOBV&#x09;WVAD&#x09;ASI&#x09;OBV&#x09;EMV&#x09;PVT&#x09;EOM&#x09;II&#x09;CHO&#x09;TAPI&#x09;</entry>
+            <entry name="E.强弱指标" type="STRING">SP&#x09;HYG&#x09;ZDZB&#x09;CD&#x09;MFI&#x09;DPTB&#x09;JDQS&#x09;</entry>
+            <entry name="8.成交量指标" type="STRING">VOL&#x09;MBSS&#x09;CJBS&#x09;NVI&#x09;VSTD&#x09;VOSC&#x09;PVI&#x09;NORVOL&#x09;QRSI&#x09;VMA&#x09;AMOUNT&#x09;</entry>
+            <entry name="5.压力支撑指标" type="STRING">VB&#x09;CHANNELS&#x09;CDP&#x09;ENV&#x09;BWIDTH&#x09;MIKE&#x09;%B&#x09;XS&#x09;BOLL&#x09;BBIBOLL&#x09;</entry>
+            <entry name="C.多空势力对比指标" type="STRING">NWPB&#x09;NWPC&#x09;DSBC&#x09;BDDTQ&#x09;SDDTQ&#x09;</entry>
+            <entry name="9.超买超卖指标" type="STRING">ADTM&#x09;</entry>
+            <entry name="F.分时指标" type="STRING">累计撤单&#x09;成交单数&#x09;均线&#x09;分时DDX&#x09;成交笔数&#x09;新单撤单&#x09;总买总卖&#x09;量比&#x09;委比&#x09;即时大单&#x09;累计大单&#x09;买卖总量&#x09;</entry>
+            <entry name="J.Level-2特色指标" type="STRING">DDC&#x09;KW&#x09;BS&#x09;DDX星空&#x09;SVNS&#x09;TRT&#x09;SHL&#x09;主力监控&#x09;SUPL&#x09;ZDDY&#x09;SHBO&#x09;DDZ&#x09;DDY&#x09;DDX&#x09;SHAD&#x09;每日大单&#x09;辉煌之星&#x09;</entry>
+            <entry name="H.龙系指标" type="STRING">VRSI-QL&#x09;WAD-QL&#x09;DMI-QLL&#x09;LON&#x09;CCI-QL&#x09;WMS%R&#x09;QIAN&#x09;SHO&#x09;RAD&#x09;SLOWKD-QL&#x09;KDJ-QL&#x09;</entry>
+            <entry name="I.神系指标" type="STRING">XDT&#x09;NDB&#x09;</entry>
+            <entry name="G.鬼系指标" type="STRING">CYW&#x09;CYC&#x09;CYS&#x09;LFS&#x09;CYQKL&#x09;</entry>
+            <entry name="期货指标" type="STRING">持仓量&#x09;价差&#x09;</entry>
+        </section>
+        <section name="条件选股">
+            <entry name="其它" type="STRING">ALERT10&#x09;ALERT11&#x09;ALERT1&#x09;ALERT12&#x09;ALERT2&#x09;ALERT3&#x09;ALERT13&#x09;ALERT4&#x09;ALERT14&#x09;ALERT5&#x09;ALERT6&#x09;ALERT7&#x09;ALERT8&#x09;ALERT9&#x09;SP&#x09;</entry>
+            <entry name="5.走势特征选股" type="STRING">C-130&#x09;C-131&#x09;C-120&#x09;C-110&#x09;C-121&#x09;C-111&#x09;C-122&#x09;C-101&#x09;C-112&#x09;C-123&#x09;C-102&#x09;C-113&#x09;C-124&#x09;C-103&#x09;C-114&#x09;C-125&#x09;C-104&#x09;C-115&#x09;C-126&#x09;C-105&#x09;C-127&#x09;C-116&#x09;C-106&#x09;C-128&#x09;C-117&#x09;C-107&#x09;C-129&#x09;C-118&#x09;C-108&#x09;C-119&#x09;C-109&#x09;</entry>
+            <entry name="3.基本面选股" type="STRING">A-110&#x09;A-111&#x09;A-101&#x09;A-112&#x09;A-102&#x09;A-113&#x09;A-103&#x09;A-114&#x09;AA-1&#x09;A-104&#x09;A-115&#x09;AA-2&#x09;A-105&#x09;AA-3&#x09;A-106&#x09;A-107&#x09;AA-5&#x09;A-108&#x09;AA-6&#x09;A-109&#x09;</entry>
+            <entry name="4.即时盘中选股" type="STRING">B-110&#x09;B-111&#x09;B-101&#x09;B-112&#x09;B-102&#x09;B-113&#x09;B-103&#x09;B-114&#x09;B-104&#x09;B-115&#x09;B-105&#x09;B-106&#x09;B-107&#x09;B-108&#x09;B-109&#x09;</entry>
+            <entry name="1.指标条件选股" type="STRING">KDJ(2)&#x09;MTM&#x09;MACD(2)&#x09;W&amp;R(2)&#x09;BIAS(2)&#x09;RSI&#x09;KD(2)&#x09;MA&#x09;MACD&#x09;BIAS&#x09;MA(2)&#x09;KD&#x09;RSI(2)&#x09;W&amp;R&#x09;MTM(2)&#x09;KDJ&#x09;BOLL&#x09;SAR&#x09;BOLL(2)&#x09;SAR(2)&#x09;</entry>
+            <entry name="6.形态特征选股" type="STRING">QSZL&#x09;KTPL&#x09;W-103&#x09;MSTAR&#x09;W-104&#x09;W-106&#x09;DTPL&#x09;W-107&#x09;</entry>
+        </section>
+    </section>
+</root>

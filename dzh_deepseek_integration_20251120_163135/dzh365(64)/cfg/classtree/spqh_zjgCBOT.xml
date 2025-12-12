@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="芝加哥CBOT" local="1">
+		<subclass name="芝加哥CBOT" node="19" scriptfile="zjgCBOT"/>
+		<subclass name="美玉米" node="112888" scriptfile="spbk"/>
+		<subclass name="美豆油" node="112892" scriptfile="spbk"/>
+		<subclass name="美豆粕" node="112893" scriptfile="spbk"/>
+		<subclass name="美燕麦" node="112896" scriptfile="spbk"/>
+		<subclass name="美稻米" node="112897" scriptfile="spbk"/>
+		<subclass name="美大豆" node="112890" scriptfile="spbk"/>
+		<subclass name="美小麦" node="112894" scriptfile="spbk"/>
+	</class>
+</classes>

@@ -1,0 +1,78 @@
+function FundRecentlyBrowse()
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',30,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'总手');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'换手率');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'现手');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'总额');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨速');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'买一价');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'卖一价');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'行业');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'市盈率');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'市净率');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'内盘');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'外盘');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'总额');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'振幅');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'量比');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'均价');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'委比');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'委差');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'成交笔数');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'成交方向');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'总市值');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'流通市值');
+		this.SetColumnAttributes(index,'',90,0,0); 
+	end
+	
+	{ 获取最近查看的股票 : 1 x n matrix}
+	stks = DZH::LoadRecentStk();
+
+	{ 设置到动态显示牌 }
+	this.SetStocks(stks,1);
+
+end
+

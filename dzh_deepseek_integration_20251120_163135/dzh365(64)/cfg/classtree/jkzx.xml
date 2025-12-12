@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="监控中心"  local="1">
+		<subclass name="监控中心" node="1" scriptfile="jkzx"/>
+	</class>  
+</classes>

@@ -1,0 +1,46 @@
+{
+  "zhipu_ai": {
+    "api_key": "${ZHIPU_AI_API_KEY_PROD}",
+    "endpoint_url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "model_name": "glm-4.6",
+    "max_retries": 5,
+    "timeout": 60,
+    "rate_limit": 1000,
+    "organization_id": "${ZHIPU_ORG_ID}",
+    "project_id": "${ZHIPU_PROJECT_ID}"
+  },
+  "security": {
+    "encryption_key": "${ENCRYPTION_KEY_PROD}",
+    "allowed_origins": ["https://api.example.com", "https://app.example.com"],
+    "allowed_ips": ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"],
+    "jwt_secret": "${JWT_SECRET_PROD}",
+    "session_timeout": 7200,
+    "enable_audit_log": true
+  },
+  "database": {
+    "host": "${PROD_DB_HOST}",
+    "port": 5432,
+    "name": "zhipu_ai_prod",
+    "username": "prod_user",
+    "password": "${PROD_DB_PASSWORD}",
+    "ssl_mode": "require",
+    "pool_size": 20,
+    "max_overflow": 30
+  },
+  "cache": {
+    "host": "${PROD_CACHE_HOST}",
+    "port": 6379,
+    "db": 0,
+    "password": "${PROD_CACHE_PASSWORD}",
+    "ttl": 7200
+  },
+  "logging": {
+    "level": "WARNING",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s",
+    "file_path": "/var/log/zhipu-ai/production.log",
+    "max_file_size": "100MB",
+    "backup_count": 10,
+    "enable_audit": true,
+    "audit_file_path": "/var/log/zhipu-ai/audit.log"
+  }
+}

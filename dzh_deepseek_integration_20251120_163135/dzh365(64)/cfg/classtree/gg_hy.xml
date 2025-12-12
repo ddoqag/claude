@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="港股行业" local="1">
+                <subclass name="能源业" node="100623" scriptfile="gpfl"/>
+                <subclass name="原材料业" node="100624" scriptfile="gpfl"/>
+                <subclass name="工业" node="100625" scriptfile="gpfl"/>
+                <subclass name="消费品制造业" node="100626" scriptfile="gpfl"/>
+                <subclass name="消费者服务业" node="100627" scriptfile="gpfl"/>
+                <subclass name="电讯业" node="100628" scriptfile="gpfl"/>
+                <subclass name="公用事业" node="100629" scriptfile="gpfl"/>
+                <subclass name="金融业" node="100630" scriptfile="gpfl"/>
+                <subclass name="地产建筑业" node="100631" scriptfile="gpfl"/>
+                <subclass name="信息科技业" node="100632" scriptfile="gpfl"/>
+                <subclass name="综合企业" node="100633" scriptfile="gpfl"/>
+	</class>
+</classes>

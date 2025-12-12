@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="海外股票">
+    <subclasses name="美洲" node="107277" scriptfile="defaultMarket">
+      <subclasses name="北美洲" node="107278" scriptfile="defaultMarket">
+        <subclass name="美国证券交易所" node="107279" scriptfile="defaultMarket" />
+        <subclass name="其他场外交易" node="107280" scriptfile="defaultMarket" />
+        <subclass name="波士顿股票交易所" node="107281" scriptfile="defaultMarket" />
+        <subclass name="芝加哥期权交易所" node="107282" scriptfile="defaultMarket" />
+        <subclass name="直接EDGA交易" node="107283" scriptfile="defaultMarket" />
+        <subclass name="场外交易市场（粉红单）" node="107284" scriptfile="defaultMarket" />
+        <subclass name="直接EDGX交易" node="107285" scriptfile="defaultMarket" />
+        <subclass name="芝加哥证券交易所（中西部）" node="107286" scriptfile="defaultMarket" />
+        <subclass name="国际证券交易" node="107287" scriptfile="defaultMarket" />
+        <subclass name="纽交所高增长市场（太平洋证券交易所）" node="107288" scriptfile="defaultMarket" />
+        <subclass name="BATS交易所公司" node="107289" scriptfile="defaultMarket" />
+        <subclass name="纳斯达克交替显示基金" node="107290" scriptfile="defaultMarket" />
+        <subclass name="纳斯达克OMX集团(纽交所/美国证券交易所上市)" node="107291" scriptfile="defaultMarket" />
+        <subclass name="BATS-Y交易" node="107292" scriptfile="defaultMarket" />
+        <subclass name="费城证券交易所" node="107293" scriptfile="defaultMarket" />
+        <subclass name="场外柜台交易市场，场外交易公告板股票" node="107294" scriptfile="defaultMarket" />
+        <subclass name="国家证券交易所（前辛辛那提证券交易所）" node="107295" scriptfile="defaultMarket" />
+        <subclass name="多伦多证券交易所" node="107296" scriptfile="defaultMarket" />
+        <subclass name="加拿大国家证券交易所" node="107297" scriptfile="defaultMarket" />
+        <subclass name="墨西哥" node="107298" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="拉丁美洲" node="107299" scriptfile="defaultMarket">
+        <subclass name="智利证券交易所（智利圣地亚哥）-仅有延迟" node="107300" scriptfile="defaultMarket" />
+        <subclass name="布宜诺斯艾利斯证券交易所" node="107301" scriptfile="defaultMarket" />
+        <subclass name="圣保罗证券交易所" node="107302" scriptfile="defaultMarket" />
+        <subclass name="巴哈马国际证券交易所" node="107303" scriptfile="defaultMarket" />
+        <subclass name="巴巴多斯证券交易所" node="107304" scriptfile="defaultMarket" />
+        <subclass name="百慕大证券交易所" node="107305" scriptfile="defaultMarket" />
+        <subclass name="玻利维亚证券交易所" node="107306" scriptfile="defaultMarket" />
+        <subclass name="开曼群岛证券交易所" node="107307" scriptfile="defaultMarket" />
+        <subclass name="智利电子交易" node="107308" scriptfile="defaultMarket" />
+        <subclass name="哥伦比亚证券交易所" node="107309" scriptfile="defaultMarket" />
+        <subclass name="瓜亚基尔证券交易所" node="107310" scriptfile="defaultMarket" />
+        <subclass name="基多证券交易所" node="107311" scriptfile="defaultMarket" />
+        <subclass name="萨尔瓦多证券交易所" node="107312" scriptfile="defaultMarket" />
+        <subclass name="牙买加证券交易所" node="107313" scriptfile="defaultMarket" />
+        <subclass name="巴拿马证券交易所" node="107314" scriptfile="defaultMarket" />
+        <subclass name="利马证券交易所" node="107315" scriptfile="defaultMarket" />
+        <subclass name="特立尼达和多巴哥证券交易所" node="107316" scriptfile="defaultMarket" />
+        <subclass name="蒙得维的亚证券交易所" node="107317" scriptfile="defaultMarket" />
+        <subclass name="加拉加斯证券交易所" node="107318" scriptfile="defaultMarket" />
+        <subclass name="东加勒比证券交易所" node="107319" scriptfile="defaultMarket" />
+      </subclasses>
+    </subclasses>
+    <subclasses name="亚洲" node="107320" scriptfile="defaultMarket">
+      <subclasses name="东亚" node="107321" scriptfile="defaultMarket">
+        <subclass name="东京证券交易所" node="107322" scriptfile="defaultMarket" />
+        <subclass name="大阪" node="107323" scriptfile="defaultMarket" />
+        <subclass name="韩国证券交易所" node="107324" scriptfile="defaultMarket" />
+        <subclass name="东京期货交易所" node="107325" scriptfile="defaultMarket" />
+        <subclass name="JASDAQ证券交易所" node="107326" scriptfile="defaultMarket" />
+        <subclass name="名古屋证券交易所" node="107327" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="南亚" node="107328" scriptfile="defaultMarket">
+        <subclass name="新加坡证券交易所" node="107329" scriptfile="defaultMarket" />
+        <subclass name="印度国家证券交易所" node="107330" scriptfile="defaultMarket" />
+        <subclass name="马来西亚交易所（吉隆坡）" node="107331" scriptfile="defaultMarket" />
+        <subclass name="孟买证券交易所" node="107332" scriptfile="defaultMarket" />
+        <subclass name="雅加达证券交易所" node="107333" scriptfile="defaultMarket" />
+        <subclass name="菲律宾证券交易所" node="107334" scriptfile="defaultMarket" />
+        <subclass name="泰国证券交易所" node="107335" scriptfile="defaultMarket" />
+        <subclass name="国家证券交易所" node="107336" scriptfile="defaultMarket" />
+        <subclass name="达卡证券交易所" node="107337" scriptfile="defaultMarket" />
+        <subclass name="尼泊尔证券交易所" node="107338" scriptfile="defaultMarket" />
+        <subclass name="卡拉奇证券交易所" node="107339" scriptfile="defaultMarket" />
+        <subclass name="科伦坡证券交易所" node="107340" scriptfile="defaultMarket" />
+        <subclass name="河内证券交易所" node="107341" scriptfile="defaultMarket" />
+        <subclass name="胡志明市证券越南证券交易所" node="107342" scriptfile="defaultMarket" />
+        <subclass name="南太平洋证券交易所" node="107343" scriptfile="defaultMarket" />
+        <subclass name="吉大港" node="107344" scriptfile="defaultMarket" />
+        <subclass name="老挝证券交易所" node="107345" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="中/西亚" node="107346" scriptfile="defaultMarket">
+        <subclass name="哈萨克斯坦证券交易所" node="107347" scriptfile="defaultMarket" />
+        <subclass name="德黑兰证券交易所" node="107348" scriptfile="defaultMarket" />
+        <subclass name="卡塔尔交易所" node="107349" scriptfile="defaultMarket" />
+        <subclass name="沙特证券交易所" node="107350" scriptfile="defaultMarket" />
+        <subclass name="伊拉克证券交易所" node="107351" scriptfile="defaultMarket" />
+        <subclass name="大马士革" node="107352" scriptfile="defaultMarket" />
+        <subclass name="安曼证券交易所" node="107353" scriptfile="defaultMarket" />
+        <subclass name="科威特证券交易所" node="107354" scriptfile="defaultMarket" />
+        <subclass name="巴勒斯坦证券交易所" node="107355" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="太平洋地区" node="107356" scriptfile="defaultMarket">
+        <subclass name="澳大利亚证券交易所" node="107357" scriptfile="defaultMarket" />
+        <subclass name="澳大利亚国际证券交易所" node="107358" scriptfile="defaultMarket" />
+        <subclass name="新西兰证券交易所" node="107359" scriptfile="defaultMarket" />
+        <subclass name="毛里求斯证券交易所" node="107360" scriptfile="defaultMarket" />
+        <subclass name="莫尔斯比港证券交易所" node="107361" scriptfile="defaultMarket" />
+      </subclasses>
+    </subclasses>
+    <subclasses name="非洲" node="107362" scriptfile="defaultMarket">
+      <subclasses name="北非" node="107363" scriptfile="defaultMarket">
+        <subclass name="佛得角证券交易所" node="107364" scriptfile="defaultMarket" />
+        <subclass name="加纳证券交易所" node="107365" scriptfile="defaultMarket" />
+        <subclass name="地区性证券交易所证券" node="107366" scriptfile="defaultMarket" />
+        <subclass name="卡萨布兰卡证券交易所" node="107367" scriptfile="defaultMarket" />
+        <subclass name="尼日利亚证券交易所" node="107368" scriptfile="defaultMarket" />
+        <subclass name="突尼斯证券交易所" node="107369" scriptfile="defaultMarket" />
+        <subclass name="阿尔及尔证券交易所" node="107370" scriptfile="defaultMarket" />
+        <subclass name="巴林证券交易所" node="107371" scriptfile="defaultMarket" />
+        <subclass name="开罗及亚历山大证券交易所" node="107372" scriptfile="defaultMarket" />
+        <subclass name="贝鲁特证券交易所" node="107373" scriptfile="defaultMarket" />
+        <subclass name="马斯喀特证券市场" node="107374" scriptfile="defaultMarket" />
+        <subclass name="纳斯达克迪拜" node="107375" scriptfile="defaultMarket" />
+        <subclass name="阿布扎比证券市场" node="107376" scriptfile="defaultMarket" />
+        <subclass name="迪拜金融市场" node="107377" scriptfile="defaultMarket" />
+        <subclass name="尼罗河证券交易所" node="107378" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="中非" node="107379" scriptfile="defaultMarket">
+        <subclass name="杜阿拉证券交易所" node="107380" scriptfile="defaultMarket" />
+        <subclass name="达累斯萨拉姆证券交易所" node="107381" scriptfile="defaultMarket" />
+        <subclass name="乌干达证券交易所" node="107382" scriptfile="defaultMarket" />
+        <subclass name="卢萨卡证券交易所" node="107383" scriptfile="defaultMarket" />
+        <subclass name="内罗毕证券交易所" node="107384" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="南非" node="107385" scriptfile="defaultMarket">
+        <subclass name="约翰内斯堡证券交易所" node="107386" scriptfile="defaultMarket" />
+        <subclass name="博茨瓦纳证券交易所" node="107387" scriptfile="defaultMarket" />
+        <subclass name="马拉维证券交易所" node="107388" scriptfile="defaultMarket" />
+        <subclass name="纳米比亚证券交易所" node="107389" scriptfile="defaultMarket" />
+        <subclass name="斯威士兰证券交易所" node="107390" scriptfile="defaultMarket" />
+        <subclass name="津巴布韦证券交易所" node="107391" scriptfile="defaultMarket" />
+      </subclasses>
+    </subclasses>
+    <subclasses name="欧洲" node="107392" scriptfile="defaultMarket">
+      <subclasses name="西欧" node="107393" scriptfile="defaultMarket">
+        <subclass name="伦敦证券交易所（英国股票交易所自动报价系统）" node="107394" scriptfile="defaultMarket" />
+        <subclass name="伦敦证券交易所（国际股票交易所自动报价系统）" node="107395" scriptfile="defaultMarket" />
+        <subclass name="波罗的海期货交易所" node="107396" scriptfile="defaultMarket" />
+        <subclass name="纽约证券交易所巴黎证交所股票" node="107397" scriptfile="defaultMarket" />
+        <subclass name="瑞士证券交易所" node="107398" scriptfile="defaultMarket" />
+        <subclass name="泛欧蓝筹股交易所" node="107399" scriptfile="defaultMarket" />
+        <subclass name="都柏林，爱尔兰证券交易所" node="107400" scriptfile="defaultMarket" />
+        <subclass name="马德里证券交易所股票" node="107401" scriptfile="defaultMarket" />
+        <subclass name="法兰克福证交所(或德国证交所)" node="107402" scriptfile="defaultMarket" />
+        <subclass name="纽约泛欧布鲁塞尔股票" node="107403" scriptfile="defaultMarket" />
+        <subclass name="德国法兰克福证券交易所电子交易平台Xetra" node="107405" scriptfile="defaultMarket" />
+        <subclass name="慕尼黑" node="107406" scriptfile="defaultMarket" />
+        <subclass name="斯图加特" node="107407" scriptfile="defaultMarket" />
+        <subclass name="柏林" node="107408" scriptfile="defaultMarket" />
+        <subclass name="杜塞尔多夫" node="107409" scriptfile="defaultMarket" />
+        <subclass name="汉堡" node="107410" scriptfile="defaultMarket" />
+        <subclass name="汉诺威（通过基金）" node="107411" scriptfile="defaultMarket" />
+        <subclass name="米兰证券交易所（意大利证交所）" node="107412" scriptfile="defaultMarket" />
+        <subclass name="卢森堡" node="107413" scriptfile="defaultMarket" />
+        <subclass name="替代市场" node="107414" scriptfile="defaultMarket" />
+        <subclass name="伯尔尼证券交易所" node="107415" scriptfile="defaultMarket" />
+        <subclass name="海峡群岛证券交易所" node="107416" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="东欧" node="107417" scriptfile="defaultMarket">
+        <subclass name="布加勒斯特证券交易所" node="107418" scriptfile="defaultMarket" />
+        <subclass name="莫斯科-转运站" node="107419" scriptfile="defaultMarket" />
+        <subclass name="莫斯科银行间货币" node="107420" scriptfile="defaultMarket" />
+        <subclass name="保加利亚证券交易所" node="107421" scriptfile="defaultMarket" />
+        <subclass name="布拉格证券交易所" node="107422" scriptfile="defaultMarket" />
+        <subclass name="塔林证券交易所" node="107423" scriptfile="defaultMarket" />
+        <subclass name="布达佩斯证券交易所" node="107424" scriptfile="defaultMarket" />
+        <subclass name="华沙证券交易所" node="107425" scriptfile="defaultMarket" />
+        <subclass name="布拉迪斯拉发联合交易所" node="107426" scriptfile="defaultMarket" />
+        <subclass name="伊斯坦布尔证券交易所" node="107427" scriptfile="defaultMarket" />
+        <subclass name="第一证券交易系统 - 乌克兰OTC" node="107428" scriptfile="defaultMarket" />
+        <subclass name="卢布尔雅那证券交易所" node="107429" scriptfile="defaultMarket" />
+        <subclass name="贝尔格莱德证券交易所" node="107430" scriptfile="defaultMarket" />
+        <subclass name="巴尼亚卢卡证券交易所" node="107431" scriptfile="defaultMarket" />
+        <subclass name="黑山证券交易所" node="107432" scriptfile="defaultMarket" />
+        <subclass name="马其顿证券交易所" node="107433" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="北欧" node="107434" scriptfile="defaultMarket">
+        <subclass name="冰岛和斯德哥尔摩股票" node="107435" scriptfile="defaultMarket" />
+        <subclass name="哥本哈根股票" node="107436" scriptfile="defaultMarket" />
+        <subclass name="奥斯陆股票" node="107437" scriptfile="defaultMarket" />
+        <subclass name="赫尔辛基股票" node="107438" scriptfile="defaultMarket" />
+        <subclass name="纽约泛欧交易所里斯本股票" node="107439" scriptfile="defaultMarket" />
+        <subclass name="纽约泛欧交易所阿姆斯特丹股票" node="107440" scriptfile="defaultMarket" />
+        <subclass name="里加纳斯达克OMX" node="107441" scriptfile="defaultMarket" />
+        <subclass name="维尔纽斯纳斯达克OMX" node="107442" scriptfile="defaultMarket" />
+        <subclass name="法罗群岛证券市场" node="107443" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="南欧" node="107444" scriptfile="defaultMarket">
+        <subclass name="雅典的衍生品交易所" node="107445" scriptfile="defaultMarket" />
+        <subclass name="雅典证券交易所" node="107446" scriptfile="defaultMarket" />
+        <subclass name="塞浦路斯证券交易所" node="107447" scriptfile="defaultMarket" />
+        <subclass name="马耳他证券交易所" node="107449" scriptfile="defaultMarket" />
+        <subclass name="特拉维夫证券交易所" node="107450" scriptfile="defaultMarket" />
+      </subclasses>
+      <subclasses name="电子交易所" node="107451" scriptfile="defaultMarket">
+        <subclass name="CHI-X交易平台" node="107452" scriptfile="defaultMarket" />
+        <subclass name="Turquoise交易平台" node="107453" scriptfile="defaultMarket" />
+        <subclass name="Tradegate交易商" node="107454" scriptfile="defaultMarket" />
+        <subclass name="GXG市场" node="107455" scriptfile="defaultMarket" />
+      </subclasses>
+    </subclasses>
+  </class>
+</classes>

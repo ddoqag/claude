@@ -1,0 +1,11 @@
+<rules target="quote_dyna">
+	<rule id="rule1" target="quote_dyna">
+		<conditions>
+		
+		</conditions>
+		<actions>
+			<action type="desc"></action>
+			<action type="itemconfig">iopv\iopv.xml</action>
+		</actions>
+	</rule>
+</rules>

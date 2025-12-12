@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="基金板块" local="1">
+		<subclass name="T+0基金" node="24" scriptfile="jjbkT"/>
+	</class>
+</classes>

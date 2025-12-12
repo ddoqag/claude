@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="大商所" local="1">
+		<subclass name="大商所" node="112664" scriptfile="dss"/>
+		<subclass name="玉米" node="112665" scriptfile="spbk"/>
+		<subclass name="玉米淀粉" node="101861" scriptfile="spbk"/>
+		<subclass name="大豆1号" node="112666" scriptfile="spbk"/>
+		<subclass name="大豆2号" node="112667" scriptfile="spbk"/>
+		<subclass name="豆粕" node="112668" scriptfile="spbk"/>
+		<subclass name="豆油" node="112669" scriptfile="spbk"/>
+		<subclass name="棕榈油" node="112670" scriptfile="spbk"/>
+		<subclass name="鸡蛋" node="112671" scriptfile="spbk"/>
+		<subclass name="聚乙烯" node="112672" scriptfile="spbk"/>
+		<subclass name="聚氯乙烯" node="112673" scriptfile="spbk"/>
+		<subclass name="聚丙烯" node="101815" scriptfile="spbk"/>
+		<subclass name="焦炭" node="112674" scriptfile="spbk"/>
+		<subclass name="焦煤" node="112675" scriptfile="spbk"/>
+		<subclass name="铁矿石" node="112676" scriptfile="spbk"/>
+		<subclass name="纤维板" node="112677" scriptfile="spbk"/>
+		<subclass name="胶合板" node="112678" scriptfile="spbk"/>
+	</class>
+</classes>

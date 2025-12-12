@@ -1,0 +1,47 @@
+function zbag_jjzs()
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',37,0,0);
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',90,0,0);
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',65,0,0);
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'总手');
+		this.SetColumnAttributes(index,'',83,0,0);
+		index = this.InsertQuotation(-1,'BIAS');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'CCI');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'RSI');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'CR');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'PSY');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'MACD');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'KD');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'W&amp;R');
+		this.SetColumnAttributes(index,'',70,0,0);
+	end
+
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('上海证券交易所-上证基金指数');
+	table =['SH000011.stk'];
+	this.SetStocks(table,1);
+
+	start = this.StockCount() + 1;
+	this.AddStringLine('深圳证券交易所-深证基金指数');
+	table =['SZ399103.stk','SZ399305','SZ399306','SZ399379','SZ399380'];
+	this.SetStocks(table,1);
+
+end
+

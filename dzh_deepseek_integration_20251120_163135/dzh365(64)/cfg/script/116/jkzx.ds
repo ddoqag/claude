@@ -1,0 +1,46 @@
+function jkzx()
+	this.ResetStocks();
+
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',60,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',180,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',90,0,0);  
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',90,0,0); 
+	end
+	
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('综合指数');
+	table =['ECCCFI.cmdty','ECCAFI.cmdty','ECCIFI.cmdty','ECCCCI.cmdty'];
+	this.SetStocks(table(1,:),1);
+	
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('农产品子指数');
+	table =['ECCRFI.cmdty','ECFEFI.cmdty','ECGRFI.cmdty','ECOIFI.cmdty','ECOOFI.cmdty','ECSOFI.cmdty'];
+	this.SetStocks(table(1,:),1);
+	
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('工业品子指数');
+	table =['ECECFI.cmdty','ECSTFI.cmdty','ECBMFI.cmdty'];
+	this.SetStocks(table(1,:),1);
+
+end
+

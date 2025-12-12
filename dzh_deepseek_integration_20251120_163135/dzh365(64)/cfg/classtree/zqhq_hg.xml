@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="回购" local="1">
+		<subclass name="回购" node="107659" scriptfile="zqbk_hgall"/>
+		<subclass name="上证回购" node="107707" scriptfile="zqbk"/>
+		<subclass name="深证回购" node="107708" scriptfile="zqbk"/>
+	</class>
+</classes>

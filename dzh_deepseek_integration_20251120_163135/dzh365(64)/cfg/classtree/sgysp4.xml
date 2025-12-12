@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="涉股衍生品" scriptfile="etf" local="1">
+		<subclass name="ETF" node="800001" scriptfile="etf">
+		</subclass>
+	</class>  
+</classes>

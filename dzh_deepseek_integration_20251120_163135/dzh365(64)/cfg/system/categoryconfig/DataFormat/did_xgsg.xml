@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<rules target="quote_dyna">
+	<rule id="rule_dyna1">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+	  <condition>colname=bound_stock|outstanding|start_date|end_date_|issue_date_|outstanding|lower_quantity2|upper_quantity2</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="func_param">{"sc":"LST_data","digit":"4","prefix":"&lt;*sf=PLUG_data*&gt;&lt;*b=1*&gt;"}</action>
+      <action type="fmt_func">cfmt_default_volume</action>           
+      <action type="new_name">新股申购</action>
+    </actions>
+  </rule> 
+    <rule id="rule_dyna2">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+	  <condition>colname=ZRZT</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="func_param">{"N":"正常状态","Y":"首日挂牌","D":"新增股票挂牌交易","I":"询价","F":"申购"}</action>
+      <action type="fmt_func">cfmt_directory</action>           
+      <action type="new_name">交易状态</action>
+    </actions>
+  </rule> 
+</rules>

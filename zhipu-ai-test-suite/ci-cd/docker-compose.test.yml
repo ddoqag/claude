@@ -1,0 +1,312 @@
+version: '3.8'
+
+services:
+  # Redis缓存服务
+  redis:
+    image: redis:7-alpine
+    container_name: zhipu-ai-test-redis
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_PASSWORD=testredis
+    command: redis-server --requirepass testredis
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    networks:
+      - zhipu-ai-test
+
+  # PostgreSQL数据库
+  postgres:
+    image: postgres:15-alpine
+    container_name: zhipu-ai-test-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=test_zhipu
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test -d test_zhipu"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - zhipu-ai-test
+
+  # MongoDB（可选）
+  mongodb:
+    image: mongo:6
+    container_name: zhipu-ai-test-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=test
+      - MONGO_INITDB_ROOT_PASSWORD=test
+      - MONGO_INITDB_DATABASE=test_zhipu
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - zhipu-ai-test
+
+  # Elasticsearch（用于日志搜索）
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
+    container_name: zhipu-ai-test-elasticsearch
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - zhipu-ai-test
+
+  # Kibana（Elasticsearch可视化）
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.1
+    container_name: zhipu-ai-test-kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    networks:
+      - zhipu-ai-test
+
+  # MinIO（S3兼容对象存储）
+  minio:
+    image: minio/minio:latest
+    container_name: zhipu-ai-test-minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=test
+      - MINIO_ROOT_PASSWORD=test12345
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    networks:
+      - zhipu-ai-test
+
+  # Jaeger（分布式追踪）
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: zhipu-ai-test-jaeger
+    ports:
+      - "16686:16686"
+      - "14268:14268"
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+    networks:
+      - zhipu-ai-test
+
+  # Prometheus（指标收集）
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: zhipu-ai-test-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    networks:
+      - zhipu-ai-test
+
+  # Grafana（指标可视化）
+  grafana:
+    image: grafana/grafana:latest
+    container_name: zhipu-ai-test-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./grafana/datasources:/etc/grafana/provisioning/datasources
+    depends_on:
+      - prometheus
+    networks:
+      - zhipu-ai-test
+
+  # Nginx（负载均衡器）
+  nginx:
+    image: nginx:alpine
+    container_name: zhipu-ai-test-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/ssl:/etc/nginx/ssl
+    depends_on:
+      - app1
+      - app2
+    networks:
+      - zhipu-ai-test
+
+  # 应用实例1
+  app1:
+    image: zhipu-ai-integration:test
+    container_name: zhipu-ai-test-app1
+    ports:
+      - "8080:8080"
+    environment:
+      - ZHIPU_API_KEY=${ZHIPU_API_KEY}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=testredis
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=test_zhipu
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - INSTANCE_ID=app1
+      - LOG_LEVEL=DEBUG
+    depends_on:
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - zhipu-ai-test
+
+  # 应用实例2
+  app2:
+    image: zhipu-ai-integration:test
+    container_name: zhipu-ai-test-app2
+    ports:
+      - "8081:8080"
+    environment:
+      - ZHIPU_API_KEY=${ZHIPU_API_KEY}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=testredis
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=test_zhipu
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - INSTANCE_ID=app2
+      - LOG_LEVEL=DEBUG
+    depends_on:
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - zhipu-ai-test
+
+  # JMeter（负载测试）
+  jmeter:
+    image: justb4/jmeter:latest
+    container_name: zhipu-ai-test-jmeter
+    ports:
+      - "1099:1099"
+    volumes:
+      - ./jmeter:/tests
+      - jmeter_results:/results
+    command: >
+      bash -c "
+      while ! curl -f http://app1:8080/health; do
+        echo 'Waiting for app to be ready...'
+        sleep 5
+      done
+      jmeter -n -t /tests/load-test.jmx -l /results/load-test-results.jtl -e -o /results/html-report
+      "
+    depends_on:
+      - app1
+    networks:
+      - zhipu-ai-test
+
+  # Artillery（负载测试工具）
+  artillery:
+    image: artilleryio/artillery:latest
+    container_name: zhipu-ai-test-artillery
+    volumes:
+      - ./artillery:/config
+      - artillery_results:/results
+    command: >
+      sh -c "
+      while ! curl -f http://nginx/health; do
+        echo 'Waiting for nginx to be ready...'
+        sleep 5
+      done
+      artillery run /config/load-test-config.yml --target http://nginx --output /results/artillery-results.json
+      "
+    depends_on:
+      - nginx
+    networks:
+      - zhipu-ai-test
+
+# 网络配置
+networks:
+  zhipu-ai-test:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+# 数据卷
+volumes:
+  postgres_data:
+    driver: local
+  mongodb_data:
+    driver: local
+  elasticsearch_data:
+    driver: local
+  minio_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+  jmeter_results:
+    driver: local
+  artillery_results:
+    driver: local

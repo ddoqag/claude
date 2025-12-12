@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="大智慧策略指数"  local="1" scriptfile="defaultMarkets1">
+	        <subclass name="策略投资指数" node="109687" >
+			<group name="策略指数" node="109692" />
+			<group name="规模指数" node="109688" />
+			<group name="主题指数" node="109690" />
+			<group name="行业指数" node="109691" />
+		</subclass>	
+	</class>  
+</classes>

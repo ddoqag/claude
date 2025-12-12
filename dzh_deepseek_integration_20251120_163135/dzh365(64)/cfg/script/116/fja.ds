@@ -1,0 +1,38 @@
+function fja()
+	{this.DeleteAllColumn();}
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',45,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',140,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',70,0,0);  
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'委买价');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'委卖价');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',80,0,0);
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',80,0,0);
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',80,0,0); 
+	end
+	
+
+    t1 = data::RequestData('service=sql&response_times=1&response_mode=0&async_response_mode=0&sql=select concat(substring(co,1,8),''.stk'') from ST41504_main where C2=''109914''');
+    this.SetStocks(t1(:,1),1);
+end
+
+
+

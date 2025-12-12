@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1" scriptfile="index_l" >
+				<subclass name="富时债指指数" node="109115" />
+				<subclass name="标普国债指数" node="109132" />
+  </class>
+</classes>

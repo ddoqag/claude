@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="GB2312" ?> 
+<newspages>
+	<!--设定信息栏对应配置-->
+	<newspage> 
+		<market>SH{type=1},SZ{type=1}</market>
+		<item name="公告" key="ggshsz" obj="stk" request="service=script&amp;script=getggshsz(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0" link ="CHROME?URL='root://stock/gsgg/index.html?stock_code=#OBJ#'"/>
+		<item name="公司新闻" key="gsxwshsz" obj="stk" request="service=script&amp;script=getgsxwshsz(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0" link ="CHROME?URL='root://news/zongheping/news_list.html?forward=true&amp;menuid=00100200A&amp;search_Stocks=true&amp;stock_code=#OBJ#'"/>
+		<item name="研究报告" key="yjbgshsz" obj="stk" request="service=script&amp;script=getyjbgshsz(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0" link ="CHROME?URL='root://stock/yjbg/index.html?type=search&amp;code=#OBJ#'"/>
+		<item name="龙虎榜" key="lhbshsz" obj="stk" request="service=script&amp;script=getlhbshsz(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0" link ="browse?'dzhd://DZH2/stk/cap_analy/StockChart.dzh.ui'"/>
+	</newspage>
+
+	<newspage>
+		<market>SH{type=3},SH{type=12},SZ{type=3},SZ{type=12}</market>
+		<item name="公告" key="ggss" obj="stk" request="service=script&amp;script=getggss(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+        <item name="公司新闻" key="gsxwss" obj="stk" request="service=script&amp;script=getgsxwss(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+        <item name="研究报告" key="yjbgss" obj="stk" request="service=script&amp;script=getyjbgss(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+	
+	<newspage>
+		<market>FX{type=6},IB{type=6}</market>
+		<item name="外汇观察" key="whgcfxib" obj="" request="service=script&amp;script=getwhgcfxib();&amp;response_times=1&amp;cache_timeout=0"/>
+		<item name="外汇要闻" key="whywfxib" obj="" request="service=script&amp;script=getwhywfxib();&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+
+    <newspage>
+		<market>SH{type=0},SZ{type=0}</market>
+		<item name="新闻" key="xwshsz" obj="" request="service=script&amp;script=getxwshsz();&amp;response_times=1&amp;cache_timeout=0"/>
+	    <item name="晨报" key="cbshsz" obj="" request="service=script&amp;script=getcbshsz();&amp;response_times=1&amp;cache_timeout=0"/>
+		<item name="数据" key="sjshsz" obj="" request="service=script&amp;script=getsjshsz();&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+
+   <newspage>
+		<market>OF</market>
+		<item name="基金公告" key="jjggof" obj="stk" request="service=script&amp;script=getjjggof(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+		<item name="市场新闻" key="scxwof" obj="stk" request="service=script&amp;script=getscxwof();&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+
+   <newspage>
+		<market>SH{type=2},SH{type=10},SZ{type=2},SZ{type=10},SZ{type=11}</market>
+		<item name="基金公告" key="jjggshsz" obj="stk" request="service=script&amp;script=getjjggshsz(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+	     <item name="市场新闻" key="scxwshsz" obj="stk" request="service=script&amp;script=getscxwshsz();&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+
+    <newspage>
+		<market>HK</market>
+		<item name="公告" key="gghk" obj="stk" request="service=script&amp;script=getgghk(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+
+	     <item name="公司新闻" key="gsxwhk" obj="stk" request="service=script&amp;script=getgsxwhk(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+
+		 <item name="港股研究" key="ggyjhk" obj="stk" request="service=script&amp;script=getggyjhk(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+    </newspage>
+
+    <newspage>
+		<market>SC,DC,ZC</market>
+		<item name="品种资讯" key="pzzxscdczc" obj="stk" request="service=script&amp;script=getpzzxscdczc(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+	    <item name="机构研究" key="jgyjscdczc" obj="stk" request="service=script&amp;script=getjgyjscdczc(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+    </newspage>
+
+    <newspage>
+		<market>SF{type=8}</market>
+		<item name="最新动态" key="zxdtsf" obj="stk" request="service=script&amp;script=getzxdtsf(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+	     <item name="机构观点" key="jggdsf" obj="stk" request="service=script&amp;script=getjggdsf(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+    </newspage>
+
+	<newspage>
+		<market>SF{type=7}</market>
+		<item name="国债期货" key="gzqhsf" obj="" request="service=script&amp;script=getgzqhsf();&amp;response_times=1&amp;cache_timeout=0"/>
+	    <item name="货币市场" key="hbscsf" obj="" request="service=script&amp;script=gethbscsf();&amp;response_times=1&amp;cache_timeout=0"/>
+    </newspage>
+	<newspage>
+		<market>WI</market>
+		<item name="债券新闻" key="zqxw" obj="" request="service=script&amp;script=getzqxw();&amp;response_times=1&amp;cache_timeout=0"/>
+		<item name="货币市场" key="hbscsf" obj="" request="service=script&amp;script=gethbscsf();&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+    <newspage>
+    	<market>00{marketLabel=IB}{type=3}</market>
+		<item name="公告" key="ggib" obj="stk" request="service=script&amp;script=getggib();&amp;response_times=1&amp;cache_timeout=0"/>
+	    <item name="公司新闻" key="gsxwib" obj="stk" request="service=script&amp;script=getgsxwib();&amp;response_times=1&amp;cache_timeout=0"/>
+    </newspage>
+
+    <newspage>
+		<market>CX,SG</market> 
+		<item name="金属新闻" key="jsxwcxsg" obj="" request="service=script&amp;script=getjsxwcxsg();&amp;response_times=1&amp;cache_timeout=0"/>
+    </newspage>
+
+    <newspage>
+		<market>HF</market>
+	    <item name="国际经济" key="gjjjhf" obj="" request="service=script&amp;script=getgjjjhf();&amp;response_times=1&amp;cache_timeout=0"/>
+    </newspage>
+
+</newspages>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="可交换债" local="1">
+		<subclass name="可交换债" node="107710" scriptfile="zqbk"/>
+		<subclass name="上证交换债" node="107711" scriptfile="zqbk"/>
+		<subclass name="深证交换债" node="107712" scriptfile="zqbk"/>
+	</class>
+</classes>

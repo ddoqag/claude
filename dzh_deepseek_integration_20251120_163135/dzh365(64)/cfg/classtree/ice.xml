@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+	<class name="品种报价" local="1" scriptfile="gs13">
+		<subclass name="ICE2号棉" node="109745" />
+		<subclass name="ICE#11糖" node="109740" />
+		<subclass name="ICE#16糖" node="109741" />
+		<subclass name="ICE咖啡" node="109743" />
+		<subclass name="ICE可可" node="109744" />
+		<subclass name="ICE橙汁" node="109742" />
+	</class>
+</classes>

@@ -1,0 +1,21 @@
+function listNewsOfHbsc()
+	params = '{"fids":"C1,C2,C3,C4,C16,C31,CC98,CC99,C8","dcategory":"1","sort":"C16:-1","skip":"0","amount":20,"menuid":"000001000"}';
+	params = util::Base64Encode(params);
+
+	req = 'service=rpc&so=jso-ui-zhpnews.jar&function=gw.sh.func.SearchNewsFromSolrRequest&paraencode=base64&parameter=';
+	req = req + params;
+	req = req + '&response_times=1&response_mode=0';
+	data = data::RequestData(req);
+	result = data(2);
+	rows = system::LineNum(result);
+
+	display = table::Create('Id:s;Category:s;Title:s;Time:s;Org:s', rows, 'data');
+	for i=1:1:rows
+		display(i,1) = result(i,1); {取字段3:C1}
+		display(i,2) = result(i,2); {取字段2:C2}
+		display(i,3) = result(i,3); {取字段3:C3}
+		display(i,4) = result(i,5); {取字段5:C16}
+		display(i,5) = result(i,9); {取字段9:C8}
+	end
+	this.Send(display);
+end

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+  <class name="资金流向"  local="1"   scriptfile="zjqs">
+      <subclass name="资金背离" node="107604"   scriptfile="zjbl">
+      </subclass>
+      <subclass name="资金强势" node="107604">
+      </subclass>
+  </class>
+</classes>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="上证指数" local="1">
+                <subclass name="上证重点" node="112461" scriptfile="gpfl"/>
+                <subclass name="上证综合" node="112462" scriptfile="gpfl"/>
+                <subclass name="上证规模" node="112463" scriptfile="gpfl"/>
+                <subclass name="上证行业" node="112464" scriptfile="gpfl"/>
+                <subclass name="上证策略" node="112465" scriptfile="gpfl"/>
+                <subclass name="上证风格" node="112466" scriptfile="gpfl"/>
+                <subclass name="上证主题" node="112467" scriptfile="gpfl"/>
+                <subclass name="上证定制" node="112468" scriptfile="gpfl"/>
+                <subclass name="上证基金" node="104432" scriptfile="gpfl"/>
+                <subclass name="上证债券" node="104433" scriptfile="gpfl"/>
+	</class>
+</classes>

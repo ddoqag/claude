@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<globals>
+  <style name ="standard" default="1" des="标准">
+    <colorfont file="standard_color_font.xml"/>
+    <img file="standard_image.xml"/>
+  </style>
+  <style name="self" des="自定义">
+    <colorfont file="self_color_font.xml"/>
+    <img file="self_image.xml"/>
+  </style>
+
+</globals>

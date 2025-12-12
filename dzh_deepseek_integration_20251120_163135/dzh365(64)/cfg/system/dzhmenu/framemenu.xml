@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Config>
+	<Frame name="ssttype" cfg="ssttype" />
+  <!-- ssttype为图形窗口-->
+  <Frame name="listtype" cfg="listtype" />
+  <!--listtype为动态显示牌窗口 -->
+  <Frame name="startype" cfg="startype" />
+  <!--startype为星空图窗口 -->
+  <Frame name="pooltype" cfg="pooltype" />
+  <!--pooltype为股票池窗口 -->
+  <Frame name="f10view" cfg="f10view" />
+  <!--f10view为专业F10窗口 -->
+  <Frame name="newstype" cfg="newstype" />
+  <!--newstype为新闻窗口 -->
+  <Frame name="ietype" cfg="ietype" />
+  <!--ietype为浏览器窗口 -->
+  <Frame name="tabletype" cfg="tabletype" />
+  <!-- tabletype为数据表窗口-->
+  <Frame name="fixtype" cfg="fixtype" />
+  <!--fixtype为固定收益平台窗口 -->
+  <Frame name="stkbrowsetype" cfg="stkbrowsetype" />
+  <!-- stkbrowsetype为信息浏览器窗口-->
+  <Frame name="functype" cfg="functype" />
+  <!-- functype为公式编辑窗口-->
+  <Frame name="piecetype" cfg="piecetype" />
+  <!-- piecetype为公式磁片窗口-->
+  <Frame name="default" cfg="ietype" />
+</Config>

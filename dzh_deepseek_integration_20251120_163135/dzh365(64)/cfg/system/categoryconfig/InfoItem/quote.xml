@@ -1,0 +1,22 @@
+<rules target="quote_dyna">
+	<rule id="rule1" target="quote_dyna">
+		<!-- rule1条件暂时只接受obj=SH600000.stk条件的筛选，市场条件正在加入 -->
+		<conditions>
+			<condition>obj=SH.*</condition>
+		</conditions>
+		<actions>
+			<action type="desc">上海股票</action>
+			<action type="QuoteDyna">quote\dyna_sh.xml</action>
+		</actions>
+	</rule>
+	<rule id="rule2" target="quote_dyna">
+		<!-- rule2条件暂时只接受obj=SZ000001.stk条件的筛选，市场条件正在加入 -->
+		<conditions>
+			<condition>obj=SZ.*</condition>
+		</conditions>
+		<actions>
+			<action type="desc">深圳股票</action>
+			<action type="QuoteDyna">quote\dyna_sz.xml</action>
+		</actions>
+	</rule>
+</rules>

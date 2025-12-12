@@ -1,0 +1,47 @@
+function hxsp()
+	{this.DeleteAllColumn();}
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',60,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',180,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',90,0,0);  
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',90,0,0); 
+	end
+	
+	this.AddStringLine('黄金');
+	table =['CXGCY0.cmdty','FXXAUUSD.frx','SCau0001.cmdty','SGAu(T+D).cmdty'];
+	this.SetStocks(table,1);
+
+	this.AddStringLine('美元');
+	table =['IXUDI.index','FXEURUSD.frx','FXGBPUSD.frx','FXUSDCNY.frx','FXUSDJPY.frx'];
+	this.SetStocks(table,1);
+
+	this.AddStringLine('原油');
+	table =['IPBY0.cmdty','NXCLY0.cmdty','IPTY0.cmdty','NXXBZY0.cmdty'];
+	this.SetStocks(table,1);
+
+	this.AddStringLine('铜/铝');
+	table =['LMCAD3M.cmdty','CXHGY0.cmdty','SCcu0001.cmdty','SCal0001.cmdty','LMAHD3M.cmdty'];
+	this.SetStocks(table,1);
+
+
+
+end
+

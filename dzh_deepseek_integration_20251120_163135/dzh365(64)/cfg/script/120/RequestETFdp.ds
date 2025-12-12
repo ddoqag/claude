@@ -1,0 +1,53 @@
+{请求ETF资金净流量，获取数据表并发回客户端
+参数：
+	obj					股票代码，例如'SH510300.fnd'
+	period 			周期，例如'1d'
+	starttime 	起始时间,例如'20130507103028000000'
+	endtime 		结束时间,例如'20130807103028000000'
+}
+function RequestETFdp(obj, period, starttime, endtime, obj2)
+	{时区偏移为0，使用GM时间作数据传输}
+	tzone = 0;
+	{首次加载获取历史数据并保存到数据层缓存}
+	if this.FirstLoad()
+		{从服务器获取历史数据}
+		olddata = data::RequestData('service=sql&response_times=1&response_mode=0&async_response_mode=0&sql=SELECT C3,C4 FROM ST25149_main WHERE CO = ''' + obj2 + ''' ORDER BY C1 ASC&source=ser');
+		n = util::GetRows(olddata);
+		{计算差分}
+		olddata2 =  table::Create('updateTime:T;data:v',n,'data');
+		for i = 2:n
+			olddata2(i-1,1) = util::StringToTimet(olddata(i,1) + '000000','%%Y%%m%%d%%H%%M%%S%%06u', tzone);
+			olddata2(i-1,2) = olddata(i,2);
+			olddata2(i-1,2) = olddata2(i-1,2) - olddata(i-1,2);
+			olddata2(i-1,2) = olddata2(i-1,2) / '10000.0';
+		end
+		{注册最新数据推送请求}
+		this.Regist('service=did&did=100130&field&response_times=-1&response_mode=0&cache_timeout=0&where=obj=' + obj2 + '&ds_wait_sync=2','RequestETFdp' + obj2,0);
+		t = util::GetCurrentTimet(0);
+		str = util::TimetToString(t,'%%Y%%m%%d');
+		olddata2(n,1) = util::StringToTimet(str,'%%Y%%m%%d', tzone);
+		{保存到数据层缓存}
+		this.SaveBuffer(olddata2, 'RequestETFdp' + obj2);
+		{发送初始数据}
+		this.Send(olddata2);
+		return;
+	end
+	
+	{获取推送数据}
+	data = this.GetPushData('RequestETFdp' + obj2);
+	{收到推送数据，更新缓存表中最新数据，发回缓存表}
+	if(util::GetRows(data) > 0)
+		{加载缓存数据表}
+		result = this.LoadBuffer('RequestETFdp' + obj2);
+		n = util::GetRows(result);
+		{更新缓存表中最新数据}
+		newdata = data(1,2);
+		nd = util::GetRows(newdata);
+		t = newdata(nd,1);
+		str = util::TimetToString(t,'%%Y%%m%%d');
+		result(n,1) = util::StringToTimet(str,'%%Y%%m%%d',tzone);
+		result(n,2) = (newdata(nd,3) - newdata(nd,6)) / '10000.0';
+		{发回缓存表}
+		this.Send(result);
+	end
+end

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="资产支持证券" local="1">
+		<subclass name="资产支持证券" node="107703" scriptfile="zqbk"/>
+		<subclass name="上证资产支持证券" node="107704" scriptfile="zqbk"/>
+		<subclass name="深证资产支持证券" node="107705" scriptfile="zqbk"/>
+	</class>
+</classes>

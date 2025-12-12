@@ -1,0 +1,13 @@
+function listspqhjgyj(obj)
+	params = '{"fids":"C1,C2,C3,C6,C8","skip":"0","amount":"20","objs":"'+obj+'"}';
+	params = util::Base64Encode(params);
+
+	req = 'service=rpc&so=jso-ui-zhpnews.jar&function=gw.sh.func.MechanismResearchNewsRequest&paraencode=base64&parameter=';
+	req = req + params;
+	req = req + '&response_times=1&response_mode=0';
+	data = data::RequestData(req);
+	result = data(2);
+
+	this.Send(result);
+end
+

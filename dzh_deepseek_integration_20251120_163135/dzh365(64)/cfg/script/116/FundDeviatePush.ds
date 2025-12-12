@@ -1,0 +1,52 @@
+function FundDeviatePush()
+	{获取推送下来的数据}
+	stock = this.GetPushData('');
+	if(util::GetRows(stock)==0)
+		return;
+	end
+	this.ResetStocks();
+	{查找cell对应行}	
+	m = SearchCell(stock, 'zjbl1');
+	{找到对应行}
+	if(m(1,1) > 0)
+		{添加分割字符串}
+		this.AddStringLine('股价下跌，资金净流入');
+		{分割数据表}
+		table = stock(m(1,1):m(1,2), 1);
+		{添加股票代码}
+		this.SetStocks(table,1);
+		{记录行数}
+		lines = lines+system::LineNum(table);
+	end
+	
+	{查找cell对应行}	
+	m = SearchCell(stock, 'zjbl3');
+	{找到对应行}
+	if(m(1,1) > 0)
+		{添加分割字符串}
+		this.AddStringLine('五日股价下跌，五日资金净流入');
+		{分割数据表}
+		table = stock(m(1,1):m(1,2), 1);
+		{添加股票代码}
+		this.SetStocks(table,1);
+		{记录行数}
+		lines = lines+system::LineNum(table);
+	end
+	
+	{查找cell对应行}	
+	m = SearchCell(stock, 'zjbl6');
+	{找到对应行}
+	if(m(1,1) > 0)
+		{添加分割字符串}
+		this.AddStringLine('个股阶段震荡，资金净流入');
+		{分割数据表}
+		table = stock(m(1,1):m(1,2), 1);
+		{添加股票代码}
+		this.SetStocks(table,1);
+		{记录行数}
+		lines = lines+system::LineNum(table);
+	end
+	
+	this.SortOn( this.FindColumn('涨幅',0), 0);
+end
+

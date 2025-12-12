@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="LOF基金" local="1">
+		<subclass name="沪深LOF" node="11" scriptfile="jjbk"/>
+		<subclass name="上证LOF" node="12" scriptfile="jjbk"/>
+		<subclass name="深证LOF" node="13" scriptfile="jjbk"/>
+		<subclass name="跨境LOF" node="14" scriptfile="jjbk"/>
+	</class>
+</classes>

@@ -1,0 +1,28 @@
+{请求EDX分钟线，获取数据表并发回客户端
+参数：
+	obj					股票代码，例如'SH510300.fnd'
+	period 			周期，例如'1d'
+	starttime 	起始时间,例如'20130507103028000000'
+	endtime 		结束时间,例如'20130807103028000000'
+	obj2				股票代码，例如'SH510050.fnd'
+	chn					1:使用obj2 其它:使用obj
+}
+function RequestClose(obj, period, starttime, endtime, obj2, chn)
+	if(this.FirstLoad())
+		t = util::StringToTimet(starttime,'%%Y%%m%%d%%H%%M%%S%%06u',0);
+		starttime = util::TimetToString(t,'%%Y%%m%%d%%H%%M%%S%%06u');
+		if(chn == 1)
+			obj = obj2;
+		end
+		closedata = data::RequestData('service=quote&type=kline&k_period=1d&field=close&response_times=1&response_mode=0&where=obj=' + obj);
+		t = closedata(1,2);
+		t2 = table::Create('updateTime:T;data:f',util::GetRows(t),'data');
+		for i=1:util::GetRows(t)
+			{t2(i,1) = util::StringToTimet('19900101','%%Y%%m%%d',0);}
+			x = t(i,1) - 631152000;
+			t2(i,1) = util::StringToTimet('19900101','%%Y%%m%%d',x/60);
+		end
+		t2(:,2) = t(:,2);
+		this.Send(t2);
+	end
+end

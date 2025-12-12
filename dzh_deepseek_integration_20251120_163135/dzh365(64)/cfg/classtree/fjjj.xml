@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="基金" local="1" scriptfile="fjjj">
+		<subclass name="分级基金" node="000000">
+			<group name="分级基金-优先份额" node="109914"/>
+			<group name="分级基金-进取份额" node="109915"/>
+		</subclass>
+		<subclass name="T+0基金" node="000000">
+			<group name="跨境LOF" node="101863_105201"/>
+			<group name="跨境ETF" node="111108"/>
+			<group name="债券ETF" node="111105"/>
+			<group name="货币ETF" node="111106"/>
+			<group name="黄金ETF" node="111107"/>
+		</subclass>
+	</class>
+</classes>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<globals>
+    <colors>
+        <color name="DEFCOLOR" value="0x00000000" des="默认颜色" />
+	<color name="BACKGROUND" value="0x01000000" des="背景"/>
+	<color name="AXIS" value="0x000000c0" des="坐标"/>
+	<color name="TEXT" value="0x01000007" des="图形文字"/>
+	<color name="UPLINE" value="0x005454ff" des="阳线"/>
+	<color name="DOWNLINE" value="0x00ffff54" des="阴线"/>
+	<color name="BARLINE" value="0x01000012" des="美国线"/>
+	<color name="TENDLINE" value="0x0100000f" des="趋势线"/>
+	<color name="INDILINE" value="0x0210e8f0" des="指标线"/>
+	<color name="HILIGHT" value="0x01000004" des="高亮背景色"/>
+        <color name="UPTEXT" value="0x005252ff" des="列表上涨字" />
+        <color name="EQUTEXT" value="0x00000013" des="列表平盘字" />
+        <color name="DOWNTEXT" value="0x0052ff52" des="列表下跌字" />
+	<color name="LST_COLNAME" value="0x00ffff52" des="列表标题"/>
+	<color name="LST_STKNAME" value="0x0052ffff" des="股票名称"/>
+        <color name="PLUG_BGCOLOR" value="0x00000000" des="插件背景" />
+        <color name="PLUG_SELCOLOR" value="0x00FF0000" des="插件选中颜色" />
+        <color name="PLUG_FRAME" value="0x000000FF" des="插件边框" />
+        <color name="PLUG_TITLE_TEXT" value="0x00FFFFFF" des="插件标题文字" />
+        <color name="PLUG_TITLE_BGCOLOR" value="0x00646464" des="插件标题背景" />
+        <color name="PLUG_TEXT" value="0x00FFFFFF" des="插件文本" />
+        <color name="PLUG_VALUE" value="0x000000FF" des="插件值" />
+        <color name="BUY" value="0x000000FF" des="买入" />
+        <color name="SELL" value="0x0000FF00" des="卖出" />
+
+	<color name="COLINDICATE1" value="0x00ff0000" des="指标线1" />
+	<color name="COLINDICATE2" value="0x00ffff00" des="指标线2" />
+	<color name="COLINDICATE3" value="0x00ff00ff" des="指标线3" />
+	<color name="COLINDICATE4" value="0x0000ff00" des="指标线4" />
+
+	<color name="COLINDICATE5" value="0x00c0c0c0" des="指标线5" />
+	<color name="COLINDICATE6" value="0x000000ff" des="指标线6" />
+	<color name="COLINDICATE7" value="0x00ff00ff" des="指标线7" />
+	<color name="COLINDICATE8" value="0x00808000" des="指标线8" />
+
+	<color name="COLINDICATE9" value="0x00800080" des="指标线9" />
+	<color name="COLINDICATE10" value="0x00008080" des="指标线10" />
+	<color name="COLINDICATE11" value="0x00c0c0c0" des="指标线11" />
+	<color name="COLINDICATE12" value="0x00c0dcc0" des="指标线12" />
+
+	<color name="COLINDICATE13" value="0x00a6dcf0" des="指标线13" />
+	<color name="COLINDICATE14" value="0x00fffbf0" des="指标线14" />
+	<color name="COLINDICATE15" value="0x00a0a0a4" des="指标线15" />
+	<color name="COLINDICATE16" value="0x00ff0000" des="指标线16" />
+    </colors>
+    <fonts>
+        <font dzhfontname="DEFAULT" facename="SYSTEM" height="-16" width="0" weight="400" itatic="0" underline="0" quality="0" charset="0" outprecision="0" pitchandfamily="0" des="默认" />
+        <font dzhfontname="HALFSTD" facename="SYSTEM" height="-9" width="0" weight="400" itatic="0" underline="0" quality="1" charset="0" outprecision="1" pitchandfamily="34" des="半高标准" />
+        <font dzhfontname="PLUG_STDFONT" facename="宋体" height="15" width="9" weight="0" itatic="0" underline="0" quality="0" charset="0" outprecision="0" pitchandfamily="0" des="插件标准" />
+        <font dzhfontname="PLUG_TITLE" facename="宋体" height="-13" width="0" weight="0" itatic="0" underline="0" quality="0" charset="1" outprecision="0" pitchandfamily="0" des="插件标题" />
+        <font dzhfontname="SMALL" facename="宋体" height="-14" width="0" weight="700" itatic="0" underline="0" quality="1" charset="134" outprecision="3" pitchandfamily="2" des="图形" />
+        <font dzhfontname="STD" facename="SYSTEM" height="-16" width="0" weight="400" itatic="0" underline="0" quality="0" charset="0" outprecision="0" pitchandfamily="0" des="标准" />
+        <font dzhfontname="STDTT" facename="SYSTEM" height="-16" width="0" weight="400" itatic="0" underline="0" quality="0" charset="0" outprecision="7" pitchandfamily="0" des="标准Truetype" />
+        <font dzhfontname="TITLE" facename="SYSTEM" height="-16" width="0" weight="400" itatic="0" underline="0" quality="0" charset="0" outprecision="0" pitchandfamily="0" des="标题" />
+	<font dzhfontname="TITLE_STK_CODE" facename="Times New Roman" height="-21" width="0" weight="700" itatic="0" underline="0" quality="1" charset="0" outprecision="3" pitchandfamily="8" des="标题股票代码" />
+	<font dzhfontname="TITLE_STK_NAME" facename="宋体" height="-16" width="0" weight="700" itatic="0" underline="0" quality="1" charset="134" outprecision="3" pitchandfamily="2" des="标题股票名称" />
+	
+    </fonts>
+</globals>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root>
+	<item key="JZJY">九转交易</item>
+	<item key="LMSJ">六脉神剑</item>
+	<item key="DDEJC">DDE决策</item>
+	<item key="CDZJ">抄底资金</item>
+	<item key="ZJFZ">追击反转</item>
+	<item key="SWZF">四维战法</item>
+	<item key="L2FX">Level2分析</item>
+	<item key="SBQL">三步擒龙</item>
+	<item key="SBQLZT">三步擒龙主图</item>
+	<item key="SBQLFT">三步擒龙副图</item>
+	<item key="BGYL">八卦游龙</item>
+	<item key="SXDQK">三线定乾坤</item>
+	<item key="TS">TS时间序列</item>
+	<item key="TRT">TRT顺势交易</item>
+	<item key="FHX">凤凰线</item>
+	<item key="BDZX">波段之星</item>
+	<item key="PE">PE(TTM)</item>
+	<item key="HHZX">辉煌之星</item>
+	<item key="XNVOL">虚拟VOL</item>
+	<item key="HJK">黄金坑2.0</item>
+	<item key="BDX">波段线</item>
+	<item key="DCBD">短仓波动</item>
+	<item key="ZJQS">资金趋势</item>
+	<item key="SHX">新散户线</item>
+	<item key="DPXF">大盘先锋</item>
+	<item key="FSBY">分时博弈</item>
+	<item key="BBD">BBD</item>
+	<item key="ZJJJ">资金夹角</item>
+	<item key="ZDZJ">主动资金</item>
+	<item key="ZBZJ">逐笔资金</item>
+	<item key="FSDDX">分时DDX</item>
+	<item key="CPX">CPX</item>
+</root>

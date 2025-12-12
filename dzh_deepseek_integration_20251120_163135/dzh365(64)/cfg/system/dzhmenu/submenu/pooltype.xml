@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Config>
+  <Menues name="终端&amp;Z">
+    <file name="TerminalMenu" />
+  </Menues>
+  <Menues name="文件&amp;F">
+    <file name="fileMenu"/>
+  </Menues>
+  <Menues name="工具&amp;T">
+    <file name="pooltypeToolMenu"/>
+  </Menues>
+  <Menues name="常用">
+    <file name="accidentMenu" />
+  </Menues>
+  <Menues name="工作区">
+    <file name="WorkSpaceMenu" />
+  </Menues>
+</Config>

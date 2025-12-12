@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="渤商所行情" local="1">
+		<subclass name="全部" node="700001" scriptfile="bsshq10"/>
+		<subclass name="国际板" node="700001" scriptfile="bsshq11"/>
+		<subclass name="生活资料板" node="700001" scriptfile="bsshq12"/>
+		<subclass name="生产资料板" node="700001" scriptfile="bsshq13"/>
+	</class>  
+</classes>

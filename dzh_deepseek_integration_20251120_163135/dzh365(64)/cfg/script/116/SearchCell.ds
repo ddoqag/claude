@@ -1,0 +1,35 @@
+{查找数据表中cell项的起止行号}
+{table 数据表}
+{cell  cell内容}
+{返回  [起始行,终止行]，起始行为0表示未找到}
+function SearchCell(table, cell)
+	{获取行数}
+	n = util::GetRows(table);
+	istart = 0;
+	iend = 0;
+	{查找起始行}
+	for i = 1 : n
+		if(table(i, 5) == cell)
+			istart = i;
+			break;
+		end
+	end
+	{查找结束行}
+	if(istart > 0 & istart < n)
+		if(istart < n)
+			for i = istart : n
+				if(table(i, 5) ~= cell)
+					iend = i - 1;
+					break;
+				end
+			end
+			if (iend == 0)
+				iend = n;
+			end
+		end
+	else
+		istart = 0;
+	end
+	{返回起止行}
+	return [istart, iend];
+end

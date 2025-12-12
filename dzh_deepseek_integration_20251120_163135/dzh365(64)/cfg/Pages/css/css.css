@@ -1,0 +1,131 @@
+﻿@charset "utf-8";
+html,body {
+        margin:0;
+        height:100%;
+        
+}
+#num {width:35px;height:21px;float:left;text-align:right;}
+.num {
+	font-family: "宋体";
+	font-size: 16px;
+	line-height: 120%;
+	font-weight: bold;
+	color: #E7E7E7;
+	text-decoration: none;
+}
+
+#h1 {float:left;height:21px;padding:0px 0px 0px 4px;}
+.h1{
+	font-family: "宋体";
+	font-size: 16px;
+	line-height: 120%;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+        letter-spacing: 2px;
+}
+.h1 a{
+	font-family: "宋体";
+	font-size: 16px;
+	line-height: 120%;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+        letter-spacing: 2px;
+}
+#kj {width:60px;height:21px;float:left;}
+.kj{
+	font-family: "calibri";
+	font-size: 16px;
+	line-height: 120%;
+	color: #E7E7E7;
+	font-weight: normal;
+	text-decoration: none;
+        letter-spacing: 1px;
+}
+#kj-1 {width:80px;height:21px;float:left;}
+.kj-1{
+	font-family: "calibri";
+	font-size: 16px;
+	line-height: 120%;
+	color: #E7E7E7;
+	font-weight: normal;
+    letter-spacing: 1px;
+}
+#h2-1 {width:152px;height:21px;float:left;}
+.h2-1 a {
+	font-family: "宋体";
+	font-size: 16px;
+	line-height: 120%;
+	color: #F79000;
+	font-weight: normal;
+	text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.h2-1 a:hover
+{
+	color: #ffffff; 
+}
+.h3 a{
+	font-family: "宋体";
+	font-size: 16px;
+	line-height: 120%;
+	color: #F79000;
+	font-weight: normal;
+	text-decoration:none;
+}
+.h3 a:hover{
+	color: #ffffff; 
+}
+#h2 {width:172px;height:21px;float:left;}
+.h2{
+	font-family: "宋体";
+	font-size: 16px;
+	line-height: 120%;
+	color: #F79000;
+	font-weight: normal;
+	text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.h2 a {
+	font-family: "宋体";
+	font-size: 16px;
+	line-height: 120%;
+	color: #F79000;
+	font-weight: normal;
+	text-decoration: none;
+        letter-spacing: 2px;
+}
+
+.h2 a:hover
+{
+	color: #ffffff; 
+}
+
+.huang {
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: normal;
+	color: #FF9900;
+	text-decoration: none;
+}
+.px14 a:hover {
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.huang a:hover {
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: normal;
+	color: #FF0000;
+	text-decoration: underline;
+}

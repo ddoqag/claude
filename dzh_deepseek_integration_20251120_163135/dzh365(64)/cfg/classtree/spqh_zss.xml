@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="郑商所" local="1">
+		<subclass name="郑商所" node="112679" scriptfile="zss"/>
+		<subclass name="晚籼稻" node="101838" scriptfile="spbk"/>
+		<subclass name="硅铁" node="101845" scriptfile="spbk"/>
+		<subclass name="锰硅" node="101846" scriptfile="spbk"/>
+		<subclass name="普麦" node="112680" scriptfile="spbk"/>
+		<subclass name="强麦" node="112681" scriptfile="spbk"/>
+		<subclass name="白糖" node="112682" scriptfile="spbk"/>
+		<subclass name="棉花" node="112683" scriptfile="spbk"/>
+		<subclass name="PTA" node="112684" scriptfile="spbk"/>
+		<subclass name="油菜籽" node="112685" scriptfile="spbk"/>
+		<subclass name="菜籽粕" node="112686" scriptfile="spbk"/>
+		<subclass name="菜籽油" node="112687" scriptfile="spbk"/>
+		<subclass name="早籼稻" node="112688" scriptfile="spbk"/>
+		<subclass name="粳稻" node="112689" scriptfile="spbk"/>
+		<subclass name="甲醇" node="112690" scriptfile="spbk"/>
+		<subclass name="玻璃" node="112691" scriptfile="spbk"/>
+		<subclass name="动力煤" node="112692" scriptfile="spbk"/>
+	</class>
+</classes>

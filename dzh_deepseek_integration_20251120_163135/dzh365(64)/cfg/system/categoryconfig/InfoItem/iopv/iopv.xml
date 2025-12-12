@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<list type="array"  format="did_iopv"  desc="一般股票" ver="1">
+	<INFO_ITEM><type>II_TEXT</type><posbegin>0</posbegin><posend>50</posend><align>left</align><prop>"IOPV"</prop></INFO_ITEM>
+	<INFO_ITEM><type>II_SERVICE</type><posbegin>50</posbegin><posend>100</posend><align>right</align><prop>V_IOPV</prop><columnname>Price</columnname><deep>0</deep></INFO_ITEM>
+	 <INFO_ITEM><type>II_NEWLINE</type><pos>0</pos><prop>0</prop><rowend></rowend></INFO_ITEM>
+</list>

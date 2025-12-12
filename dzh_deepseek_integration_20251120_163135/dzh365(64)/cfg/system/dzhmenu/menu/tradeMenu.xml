@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Config>
+    <menu code="SETORDER" disp="委托设置"/>
+    <menu code="COMMAND" disp="策略交易" cmd="CHROME?URL='https://lhjy.dzh.com.cn/index.html#/index'&amp;FULLSCREEN=1"/>
+</Config>

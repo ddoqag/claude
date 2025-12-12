@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+  <class name="品种报价" local="1"  scriptfile="ec1">
+  	<subclasses name="贵金属" node="108121">
+            <subclass name="贵金属" node="108055" >
+		        <group name="上海期货交易所 " node="108056" />
+		    </subclass>
+	</subclasses>
+	<subclasses name="有色金属" node="108095">
+	        <subclass name="有色金属" node="108044" >
+		        <group name="上海期货交易所" node="108045" />
+		    </subclass>		
+	</subclasses>
+	<subclasses name="黑色金属" node="108115">
+            <subclass name="黑色金属" node="108050" >
+		        <group name="上海期货交易所" node="108051" />
+	        </subclass>
+	</subclasses>
+	<subclasses name="能源" node="108131">
+	        <subclass name="能源" node="108061" >
+		        <group name="上海期货交易所 " node="108062" />
+	        </subclass>
+	</subclasses>
+	<subclasses name="软商品" node="108180">
+	        <subclass name="软商品" node="108081" >
+		    <group name="上海期货交易所 " node="108082" />
+	        </subclass>
+	</subclasses>
+ 	<subclasses name="国际贵金属" node="108121">
+            <subclass name="国际贵金属" node="108055" >
+		        <group name="NYMEX-纽约商业期货交易所" node="108058" />
+		        <group name="COMEX-纽约商品交易所" node="108059" />
+		        <group name="贵金属现货" node="108060" />
+		    </subclass>
+	</subclasses>
+	<subclasses name="国际有色金属" node="108095">
+	        <subclass name="国际有色金属" node="108044" >
+		        <group name="LME—伦敦金属交易所" node="108047" />
+		        <group name="COMEX-纽约商品交易所" node="108048" />
+		        <group name="SGX-新加坡期货交易所" node="108049" />
+		    </subclass>		
+	</subclasses>
+	<subclasses name="国际黑色金属" node="108115">
+            <subclass name="国际黑色金属" node="108050" >
+		        <group name="NYMEX-纽约商业期货交易所" node="108053" />
+		        <group name="LME—伦敦金属交易所" node="108054" />
+	        </subclass>
+	</subclasses>
+	<subclasses name="国际能源" node="108131">
+	        <subclass name="国际能源" node="108061" >
+	        	<group name="NYMEX-纽约商业期货交易所" node="108065" />
+	        	<group name="SGX-新加坡期货交易所" node="108066" />
+	        </subclass>
+	</subclasses>
+	<subclasses name="国际软商品" node="108180">
+	        <subclass name="国际软商品" node="108081" >
+		    <group name="ICE-美国洲际交易所" node="108085" />
+		    <group name="SGX-新加坡期货交易所" node="108086" />
+	        </subclass>
+	</subclasses>
+
+
+
+  </class>
+</classes>
+
+

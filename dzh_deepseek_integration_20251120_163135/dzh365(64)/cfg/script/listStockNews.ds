@@ -1,0 +1,13 @@
+function listStockNews(obj)
+	params = '{"obj":"'+obj+'","type":"1"}';
+	params = util::Base64Encode(params);
+
+	req = 'service=rpc&so=jso-365-news.jar&function=gw.sh.func.News365NewsRequest&paraencode=base64&parameter=';
+	req = req + params;
+	req = req + '&response_times=1&response_mode=0';
+	data = data::RequestData(req);
+	result = data(2);
+
+	this.Send(result);
+end
+

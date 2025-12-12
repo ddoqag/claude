@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="洲际欧洲" local="1">
+		<subclass name="洲际欧洲" node="1" scriptfile="zhoujiOZ"/>
+		<subclass name="布伦特原油" node="112929" scriptfile="spbk"/>
+		<subclass name="ICE美原油" node="112932" scriptfile="spbk"/>
+		<subclass name="ICE柴油" node="107679" scriptfile="spbk"/>
+		<subclass name="ICE汽油" node="107680" scriptfile="spbk"/>
+	</class>
+</classes>

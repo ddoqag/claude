@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="深证指数" local="1">
+                <subclass name="深证规模" node="112470" scriptfile="gpfl"/>
+                <subclass name="深证行业" node="112471" scriptfile="gpfl"/>
+                <subclass name="深证风格" node="112472" scriptfile="gpfl"/>
+                <subclass name="深证主题" node="112473" scriptfile="gpfl"/>
+                <subclass name="深证策略" node="112474" scriptfile="gpfl"/>
+                <subclass name="深证综合" node="112475" scriptfile="gpfl"/>
+                <subclass name="深证定制" node="112476" scriptfile="gpfl"/>
+                <subclass name="深证基金" node="104440" scriptfile="gpfl"/>
+	</class>
+</classes>

@@ -1,0 +1,30 @@
+function getgjjjhf()
+
+	{    
+	// col1: id; 
+    // col2: did;
+    // col3: ttl;
+    // col4: newstime;
+    // col5: org;
+    // col6: lnk;
+    // col7: recordtime;}
+	params = '{"code":"00000000000200020001","fids":"C1,C2,C3,C16,C8","dcategory":"1-19","sort":"C16:-1","skip":"0","amount":"30"}';
+	param = util::Base64Encode(params);
+
+	
+	req = 'service=rpc&so=jso-ui-zhpnews.jar&function=gw.sh.func.SearchByRegexRequest&paraencode=base64&parameter=';
+	req = req + param;
+	req = req + '&response_times=1&response_mode=0';
+	
+	data = data::RequestData(req);
+	
+	data2 = data;
+	data1 = data2(1,2);
+	
+	for i = 1 : util::GetRows(data1)
+		data1(i ,3) = data1(i ,5) + ':' + data1(i ,3);
+		data1(i ,5) = data1(i ,3);
+	end
+	data2(1,2) = data1;
+	this.Send(data2);
+end

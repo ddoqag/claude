@@ -1,0 +1,17 @@
+function listStockNotice(obj,category)
+	{Category意义如下：
+		3公司公告，4历史公告，5权证公告，6港股公告，
+		7基金公告，8机构公告，10债券公告，14集合理财公告，
+		15信托计划公告，16保险产品公告，17银行个人理财公告
+	}
+	params = '{"obj":"'+obj+'","type":"'+category+'"}';
+	params = util::Base64Encode(params);
+
+	req = 'service=rpc&so=jso-365-news.jar&function=gw.sh.func.News365NoticeRequest&paraencode=base64&parameter=';
+	req = req + params;
+	req = req + '&response_times=1&response_mode=0';
+	data = data::RequestData(req);
+	result = data(2);
+	
+	this.Send(result);
+end

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="分级基金A类" local="1">
+		<subclass name="全部分级A" node="15" scriptfile="jjbk"/>
+		<subclass name="股票分级A" node="16" scriptfile="jjbk"/>
+		<subclass name="债券分级A" node="17" scriptfile="jjbk"/>
+		<subclass name="QDII分级A" node="18" scriptfile="jjbk"/>
+	</class>
+</classes>

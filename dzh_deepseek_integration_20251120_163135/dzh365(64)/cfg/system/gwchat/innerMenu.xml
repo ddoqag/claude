@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+	<rightMenu>
+		<item name="慧信" model="convPanel"/>
+		<item name="企微" url="https://newhxcrm.dzh.com.cn/qy_chat_list.html?account=#USERID#" id="qwItem" visible="false"/>
+		<item name="通讯录" visibleAt="normalModel" id="txlItem" url="https://newhxcrm.dzh.com.cn/client_list.html?token=#V3TOKEN#&amp;source=inner"/>
+		<item name="我的" visibleAt="workModel" url="https://newhxcrm.dzh.com.cn/right-mine.html?token=#V3TOKEN#&amp;source=inner"/>
+		<item name="专属" model="exclusive"/>
+	</rightMenu>
+	<rightMoreMenu>
+		<item name="发长文" url="https://f.dzh.com.cn/msg/publisharticle?token=#V3TOKEN#"/>
+		<item name="发视频" url="https://f.dzh.com.cn/circle/shortvideo?token=#V3TOKEN#"/>
+	</rightMoreMenu>
+	<friendLink url="https://newhxcrm.dzh.com.cn/left_mine.html?account=#USERID#&amp;token=#V3TOKEN#&amp;source=inner"/>
+	<workLink url="https://newhxcrm.dzh.com.cn/left_index.html?token=#V3TOKEN#&amp;source=inner"/>
+	<showMode>3</showMode>
+	<remoteHelp url="https://newhxcrm.dzh.com.cn/remote-help.html?token=#V3TOKEN#"/>
+	<researcherMark url="https://newhxcrm.dzh.com.cn/points-platform.html?token=#V3TOKEN#"/>
+	<dataPublish url="https://newhxcrm.dzh.com.cn/management/index.html?token=#V3TOKEN#"/>
+	<dataPublishV2 url="https://newhxcrm.dzh.com.cn/management/instIndex.html?token=#V3TOKEN#"/>
+	<massMessaging url="https://pcgroup.dzh.com.cn/index/qf?token=#V3TOKEN#"/>
+</root>

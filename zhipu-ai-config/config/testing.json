@@ -1,0 +1,46 @@
+{
+  "zhipu_ai": {
+    "api_key": "${ZHIPU_AI_API_KEY_TEST}",
+    "endpoint_url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "model_name": "glm-4.6",
+    "max_retries": 2,
+    "timeout": 15,
+    "rate_limit": 50,
+    "organization_id": null,
+    "project_id": null
+  },
+  "security": {
+    "encryption_key": "${ENCRYPTION_KEY_TEST}",
+    "allowed_origins": ["http://test.example.com"],
+    "allowed_ips": ["192.168.1.0/24"],
+    "jwt_secret": "${JWT_SECRET_TEST}",
+    "session_timeout": 1800,
+    "enable_audit_log": true
+  },
+  "database": {
+    "host": "${TEST_DB_HOST}",
+    "port": 5432,
+    "name": "zhipu_ai_test",
+    "username": "test_user",
+    "password": "${TEST_DB_PASSWORD}",
+    "ssl_mode": "require",
+    "pool_size": 3,
+    "max_overflow": 5
+  },
+  "cache": {
+    "host": "${TEST_CACHE_HOST}",
+    "port": 6379,
+    "db": 1,
+    "password": "${TEST_CACHE_PASSWORD}",
+    "ttl": 60
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file_path": "./logs/testing.log",
+    "max_file_size": "5MB",
+    "backup_count": 3,
+    "enable_audit": true,
+    "audit_file_path": "./logs/test_audit.log"
+  }
+}

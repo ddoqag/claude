@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="GB2312"?>
+<DzhLog>
+<Load>default</Load>
+<category name="tim">
+<Appender>tim</Appender>
+</category>
+<category name="gwchat">
+<Appender>gwchat</Appender>
+</category>
+<category name="ilive">
+<Appender>ilive</Appender>
+</category>
+<category name="hxhttp">
+<Appender>hxhttp</Appender>
+</category>
+<category name="liteav">
+<Appender>liteav</Appender>
+</category>
+<category name="gwchatreqdata">
+<Appender>gwchatreqdata</Appender>
+</category>
+<category name="stock">
+<Appender>stock</Appender>
+</category>
+<category name="ihxchat">
+<Appender>ihxchat</Appender>
+</category>
+<appender name="tim" type="File" path="gwchat\tim.txt" minlevel="debug" size="4"/>
+<appender name="gwchat" type="File" path="gwchat\gwchat.txt" minlevel="debug" size="4"/>
+<appender name="ilive" type="File" path="gwchat\ilive.txt" minlevel="debug" size="4"/>
+<appender name="hxhttp" type="File" path="gwchat\hxhttp.txt" minlevel="debug" size="4"/>
+<appender name="liteav" type="File" path="gwchat\liteav.txt" minlevel="debug" size="4"/>
+<appender name="gwchatreqdata" type="File" path="gwchat\gwchatreqdata.txt" minlevel="debug" size="4"/>
+<appender name="stock" type="File" path="gwchat\stock.txt" minlevel="debug" size="4"/>
+<appender name="ihxchat" type="File" path="gwchat\ihxchat.txt" minlevel="debug" size="4"/>
+</DzhLog>

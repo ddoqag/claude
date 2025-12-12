@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="新三板" scriptfile="xsb" local="1">
+		<subclass name="做市股票" node="101858"/>
+		<subclass name="三板成指" node="101867"/>
+		<subclass name="做市成指" node="101868"/>
+	</class>
+	<class name="申万板块" scriptfile="xsb" local="1">
+		<subclass name="SW农林牧渔" node="114370"/>
+		<subclass name="SW采掘" node="114392"/>
+		<subclass name="SW化工" node="114403"/>
+		<subclass name="SW钢铁" node="114441"/>
+		<subclass name="SW有色金属" node="114445"/>
+		<subclass name="SW电子" node="114461"/>
+		<subclass name="SW汽车" node="114478"/>
+		<subclass name="SW家用电器" node="114489"/>
+		<subclass name="SW食品饮料" node="114499"/>
+		<subclass name="SW纺织服装" node="114512"/>
+		<subclass name="SW轻工制造" node="114527"/>
+		<subclass name="SW医药生物" node="114539"/>
+		<subclass name="SW公用事业" node="114553"/>
+		<subclass name="SW交通运输" node="114566"/>
+		<subclass name="SW房地产" node="114583"/>
+		<subclass name="SW商业贸易" node="114588"/>
+		<subclass name="SW休闲服务" node="114600"/>
+		<subclass name="SW银行" node="114612"/>
+		<subclass name="SW非银金融" node="114615"/>
+		<subclass name="SW综合" node="114622"/>
+		<subclass name="SW建筑材料" node="114625"/>
+		<subclass name="SW建筑装饰" node="114634"/>
+		<subclass name="SW电气设备" node="114652"/>
+		<subclass name="SW机械设备" node="114671"/>
+		<subclass name="SW国防军工" node="114695"/>
+		<subclass name="SW计算机" node="114704"/>
+		<subclass name="SW传媒" node="114710"/>
+		<subclass name="SW通信" node="114722"/>
+	</class>
+	<class name="投资型行业" scriptfile="xsb" local="1">
+		<subclass name="能源" node="107006"/>
+		<subclass name="原材料" node="107019"/>
+		<subclass name="工业" node="107047"/>
+		<subclass name="非日常生活消费品" node="107089"/>
+		<subclass name="日常消费品" node="107140"/>
+		<subclass name="医疗保健" node="107163"/>
+		<subclass name="金融" node="107184"/>
+		<subclass name="信息技术" node="107209"/>
+		<subclass name="电信业务" node="107238"/>
+		<subclass name="公用事业" node="107253"/>
+		<subclass name="房地产" node="107267"/>
+	</class>
+</classes>

@@ -1,0 +1,28 @@
+function RequestTopics(objs)
+	sobjs = StringUtil::trimsuffix(objs);
+	resault = DZH::requestyundata('/topicblock?input='+sobjs);
+	col = table::GetColumnIndex(resault,'Data');
+	system::Print('Data:'+col);
+	tdata = resault(1,col);
+	col = table::GetColumnIndex(tdata,'RepDataTopicPage');
+	system::Print('RepDataTopicPage:'+col);
+	ttopics = tdata(1,col);
+	num = util::GetColumns(ttopics);
+	system::Print('ttopics:' + num);
+	rtable = table::Create('obj:s;topic:s',num,'data');
+	objstr = 'namestr';
+	topicstr = 'topicstr';
+	for i=1:num
+		ttopic = ttopics(1,i);
+		col = table::GetColumnIndex(ttopic,'obj');
+		objstr = ttopic(1,col);
+		col = table::GetColumnIndex(ttopic,'SuoShuZhuTi');
+		system::Print(col);
+		topicstr = ttopic(1,col);
+		rtable(i,1) = objstr;
+		rtable(i,2) = topicstr;
+	end
+	system::Print(rtable);
+	this.Send(rtable);
+end
+

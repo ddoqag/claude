@@ -1,0 +1,50 @@
+function gjsp()
+	{this.DeleteAllColumn();}
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',45,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',140,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',70,0,0);  
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'总手');
+		this.SetColumnAttributes(index,'',80,0,0);
+		index = this.InsertQuotation(-1,'现手');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'总额');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'持仓量');
+		this.SetColumnAttributes(index,'',82,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',80,0,0);
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'委买价');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'委卖价');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'涨速');
+		this.SetColumnAttributes(index,'',80,0,0);
+		index = this.InsertQuotation(-1,'振幅');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'委比');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'委差');
+		this.SetColumnAttributes(index,'',80,0,0); 
+	end
+
+	table =['NXCLY0.index','NXNGY0.index','IPBY0.index','CXGCY0.cmdty','CXSIY0.cmdty','CXHGY0.cmdty','LMCAD3M.cmdty','LMZSD3M.cmdty','CBZSY0.cmdty','CBZCY0.cmdty','CBZWY0.cmdty','ICSBY0.cmdty','ICCTY0.cmdty','ICCCY0.cmdty','ICKCY0.cmdty'];
+	this.SetStocks(table,1);
+
+end
+

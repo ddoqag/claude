@@ -1,0 +1,48 @@
+function FundMightyLoad()
+	{this.DeleteAllColumn();}
+	this.ResetStocks();
+	
+	indi mymr[(bigorder(1)-bigorder(2))*vol/capital*100;]
+	indi mywr[SUM((bigorder(1)-bigorder(2))*vol/capital*100,5);]
+	indi myzf[sum((C-REF(C,1))/REF(C,1)*100,5);]
+	 
+	if this.ColCount() == 0 
+	index = this.InsertQuotation(-1,'序号'); 
+	this.SetColumnAttributes(index,'',30,0,0); 
+ 
+	index = this.InsertQuotation(-1,'代码');
+	this.SetColumnAttributes(index,'',70,0,0); 
+	index = this.InsertQuotation(-1,'名称');
+	this.SetColumnAttributes(index,'',80,0,0); 
+	index = this.InsertQuotation(-1,'最新');
+	this.SetColumnAttributes(index,'',70,0,0); 
+	index = this.InsertQuotation(-1,'涨幅');
+	this.SetColumnAttributes(index,'',70,0,0); 
+	index = this.InsertQuotation(-1,'涨速');
+	this.SetColumnAttributes(index,'',70,0,0); 
+	index = this.InsertQuotation(-1,'换手率');
+	this.SetColumnAttributes(index,'',70,0,0); 
+	index = this.InsertQuotation(-1,'总手');
+	this.SetColumnAttributes(index,'',70,0,0); 
+	index = this.InsertQuotation(-1,'总额');
+	this.SetColumnAttributes(index,'',70,0,0);
+	index = this.InsertQuotation(-1,'量比');
+	this.SetColumnAttributes(index,'',70,0,0); 
+	
+	index = this.InsertIndicator(-1,'每日资金',mymr());
+	this.SetColumnAttributes(index,'',90,0,0); 
+	index = this.InsertIndicator(-1,'五日资金',mywr());
+	this.SetColumnAttributes(index,'',90,0,0); 
+	index = this.InsertIndicator(-1,'五日涨幅',myzf());
+	this.SetColumnAttributes(index,'',90,0,0); 
+	
+	end
+	
+	{注册推送服务,目前只支持注册一个服务}
+	this.RegPushService('/platformi/platformIntegration/mostcare/data?__repeat=-1','',1);
+	
+	{刷新屏幕}
+	DZH::Sleep(200);
+	FundMightyPush();
+end
+

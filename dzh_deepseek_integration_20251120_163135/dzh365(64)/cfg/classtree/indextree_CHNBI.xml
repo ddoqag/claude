@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1" scriptfile="index_s" >
+        		<subclass name="上证债券指数" node="104433" />
+				<subclass name="中证债券指数" node="100644" />				
+				<subclass name="巨潮企债指数" node="104446" />
+	
+  </class>
+</classes>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<dzhcfg>
+<!--
+<objtypes default="stk">
+<objtype type="stk" name="股票" basic="1" dids="21000-24999" root="stkroot.xml"/>
+<objtype type="fnd" name="基金" basic="1" dids="25000-25999" root="fndroot.xml"/>
+<objtype type="bond" name="债券" basic="1" dids="26000-26499"/>
+<objtype type="index" name="指数" basic="1" dids="26500-26999"/>
+<objtype type="mmkt" name="货币" basic="1" dids="27000-27499"/>
+<objtype type="cmcy" name="外汇" basic="1" dids="27500-27999"/>
+<objtype type="cmdty" name="商品" basic="1" dids="28000-28499"/>
+<objtype type="ecod" name="经济数据" basic="1" dids="28500-31999"/>
+<objtype type="pfs" name="理财" basic="1" dids="32000-32499"/>
+<objtype type="la" name="生活艺术" basic="1" dids="32500-32999"/>
+<objtype type="ivfm" name="投融资" basic="1" dids="33000-33499"/>
+<objtype type="com" name="公司" basic="1" dids="33500-33999"/>
+<objtype type="prod" name="产品" basic="1" dids="34000-36999"/>
+<objtype type="new" name="新闻" basic="1" dids="37000-39999"/>
+<objtype type="pty" name="房地产" basic="1" dids="40000-40999"/>
+<objtype type="grp" name="分组" dids="41000-42999"/>
+</objtypes>
+-->
+<fileurls>
+<fileurl name="DZH2DATA#0" url="http://rdfile.gw.com.cn"/>
+<fileurl name="DZH2DATA#1" url="http://10.7.3.206"/>
+<fileurl name="DZH2DATA#2" url="http://10.15.88.78"/>
+<fileurl name="DZH2DATA#3" url="http://reader.gw.com.cn"/>
+<fileurl name="DZH2DATA#4" url="http://file3.gw.com.cn"/>
+<fileurl name="DZH2DATA#5" url="http://10.15.104.167"/>
+<fileurl name="DZH2DATA#6" url="http://f9data.gw.com.cn/_api/download.php?from=kvdb&amp;zlib=skip&amp;save=no&amp;file="/>
+</fileurls>
+<infos>
+<info id="F9DEV" name="f9datadev.gw.com.cn" port="80"/>
+<info id="F9TEST" name="f9datatest.gw.com.cn" port="80"/>
+<info id="F9" name="f9data.gw.com.cn" port="80"/>
+<info id="F9ALPHA" name="f9dataalpha.gw.com.cn" port="80"/>
+<info id="F9BETA" name="f9databeta.gw.com.cn" port="80"/>
+<info id="LCWEBDEV" name="f9datadev.gw.com.cn" port="80"/>
+<info id="LCWEBTEST" name="f9datatest.gw.com.cn" port="80"/>
+<info id="LCWEB" name="f9data.gw.com.cn" port="80"/>
+</infos>
+</dzhcfg>

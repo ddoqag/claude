@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="洲际美洲" local="1">
+		<subclass name="洲际美洲" node="1" scriptfile="zhoujiMZ"/>
+		<subclass name="美可可" node="112926" scriptfile="spbk"/>
+		<subclass name="美棉花2号" node="112927" scriptfile="spbk"/>
+		<subclass name="美咖啡" node="112925" scriptfile="spbk"/>
+		<subclass name="美橙汁" node="112924" scriptfile="spbk"/>
+		<subclass name="#11国际糖" node="112922" scriptfile="spbk"/>
+	</class>
+</classes>

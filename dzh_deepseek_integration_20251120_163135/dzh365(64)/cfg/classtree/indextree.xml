@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="指数系列" local="1" scriptfile="index">
+		<subclasses name="上证系列" node="107278">
+			<subclass name="上证综合" node="104427"/>
+			<subclass name="上证成份" node="104428"/>
+			<subclass name="上证风格" node="104429"/>
+			<subclass name="上证主题" node="104430"/>
+			<subclass name="上证策略" node="104431"/>
+			<subclass name="上证基金" node="104432"/>
+			<subclass name="上证债券" node="104433"/>
+			<subclass name="上证定制" node="104434"/>
+			<subclass name="上证行业" node="104435"/>
+			<subclass name="上证重点" node="108781"/>
+		</subclasses>
+		<subclasses name="深证系列" node="100637">
+			<subclasses name="成份股指数" node="108783">
+				<subclass name="深证规模" node="104437"/>
+				<subclass name="深证风格" node="104438"/>
+				<subclass name="深证主题" node="104439"/>
+				<subclass name="深证策略" node="108782"/>
+				<subclass name="深证行业" node="108785"/>
+			</subclasses>
+			<subclasses name="综合指数" node="108784">
+				<subclass name="深证市场" node="104436"/>
+				<subclass name="深证基金" node="104440"/>
+				<subclass name="深证行业" node="104441"/>
+			</subclasses>
+		</subclasses>
+		<subclasses name="中证系列" node="100067">
+			<subclass name="中证行业" node="100641"/>
+			<subclass name="中证风格" node="100642"/>
+			<subclass name="中证海外" node="100643"/>
+			<subclass name="中证债券" node="100644"/>
+			<subclass name="中证规模" node="104448"/>
+			<subclass name="中证主题" node="104449"/>
+			<subclass name="中证策略" node="104450"/>
+			<subclass name="中证定制" node="104451"/>
+			<subclass name="AMAC行业" node="104453"/>
+			<subclass name="300一级行业" node="104454"/>
+			<subclass name="300二级行业" node="104455"/>
+		</subclasses>
+		<subclasses name="巨潮系列" node="100637">
+			<subclasses name="成份股指数" node="108787">
+				<subclass name="巨潮规模" node="104443"/>
+				<subclass name="巨潮风格" node="104444"/>
+				<subclass name="巨潮主题" node="104445"/>
+				<subclass name="巨潮区域" node="104447"/>
+				<subclass name="巨潮行业" node="108786"/>
+			</subclasses>
+			<subclasses name="综合指数" node="108788">
+				<subclass name="巨潮市场" node="104442"/>
+				<subclass name="巨潮企债" node="104446"/>
+			</subclasses>
+		</subclasses>
+		<subclasses name="申万系列" node="100070">
+			<subclass name="SW市场表征指数" node="104463"/>
+			<subclass name="SW风格指数" node="100652"/>
+			<subclass name="SW量化策略指数" node="104464"/>
+			<subclass name="SW一级行业指数" node="104460"/>
+			<subclass name="SW二级行业指数" node="104461"/>
+			<subclass name="SW商品指数" node="109497" scriptfile="index1"/>
+		</subclasses>
+	</class>
+</classes>

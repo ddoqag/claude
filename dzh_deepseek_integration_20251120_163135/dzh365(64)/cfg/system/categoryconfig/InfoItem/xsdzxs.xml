@@ -1,0 +1,13 @@
+<rules target="quote_dyna">
+	<rule id="rule1" target="quote_dyna">
+		<conditions>
+		<conditions>
+			<condition>obj=AO.*</condition>
+		</conditions>		
+		</conditions>
+		<actions>
+			<action type="desc"></action>
+			<action type="itemconfig">AOsd\xsdzxs.xml</action>
+		</actions>
+	</rule>
+</rules>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="可转债" local="1">
+		<subclass name="可转债" node="107697" scriptfile="zqbk"/>
+		<subclass name="上证转债" node="107698" scriptfile="zqbk"/>
+		<subclass name="深证转债" node="107699" scriptfile="zqbk"/>
+	</class>
+</classes>

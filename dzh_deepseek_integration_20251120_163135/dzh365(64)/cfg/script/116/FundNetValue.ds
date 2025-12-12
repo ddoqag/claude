@@ -1,0 +1,118 @@
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width, 4294967295, 0); 
+end
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width, 4294967295, 0); 
+end
+
+{设置列元素值
+matrixdata 列数据
+colname    列名
+id         识别码
+start      起始数据行号，从1开始}
+function SetStatic(matrixdata, colname, id, start)
+	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end
+
+function SetStatis2(matrixdata, colname, id, start)
+ 	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end 
+
+function FundNetValue()
+	this.DeleteAllColumn();
+
+	this.ResetStocks();
+
+{插入数据列}
+	InsertQuotation('序号','',35);
+	InsertQuotation('代码','S',100);
+	InsertQuotation('名称','S',150);
+{插入静态列}
+	InsertStatic('净值日期',  1, 'S', 100);
+	InsertStatic('单位净值',  2, '', 80);
+	InsertStatic('累计净值',  3, '',80);
+	InsertStatic('增长率(%%)',4, '', 100);
+	InsertStatic('成立日期',  5, 'S', 100);
+
+
+	this.AddStringLine('股票型基金');	
+	t = data::RequestData('/webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_stockfund');
+	this.SetStocks(t(:,1),1);
+{设置静态列}
+	this.SetGroup('最新',3,6);
+	SetStatic(t(:, 3), '净值日期', 1, 1);
+	SetStatic(t(:, 4), '单位净值', 2, 1);
+	SetStatic(t(:, 5), '累计净值', 3, 1);
+	SetStatic(t(:, 6), '增长率(%%)', 4, 1);	
+	SetStatic(t(:, 7), '成立日期', 5, 1);
+
+	
+	this.AddStringLine('混合型基金');
+	t1 = data::RequestData('/webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_mixedfund');
+	this.SetStocks(t1(:,1),1);
+	x = util::GetRows(t)+2;
+
+	SetStatic(t1(:, 3), '净值日期', 1, x);
+	SetStatic(t1(:, 4), '单位净值', 2, x);
+	SetStatic(t1(:, 5), '累计净值', 3, x);
+	SetStatic(t1(:, 6), '增长率(%%)', 4, x);	
+	SetStatic(t1(:, 7), '成立日期', 5, x);
+
+	
+		
+	this.AddStringLine('保本型基金');
+	t2 = data::RequestData('/webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_principal_guaranteed_fund');
+	this.SetStocks(t2(:,1),1);
+	y = x+util::GetRows(t1)+1;	
+	SetStatic(t2(:, 3), '净值日期', 1, y);
+	SetStatic(t2(:, 4), '单位净值', 2, y);
+	SetStatic(t2(:, 5), '累计净值', 3, y);
+	SetStatic(t2(:, 6), '增长率(%%)', 4, y);
+	SetStatic(t2(:, 7), '成立日期', 5, y);
+
+	
+	this.AddStringLine('债券型基金');
+	t3 = data::RequestData('/webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_bond_fund');
+	this.SetStocks(t3(:,1),1);
+	z=y+util::GetRows(t2)+1;	
+	SetStatic(t3(:, 3), '净值日期', 1, z);
+	SetStatic(t3(:, 4), '单位净值', 2, z);
+	SetStatic(t3(:, 5), '累计净值', 3, z);
+	SetStatic(t3(:, 6), '增长率(%%)', 4, z);
+	SetStatic(t3(:, 7), '成立日期', 5, z);
+
+	
+	this.AddStringLine('货币净值基金');
+	t4 = data::RequestData('/webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_monetary_fund');
+	this.SetStocks(t4(:,1),1);
+	f = z + util::GetRows(t3)+1;
+	SetStatic(t4(:, 3), '净值日期', 1, f);
+	SetStatic(t4(:, 4), '单位净值', 2, f);
+	SetStatic(t4(:, 5), '累计净值', 3, f);
+	SetStatic(t4(:, 6), '增长率(%%)', 4, f);
+	SetStatic(t4(:, 7), '成立日期', 5, f);
+
+	this.AddStringLine('QDII基金');
+	t5 = data::RequestData('/webquery/common/wadeStockDerivatives?__qid=wade_stock_derivatives_qdii_fund');
+	this.SetStocks(t5(:,1),1);
+	q = f +util::GetRows(t4)+1;
+	SetStatic(t5(:, 3), '净值日期', 1, q);
+	SetStatic(t5(:, 4), '单位净值', 2, q);
+	SetStatic(t5(:, 5), '累计净值', 3, q);
+	SetStatic(t5(:, 6), '增长率(%%)', 4, q);
+	SetStatic(t5(:, 7), '成立日期', 5, q);
+end
+
+

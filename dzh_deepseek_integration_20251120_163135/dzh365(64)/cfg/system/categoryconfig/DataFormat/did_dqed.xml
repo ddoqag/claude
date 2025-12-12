@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GB2312"?>
+<rules target="quote_dyna">
+  <rule id="rule_dyna1">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=curlimit</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="func_param">{"sc":"LST_data","digit":"0","prefix":"&lt;*sf=PLUG_data*&gt;&lt;*b=1*&gt;"}</action>
+      <action type="fmt_func">cfmt_default_volume</action>           
+      <action type="new_name">当日余额</action>
+    </actions>
+  </rule>
+
+</rules>

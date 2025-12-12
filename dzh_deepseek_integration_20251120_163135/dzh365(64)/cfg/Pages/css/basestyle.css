@@ -1,0 +1,115 @@
+hackbox/* Basics */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,menu,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+header,footer,aside,article,section,hgroup,nav,figure{display:block;}
+div,p{white-space:normal;word-break:break-all;word-wrap:break-word;}
+table{border-collapse:collapse;border-spacing:0;}
+table th,table td{word-wrap:break-word;overflow:hidden;}
+hr{display:none;}
+ul,ol,menu{list-style:none outside none;}
+fieldset,img{border:none;}
+input{vertical-align:middle;}
+textarea{vertical-align:middle; resize:none;}
+
+
+
+/* apply */
+.clearfix:after {display:block; clear:both; content:"."; visibility:hidden; height:0;}
+*html .clearfix {height:1%;}
+*:first-child+html .clearfix {height:1%;}
+.float_l {float:left; display:inline;}
+.float_r {float:right; display:inline;}
+.hide_a {overflow:hidden; display:block; font-size:0;}
+.absolute {position:absolute;}
+.relative {position:relative;}
+.hackbox {clear:both; font-size:0; height:0;}
+.container980px {width:980px; margin:0 auto;}
+.container960px {width:960px; margin:0 auto;}
+
+/*fast*/
+.font0px {font-size:0; line-height:0;}
+.text_r {text-align:right;}
+.text_m {text-align:center;}
+.text_l {text-align:left;}
+.font_w {font-weight:bold;}
+.color_red {color:#f00;}
+/*css3*/
+
+.hbox {
+    display: -webkit-box !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: stretch;
+    display: -moz-box !important;
+    -moz-box-orient: horizontal;
+    -moz-box-align: stretch;
+    display: box !important;
+    box-orient: horizontal;
+    box-align: stretch;
+}
+.hbox > * {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    display: block;
+}
+.vbox {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box !important;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box !important;
+    box-orient: vertical;
+    box-align: stretch;
+}
+.vbox > * {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    display: block;
+}
+.spacer {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+}
+.spacer1 {
+    -webkit-box-flex: 1;
+}
+.spacer2 {
+    -webkit-box-flex: 2;
+}
+.spacer3 {
+    -webkit-box-flex: 3;
+}
+.spacer4 {
+    -webkit-box-flex: 4;
+}
+.spacer5 {
+    -webkit-box-flex: 5;
+}
+.spacer6 {
+    -webkit-box-flex: 6;
+}
+.spacer7 {
+    -webkit-box-flex: 7;
+}
+.spacer8 {
+    -webkit-box-flex: 8;
+}
+.spacer9 {
+    -webkit-box-flex: 9;
+}
+.spacer10 {
+    -webkit-box-flex: 10;
+}
+.spacer11 {
+    -webkit-box-flex: 11;
+}
+.spacer12 {
+    -webkit-box-flex: 12;
+}
+.box-center { 
+	text-align: Center;
+  -webkit-box-align:center;
+  -webkit-box-pack:center;}

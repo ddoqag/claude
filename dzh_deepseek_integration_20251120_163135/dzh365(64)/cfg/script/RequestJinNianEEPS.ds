@@ -1,0 +1,173 @@
+{请求EDX日线，获取数据表并发回客户端
+参数：
+	obj				股票代码，例如'SH510300.fnd'
+	period 			周期，例如'1d'
+	starttime 		起始时间,例如'20130507103028000000'
+	endtime 		结束时间,例如'20130807103028000000'
+测试请求：/script?script=RequestJinNianEEPS('SH600000.stk','','','');&response_times=-1&timer=300
+公式：x:RUNSCRIPT('RequestJinNianEEPS','','' );
+}
+function GetJsonTbl(rdata)
+	col = table::GetColumnIndex(rdata,'Data');
+	tdata = rdata(1,col);
+	col = table::GetColumnIndex(tdata,'JsonTbl');
+	tJsonTbl = tdata(1,col);
+	return tJsonTbl;
+end
+
+function GetJsonTblIndex(jsonTbl,name)
+	col = table::GetColumnIndex(jsonTbl,'head');
+	tJsonTblhead = jsonTbl(1,col);
+	i=1;
+	n=util::GetColumns(tJsonTblhead);
+	for i=1:n
+		if tJsonTblhead(1,i)==name
+			break;
+		end
+	end
+	return i;
+end
+
+function GetJsonTblDatai(jsonTbl,i)
+	col = table::GetColumnIndex(jsonTbl,'data');
+	tJsonTbldata = jsonTbl(1,col);
+	col = table::GetColumnIndex(tJsonTbldata,'['+i+']');
+	tJsonTbldatai = tJsonTbldata(1,col);
+
+	return tJsonTbldatai;
+end
+
+function GetJsonTblSeriesN(jsonTbl)
+	col = table::GetColumnIndex(jsonTbl,'data');
+	tJsonTbldata = jsonTbl(1,col);
+	return util::GetColumns(tJsonTbldata);
+end
+
+function GetJsonTblSeries(jsonTbl,name,n)
+	series = StringUtil::ones(n,1);
+	index = GetJsonTblIndex(jsonTbl,name);
+	for i=0:(n-1)
+		tJsonTblDatai = GetJsonTblDatai(jsonTbl,i);
+		series(i+1,1) = tJsonTblDatai(1,index);
+	end
+	return series;
+end
+
+function SetRunning()
+	key = 'run_key';
+	t_run = table::Create('r:s',1,'run_key');
+	t_run(1,1) = 'running';
+	this.SaveBuffer(t_run, key);
+end
+
+function ClearRunning()
+	key = 'run_key';
+	t_run = table::Create('r:s',1,'run_key');
+	t_run(1,1) = 'run_end';
+	this.SaveBuffer(t_run, key);
+end
+
+function TestAndSetRunning()
+	brunning = 0;
+	key = 'run_key';
+	t_run = this.LoadBuffer(key);
+	if(util::GetRows(t_run) == 0)
+		SetRunning();
+	else
+		srunning = t_run(1,1);
+		if srunning == 'running'
+			brunning = 1;
+		else
+			SetRunning();
+		end
+	end
+	return brunning;
+end
+
+function RequestJinNianEEPS(obj, period, starttime, endtime)
+	firstload = 0;
+	if this.FirstLoad()
+		firstload = 1;
+	end
+	if TestAndSetRunning() == 0
+		sobj = StringUtil::trimsuffix(obj);
+		skey = 'yiziyuqi'+sobj+'JinNianEEPS';
+		needreq = 0;
+		res = kv::TestKV(skey);
+		if res == 0
+			needreq = 1;
+		else
+			{TODO:检查日期}
+			needreq = 0;
+			if firstload == 1
+				oJinNianEEPS = kv::GetKV(skey);		
+				this.Send(oJinNianEEPS);			
+			end
+		end
+		if needreq == 1
+			rdata = DZH::requestyundata('/forecast/consistent?obj='+sobj);
+			
+			tJsonTbl = GetJsonTbl(rdata);
+			
+			index = GetJsonTblIndex(tJsonTbl,'RepDataPcYeJiYuCeShuJu');
+			tJsonTblData0 = GetJsonTblDatai(tJsonTbl,0);
+			tRepDataPcYeJiYuCeShuJu0 = tJsonTblData0(1,index);
+			
+			index = GetJsonTblIndex(tRepDataPcYeJiYuCeShuJu0,'YiZhiXinYeJiYuCe');
+			tRepDataPcYeJiYuCeShuJu0data0 = GetJsonTblDatai(tRepDataPcYeJiYuCeShuJu0,0);
+			tYiZhiXinYeJiYuCe0 = tRepDataPcYeJiYuCeShuJu0data0(1,index);
+
+			index = GetJsonTblIndex(tRepDataPcYeJiYuCeShuJu0,'Obj');
+			tObj0 = tRepDataPcYeJiYuCeShuJu0data0(1,index);
+			
+			n = GetJsonTblSeriesN(tYiZhiXinYeJiYuCe0);
+			sYanBaoRiQi = GetJsonTblSeries(tYiZhiXinYeJiYuCe0,'YanBaoRiQi',n);
+			sJinNianEEPS = GetJsonTblSeries(tYiZhiXinYeJiYuCe0,'JinNianEEPS',n);
+			sMingNianEEPS = GetJsonTblSeries(tYiZhiXinYeJiYuCe0,'MingNianEEPS',n);
+			sJinNianEPE = GetJsonTblSeries(tYiZhiXinYeJiYuCe0,'JinNianEPE',n);
+			sMingNianEPE = GetJsonTblSeries(tYiZhiXinYeJiYuCe0,'MingNianEPE',n);
+			
+			rJinNianEEPS = table::Create('updateTime:T;JinNianEEPS:f',n,'data');
+			rMingNianEEPS = table::Create('updateTime:T;MingNianEEPS:f',n,'data');
+			rJinNianEPE = table::Create('updateTime:T;JinNianEPE:f',n,'data');
+			rMingNianEPE = table::Create('updateTime:T;MingNianEPE:f',n,'data');
+			for i=1:n
+				rJinNianEEPS(i,1) = util::StringToTimet(sYanBaoRiQi(i,1),'%%Y%%m%%d',0);
+				rMingNianEEPS(i,1) = rJinNianEEPS(i,1);
+				rJinNianEPE(i,1) = rJinNianEEPS(i,1);
+				rMingNianEPE(i,1) = rJinNianEEPS(i,1);
+				
+				rJinNianEEPS(i,2) = StringUtil::StringToFloat(sJinNianEEPS(i,1));
+				rMingNianEEPS(i,2) = StringUtil::StringToFloat(sMingNianEEPS(i,1));
+				rJinNianEPE(i,2) = StringUtil::StringToFloat(sJinNianEPE(i,1));
+				rMingNianEPE(i,2) = StringUtil::StringToFloat(sMingNianEPE(i,1));
+			end
+			
+			cJinNianEEPS = table::Create('time:s',1,'data');
+			cMingNianEEPS = table::Create('state:i',1,'data');
+			cJinNianEPE = table::Create('state:i',1,'data');
+			cMingNianEPE = table::Create('state:i',1,'data');
+			cMingNianEEPS(1,1) = 0;
+			cJinNianEPE(1,1) = 0;
+			cJinNianEPE(1,1) = 0;
+			nowtime = util::GetCurrentTimet(0);
+			snowtime = util::TimetToString(nowtime, '%%Y%%m%%d');
+			cJinNianEEPS(1,1) = snowtime;
+			kv::SetKV('yiziyuqi'+sobj+'SJinNianEEPS',cJinNianEEPS);
+			kv::SetKV('yiziyuqi'+sobj+'JinNianEEPS',rJinNianEEPS);
+			kv::SetKV('yiziyuqi'+sobj+'SMingNianEEPS',cMingNianEEPS);
+			kv::SetKV('yiziyuqi'+sobj+'MingNianEEPS',rMingNianEEPS);
+			kv::SetKV('yiziyuqi'+sobj+'SJinNianEPE',cJinNianEPE);
+			kv::SetKV('yiziyuqi'+sobj+'JinNianEPE',rJinNianEPE);
+			kv::SetKV('yiziyuqi'+sobj+'SMingNianEPE',cMingNianEPE);
+			kv::SetKV('yiziyuqi'+sobj+'MingNianEPE',rMingNianEPE);
+			
+			oJinNianEEPS = kv::GetKV('yiziyuqi'+sobj+'JinNianEEPS');
+			
+			this.Send(oJinNianEEPS);
+		end
+		ClearRunning();
+	end
+end
+
+

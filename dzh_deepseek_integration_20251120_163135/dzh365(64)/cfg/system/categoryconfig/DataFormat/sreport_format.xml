@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="GB2312"?>
+<rules target="sreport_format">
+  <rule id="rule_sreport1">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=time</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_time</action>           
+      <action type="new_name">时间</action>
+    </actions>
+  </rule>
+  <rule id="rule_sreport2">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=price</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_minprice</action>           
+      <action type="new_name">价格</action>
+    </actions>
+  </rule>
+  <rule id="rule_sreport3">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=volume</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_minvolume</action>           
+      <action type="new_name">成交量</action>
+    </actions>
+  </rule>
+  <rule id="rule_sreport4">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=tickcount</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_mintick</action>           
+      <action type="new_name">成交笔数</action>
+    </actions>
+  </rule>
+</rules>

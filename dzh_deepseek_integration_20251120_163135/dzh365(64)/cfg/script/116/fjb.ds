@@ -1,0 +1,59 @@
+function fjb()
+	{this.DeleteAllColumn();}
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',45,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',140,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',70,0,0);  
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'委买价');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'委卖价');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',80,0,0);
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',80,0,0);
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',80,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',80,0,0); 
+	end
+	
+	this.AddStringLine('分级精选');
+    t1 = data::RequestData('service=rpc&response_times=1&response_mode=0&async_response_mode=0&so=javadataproxy.jar&function=gw/UIMain&parameter=L3dlYnF1ZXJ5L2NvbW1vbi93YWRlU3RvY2tEZXJpdmF0aXZlcz9fX3FpZD13YWRlX3N0b2NrX2Rlcml2YXRpdmVzX2NsYXNzaWZpY2F0aW9uZnVuZF8x&paraencode=base64');
+    t = ['SZ150228.fnd';'SZ150193.fnd';'SZ150204.fnd'];
+    t2 = [1;2;3];
+    n = 0;
+    for i= 1:util::GetRows(t)
+        for j=1:util::GetRows(t1)
+            if t1(j,1) == t(i,1)
+                break;
+            end
+        end
+        if j>util::GetRows(t1)
+            n = n + 1;
+            t2(n,1) = t(i,1);
+        end
+    end
+    t3 = table::Create('c:s',n,'data');
+    for i=1:n
+        t3(i,1) = t2(i,1);
+    end
+	this.SetStocks(t3(:,1),1);
+    this.SetStocks(t1(:,1),1);
+	
+    this.AddStringLine('分级基金-进取份额');
+    t1 = data::RequestData('service=sql&response_times=1&response_mode=0&async_response_mode=0&sql=select concat(substring(co,1,8),''.stk'') from ST41504_main where C2=''109915''');
+    this.SetStocks(t1(:,1),1);
+end
+

@@ -1,0 +1,71 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# 日志文件
+*.log
+logs/
+
+# 编译输出
+*.pyc
+*.pyo
+__pycache__/
+.node_modules/
+node_modules/
+
+# Python
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 敏感配置
+.env
+.env.local
+config/secrets.json
+
+# 备份文件
+*.bak
+*.backup
+
+# 临时目录
+tmp/
+temp/
+
+# Large installers
+*.exe
+*.zip
+python_portable/
+
+# API keys and sensitive files (but keep guides)
+*API_KEY*
+*secret*
+*password*
+*命令*.txt
+id_ed25519
+id_ed25519.pub
+config
+!API_GUIDE.md
+!*_API_GUIDE.md

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Config>
+	<menu code="SEPARATOR"/>
+	<menu code="SETORDER" disp="委托设置"/>
+</Config>

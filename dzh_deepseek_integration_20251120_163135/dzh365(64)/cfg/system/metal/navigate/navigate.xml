@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<navigatebars homepage="PLUGINBROWSER?LAYOUT=hqsy" >
+	<navigatebar id="1" background="Menupic\line1backg">
+		<item id="100" type="cmdid" name="" link="57738" postion="1" width="65" background="Menupic\logo-1|Menupic\logo-1" />
+		<item id="1001" type="cmdid" name="" link="57739" postion="70" width="26" background="Menupic\back-default|Menupic\back-hover" secbackground="Menupic\back-selected|Menupic\back-selected" />
+		<item id="1002" type="cmdid" name="" link="57740" postion="96" width="20" background="Menupic\history-dafault|Menupic\history-hover" />
+		<item id="1003" type="cmdid" link="43306" postion="140" />
+		<item id="1004" type="cmdid" link="57741" postion="600" width="100" background="Menupic\dzh365bk5|Menupicdzh365bk5"/>
+		<item id="101" type="buttongroup" postion="1024">
+			<buttongroup id="10101" parent="101">
+				<button id="1010101" type="cmdid" name="" link="57744" width="29" background="Menupic\close|Menupic\close1" />
+				<button id="1010102" type="cmdid" name="" link="57745" width="33" background="Menupic\max|Menupic\max1" secbackground="Menupic\max|Menupic\max1"/>
+				<button id="1010103" type="cmdid" name="" link="57746" width="31" background="Menupic\min|Menupic\min1" />
+			</buttongroup>
+		</item>
+		<item id="104" parent="1" type="firstbig" name="" postion="830" width="0" background="Menupic\line1backg|Menupic\line1backg" select="true" />
+		<!--模式切换-->
+		<item id="105" parent="1" type="murl" link="MURL?URL='file://#DZH2#/cfg/Pages/switchmode.html'&amp;WIDTH='750'&amp;HEIGHT='430'&amp;ALIGN='FULL'" name="" postion="703" width="72" background="Menupic\dayinjia-default|Menupic\dayinjia-hover"/>
+	</navigatebar>
+	<navigatebar id="2" background="Menupic\line2backg">
+		<item id="202" type="buttongroup" postion="1">
+			<buttongroup id="20201" parent="104">
+				<button id="200" type="cmdid" name="" link="57738" width="65" background="Menupic\logo-2|Menupic\logo-2" />
+				<button id="2001" type="pic" name="" width="5" background="Menupic\line2backg|Menupic\line2backg" />
+				<button id="2020101" parent="-1" type="secondsmall" name="" textleft="5" width="110" background="Menupic\hangqing|Menupic\hangqing-hover"  select="true"/>
+				<button id="202010100" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin" />
+				<button id="2020102" parent="-1" type="secondsmall" name="" textleft="5" width="113" background="Menupic\zixun|Menupic\zixun-hover"/>
+				<button id="202010200" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin" />
+				<button id="2020103" parent="-1" type="cmd" name="" textleft="5" width="116" link="DZHWeb?'http://caijing.gw.com.cn/metal.html?clientType=365&amp;userId=**USERID**&amp;**WndRect(1120,820)**&amp;**Title=大智慧视频**&amp;**newwnd=0**''" background="Menupic\shipin|Menupic\shipin-hover" />
+				<button id="202010300" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin" />
+				<button id="2020104" parent="-1" type="secondsmall" name="" textleft="5" width="113" background="Menupic\tougu|Menupic\tougu-hover" />
+				<button id="202010400" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin" />
+				<button id="2020106" parent="-1" type="cmd" name="" textleft="5" width="113" link="shellexe?DZHTool.exe -f dzhtoolscript\dzhweituo\mingtai.lua -p mncg\dyj\mingtai\Mintai_JiaoYi.exe SysFrame.exe http://downfile.gw.com.cn/pub/mtjy.exe" background="Menupic\weituo|Menupic\weituo-hover" />
+			</buttongroup>
+		</item>
+	</navigatebar>
+	<navigatebar id="3" background="Menupic\fenge3">
+		<item id="301" type="buttongroup" postion="5">
+			<buttongroup id="3020101" parent="2020101">
+				<button id="302010101" width="80" name="行情首页" type="cmd" link="PLUGINBROWSER?LAYOUT=hqsy" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" select="true" />
+				<button id="302010102" width="90" name="天津贵金属" type="cmd" link="VIEWLIST?MARKET2=tjgjs/贵金属/天津贵金属" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="302010103" width="90" name="国际贵金属" type="cmd" link="MARKETGROUP?国际贵金属" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="302010104" width="80" name="上金所" type="cmd" link="MARKETGROUP?上海黄金" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="302010105" width="80" name="上期所" type="cmd" link="MARKETGROUP?贵金属上海期货" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="302010106" width="80" name="COMEX" type="cmd" link="MARKETGROUP?COMEX" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="302010107" width="80" name="外汇行情" type="cmd" link="MARKETGROUP?贵金属外汇" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="302010108" width="80" name="相关指数" type="cmd" link="VIEWLIST?MARKET2=qqgz/全球股指/全球股指" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="301030101" width="80" name="自选行情" type="cmd" link="MARKETGROUP?自选股" background="Menupic\level3recom-default-yellow|Menupic\level3recom-hover-yellow" />
+				<button id="302010110" width="80" name="近期浏览" type="cmd" link="VIEWLIST?MARKET2=jqll/近期浏览/近期浏览" background="Menupic\level3recom-default-yellow|Menupic\level3recom-hover-yellow" />
+				
+			</buttongroup>
+			<buttongroup id="3020102" parent="2020102">
+				<button id="302010201" width="80" name="滚动新闻" type="cmd" link="CHROME?URL='root://news/zongheping/news_list.html?menuid=1200000&amp;usenew=true&amp;navigation=false'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" select="true" />
+				<button id="302010202" width="80" name="要闻精选" type="cmd" link="CHROME?URL='root://news/zongheping/news_list.html?menuid=1201000&amp;usenew=true&amp;navigation=false'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" />
+				<button id="302010203" width="90" name="贵金属报表" type="cmd" link="REPORT?ReportModule.dll&amp;MODULE='8037'&amp;PARAM='loadStat 89767 89767'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="302010204" width="80" name="经济日历" type="cmd" link="CHROME?URL='root://bond/economicalCalendar/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="302010205" width="80" name="重要公告" type="cmd" link="CHROME?URL='root://news/zongheping/news_list.html?menuid=1205000&amp;usenew=true&amp;navigation=false'" background="Menupic\level3recom-default-yellow|Menupic\level3recom-hover-yellow" />
+				<button id="302010206" width="80" name="深度研究" type="cmd" link="CHROME?URL='root://news/zongheping/news_list.html?menuid=1207000&amp;usenew=true&amp;navigation=false'" background="Menupic\level3recom-default-yellow|Menupic\level3recom-hover-yellow" />
+				<button id="302010207" width="80" name="独家研报" type="cmd" link="CHROME?URL='root://news/zongheping/news_list.html?menuid=1206000&amp;usenew=true&amp;navigation=false'" background="Menupic\level3recom-default-yellow|Menupic\level3recom-hover-yellow" />
+			</buttongroup>
+			<buttongroup id="3020104" parent="2020104">
+				<button id="302010401" width="80" name="投顾首页" type="cmd" link="navigate?'http://tzgw.gw.com.cn/noblemetal/login'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" select="true" />
+			</buttongroup>
+		</item>
+	</navigatebar>
+</navigatebars>

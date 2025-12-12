@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="亚太市场" scriptfile="defaultMarket" >
+      <subclass name="澳大利亚证券交易所" node="107357"  />
+	  <subclass name="新西兰证券交易所" node="107359"  />
+	  <subclass name="印度国家证券交易所" node="107330"  />
+      <subclass name="新加坡证券交易所" node="107329"  />
+	  <subclass name="东京证券交易所" node="107322"  />
+      <subclass name="韩国证券交易所" node="107324"  />
+     <subclasses name="东亚" node="107321" >
+        <subclass name="大阪证券交易所" node="107323"  />
+        <subclass name="JASDAQ证券交易所" node="107326"  />
+        <subclass name="名古屋证券交易所" node="107327"  />
+      </subclasses>
+      <subclasses name="南亚" node="107328" >
+        <subclass name="马来西亚交易所" node="107331"  />
+        <subclass name="孟买证券交易所" node="107332"  />
+        <subclass name="雅加达证券交易所" node="107333"  />
+        <subclass name="菲律宾证券交易所" node="107334"  />
+        <subclass name="泰国证券交易所" node="107335"  />     
+        <subclass name="达卡证券交易所" node="107337"  />
+        <subclass name="尼泊尔证券交易所" node="107338"  />
+        <subclass name="卡拉奇证券交易所" node="107339"  />
+        <subclass name="科伦坡证券交易所" node="107340"  />
+        <subclass name="河内证券交易所" node="107341"  />
+        <subclass name="越南胡志明证券交易所" node="107342"  />
+        <subclass name="斐济南太平洋证券交易所" node="107343"  />
+        <subclass name="吉大港证券交易所" node="107344"  />
+        <subclass name="老挝证券交易所" node="107345"  />
+        <subclass name="柬埔寨证券所" node="108827"  />
+      </subclasses>
+      <subclasses name="中西亚" node="107346" >
+        <subclass name="哈萨克斯坦证券交易所" node="107347"  />
+        <subclass name="德黑兰证券交易所" node="107348"  />
+        <subclass name="卡塔尔交易所" node="107349"  />
+        <subclass name="沙特证券交易所" node="107350"  />
+        <subclass name="伊拉克证券交易所" node="107351"  />
+        <subclass name="叙利亚大马士革证券交易所" node="107352"  />
+        <subclass name="安曼证券交易所" node="107353"  />
+        <subclass name="科威特证券交易所" node="107354"  />
+        <subclass name="巴勒斯坦证券交易所" node="107355"  />
+	    <subclass name="纳斯达克迪拜" node="107375"  />
+	    <subclass name="阿联酋阿布扎比证券交易所" node="107376"  />
+	    <subclass name="迪拜金融市场" node="107377"  />
+      </subclasses>
+      <subclasses name="太平洋地区" node="107356" >
+        <subclass name="澳大利亚国家证券交易所" node="107358"  />
+        <subclass name="毛里求斯证券交易所" node="107360"  />
+      </subclasses>      
+  </class>
+</classes>

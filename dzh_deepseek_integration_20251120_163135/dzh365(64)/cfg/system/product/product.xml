@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root name="product">
+	<kv key="loginadvjson" tid=113><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-H.json]]></kv>
+	<kv key="loginadvjson" tid=115><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-F.json]]></kv>
+	<kv key="loginadvjson" tid=116><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-L.json]]></kv>
+	<kv key="loginadvjson" tid=73><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-M.json]]></kv>
+	<kv key="loginadvjson" tid=100><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-M.json]]></kv>
+	<kv key="loginadvjson" tid=81><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-H.json]]></kv>
+	<kv key="loginadvjson" tid=83><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-H.json]]></kv>
+	<kv key="loginadvjson" tid=125><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-H.json]]></kv>
+	<kv key="loginadvjson" tid=126><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-M.json]]></kv>
+	<kv key="loginadvjson" tid=122><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-M.json]]></kv>
+	<kv key="loginadvjson" tid=338><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-QH.json]]></kv>
+    <kv key="loginadvjson" tid=335><![CDATA[https://mnews.dzh.com.cn/pcdata/loginSuccess-YT.json]]></kv>
+</root>

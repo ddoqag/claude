@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Config>
+  <menu code="FILEOPEN" disp="打开(&amp;O)" />
+  <menu code="FILESAVEAS" disp="另存为(&amp;A)" />
+  <menu code="FILECLOSE" disp="关闭(&amp;C)" />
+  <menu code="COMPILE" disp="编译公式(&amp;L)" />
+  <menu code="SEPARATOR" />
+  <submenu name="编辑" >
+    <menu code="EDITUNDO" disp="撤消(&amp;U)" />
+    <menu code="EDITCUT" disp="剪切(&amp;T)" />
+    <menu code="EDITCOPY" disp="复制(&amp;C)" />
+    <menu code="EDITPASTE" disp="粘贴(&amp;P)" />
+    <menu code="OTHERFUNC" disp="其它公式(&amp;O)" />
+    <menu code="SEPARATOR" />
+    <menu code="FIND" disp="查找(&amp;F)" />
+    <menu code="REPLACE" disp="替换(&amp;E)" />
+    <menu code="SEPARATOR" />
+    <menu code="INSERTFNC" disp="插入函数(&amp;I)" />
+    <menu code="BUYMETHOD" disp="买入规则(&amp;R)" />
+    <menu code="SEPARATOR" />
+    <menu code="FONT" disp="字体(&amp;N)" />
+    <menu code="COLOREDIT" disp="彩色编辑器(&amp;L)" />
+  </submenu>
+  <submenu name="属性" >
+    <menu code="FORBID" disp="禁用周期(&amp;F)" />
+    <menu code="STOPCOND" disp="系统设置(&amp;S)" />
+    <menu code="PARAMWIZ" disp="参数精灵(&amp;W)" />
+    <menu code="EXPLAIN" disp="公式注释(&amp;E)" />
+  </submenu>
+  <submenu name="调试" >
+    <menu code="BEGINDEBUG" disp="开始调试\tF6" />
+    <menu code="GO" disp="执行\tF5" />
+    <menu code="RESTART" disp="重新执行\tCtrl+F5" />
+    <menu code="STOPGO" disp="停止执行\tShift+F5" />
+    <menu code="SEPARATOR" />
+    <menu code="STEPIN" disp="单步\tF11" />
+    <menu code="MULTISTEP" disp="连续单步\tCtrl+F11" />
+    <menu code="GOTO" disp="执行到光标\tF7" />
+    <menu code="SEPARATOR" />
+    <menu code="执行到光标\tF7" disp="设置断点\tF9" />
+    <menu code="VIEWVAR" disp="查看变量\tF8" />
+  </submenu>
+</Config>

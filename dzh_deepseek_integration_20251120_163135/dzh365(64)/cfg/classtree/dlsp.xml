@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+  <class name="品种报价" local="1"  scriptfile="ec1">
+ 	<subclasses name="油脂油料" node="108155">
+	    <subclass name="油脂油料" node="108072" >
+		    <group name="大连商品交易所" node="108073" />
+		</subclass>
+	</subclasses>
+	<subclasses name="谷物" node="108170">
+	    <subclass name="谷物" node="108077" >
+		   <group name="大连商品交易所" node="108078" />
+		</subclass>
+	</subclasses>
+	<subclasses name="能源" node="108131">
+	    <subclass name="能源" node="108061" >
+		   <group name="大连商品交易所" node="108063" />
+		</subclass>
+	</subclasses>
+	<subclasses name="化工" node="108143">
+        <subclass name="化工" node="108067" >
+		   <group name="大连商品交易所" node="108068" />
+		</subclass>
+	</subclasses>
+ 	<subclasses name="国际油脂油料" node="108155">
+	    <subclass name="国际油脂油料" node="108072" >
+		   <group name="CBOT-芝加哥期货交易所" node="108075" />
+		</subclass>
+	</subclasses>
+	<subclasses name="国际谷物" node="108170">
+	    <subclass name="国际谷物" node="108077" >
+		   <group name="CBOT-芝加哥期货交易所" node="108080" />
+		</subclass>
+	</subclasses>
+	<subclasses name="国际能源" node="108131">
+	        <subclass name="国际能源" node="108061" >
+	        	<group name="NYMEX-纽约商业期货交易所" node="108065" />
+	        	<group name="SGX-新加坡期货交易所" node="108066" />
+	        </subclass>
+	</subclasses>
+	<subclasses name="国际化工" node="108143">
+        <subclass name="国际化工" node="108067" >
+		      <group name="CBOT-芝加哥期货交易所" node="108071" />
+		</subclass>
+	</subclasses>
+
+  </class>
+</classes>

@@ -1,0 +1,142 @@
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertIndication(colname, type, width)
+	index = this.InsertIndicator(-1, colname,colname);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+function setColors(tableDatas,tnum,colnum,offerset)
+	table2 = tableDatas(:,tnum);
+	rows = util::GetRows(table2);
+	vv = StringUtil::zeros(rows,1);
+	for i = 1:rows 
+		if(table2(i) > 0)
+			vv(i) = 1;
+		end
+		if(table2(i) == 0)
+			vv(i) = 0;
+		end
+		if(table2(i) < 0)
+			vv(i) = -1;
+		end		
+	end
+	Print(vv);
+	this.SetCellTxtColor(colnum,vv,[5395199,5439314,5439487],offerset);
+end
+
+function setOnlyColor(tableDatas,tnum,colnum,color,offerset)
+	table2 = tableDatas(:,tnum);
+	rows = util::GetRows(table2);
+	vv = StringUtil::zeros(rows,1);
+	for i = 1:rows 
+		vv(i) = 1;
+	end
+	this.SetCellTxtColor(colnum,vv,[color,color,color],offerset);
+end
+{设置列元素值
+matrixdata 列数据
+colname    列名
+id         识别码
+start      起始数据行号，从1开始}
+function SetStatic(matrixdata, colname, id, start)
+	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end
+
+{商品脚本调用}
+function lzld()
+		
+	    this.ResetStocks();
+    	this.DeleteAllColumn();
+		indi mytdlr["macd.diff";] 
+	    indi myddlr["dmi.pdi";]
+    	indi myzdlr["ddi.ddi";]
+	     {插入数据列}	
+		InsertQuotation('序号','',35);
+		InsertQuotation('代码','S',75);
+		InsertQuotation('名称','S',90);
+		InsertQuotation('最新','',65);
+		InsertQuotation('现手','',65);
+		InsertStatic(' ',  10, 'S', 30);
+		InsertStatic('连涨/跌天',  1, 'S', 70);
+		InsertStatic('累涨/跌',  2, 'S', 70);
+		InsertStatic('累计涨幅',  3, 'S', 90);
+	    index = this.InsertIndicator(-1,'MACD',mytdlr());
+    	 this.SetColumnAttributes(index,'',75,4294967295,4294967295); 
+	    index = this.InsertIndicator(-1,'DMI',myddlr()); 
+    	 this.SetColumnAttributes(index,'',75,4294967295,4294967295); 
+	    index = this.InsertIndicator(-1,'DDI',myzdlr());
+    	 this.SetColumnAttributes(index,'',75,4294967295,4294967295); 
+ 	    InsertStatic(' ',  11, 'S', 30);	
+		InsertStatic('累计成交量',  4, 'S', 90);
+		InsertStatic('多头增仓',  5, 'S', 70);
+		InsertStatic('空头增仓',  6, 'S', 70);
+		InsertQuotation('今开','',55);
+		InsertQuotation('昨收','',65);
+		InsertQuotation('昨结算价','',70);				
+	lineIndex = 0;{一静态行}
+	this.AddStringLine('连续上涨品种');
+	
+	table1 = data::RequestData('/webquery/common/forex?__qid=lzld_122_app8798_forex&type=1');
+	Print('-----------------------------');
+	Print(table1);
+	this.SetStocks(table1(:,1),1);
+	lineIndex = lineIndex + 1;
+	SetStatic(table1(:, 7),'连涨/跌天',1,lineIndex);
+	SetStatic(table1(:, 5),'累涨/跌',2,lineIndex);
+	SetStatic(table1(:, 6),'累计涨幅',3,lineIndex);
+	SetStatic(table1(:, 8),'累计成交量',4,lineIndex);
+	SetStatic(table1(:, 9),'多头增仓',5,lineIndex);
+	SetStatic(table1(:, 10),'空头增仓',6,lineIndex);
+	{setOnlyColor(table1,7,6,5439487);}
+	setOnlyColor(table1,5,7,5395199,1);
+	setOnlyColor(table1,5,8,5395199,1);
+	setColors(table1,5,8,1);
+	{setColors(table1,6,9,1);}
+	setColors(table1,10,15,1);
+	setColors(table1,9,14,1);
+	{setColors(table1,8,13,1);}
+	
+	lineIndex = util::GetRows(table1)+2;{两静态行}
+	this.AddStringLine('连续下跌品种');
+	table1 = data::RequestData('/webquery/common/forex?__qid=lzld_122_app8798_forex&type=0');
+	Print('-----------------------------');
+	Print(table1);
+	this.SetStocks(table1(:,1),1);
+	SetStatic(table1(:, 7),'连涨/跌天',1,lineIndex);
+	SetStatic(table1(:, 5),'累涨/跌',2,lineIndex);
+	SetStatic(table1(:, 6),'累计涨幅',3,lineIndex);
+	SetStatic(table1(:, 8),'累计成交量',4,lineIndex);
+	SetStatic(table1(:, 9),'多头增仓',5,lineIndex);
+	SetStatic(table1(:, 10),'空头增仓',6,lineIndex);
+	{setOnlyColor(table1,7,6,5439487);}
+	setOnlyColor(table1,5,7,5395199,lineIndex);
+	setColors(table1,5,7,lineIndex);
+	setColors(table1,5,8,lineIndex);
+	{setColors(table1,6,9,lineIndex);}
+	setColors(table1,10,15,lineIndex);
+	setColors(table1,9,14,lineIndex);
+	{setColors(table1,8,13,lineIndex);}
+	
+end

@@ -1,0 +1,67 @@
+function bsshq1_gjb()
+	{this.DeleteAllColumn();}
+	this.ResetStocks();
+	 
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',30,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',100,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',65,0,0); 
+		index = this.InsertQuotation(-1,'最新含税价');
+		this.SetColumnAttributes(index,'',95,0,0); 
+		index = this.InsertQuotation(-1,'平均含税价');
+		this.SetColumnAttributes(index,'',95,0,0); 		
+		index = this.InsertQuotation(-1,'现量');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'买一价');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'买一量');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'卖一价');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'卖一量');
+		this.SetColumnAttributes(index,'',75,0,0); 
+		
+		index = this.InsertQuotation(-1,'增仓');
+		this.SetColumnAttributes(index,'',70,0,0); 		
+		index = this.InsertQuotation(-1,'总量');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'订货量');
+		this.SetColumnAttributes(index,'',78,0,0);
+		index = this.InsertQuotation(-1,'日增仓');
+		this.SetColumnAttributes(index,'',82,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',70,0,0); 		
+		index = this.InsertQuotation(-1,'结算价');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'昨结算价');
+		this.SetColumnAttributes(index,'',93,0,0);
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'外盘');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'内盘');
+		this.SetColumnAttributes(index,'',70,0,0); 
+
+	end
+	
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	table =['BOBRSSRV.cmdty','BOBRURV.cmdty'];
+	this.SetStocks(table,1);
+
+end
+
+

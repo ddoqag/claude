@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<navigatebars>
+	<navigatebar id="1" background="Menupic\line1backg">
+		<item id="100" type="pic" name=""  postion="1" width="65" background="Menupic\logo-1|Menupic\logo-1" />
+		<item id="1001" type="cmdid" name="" link="57739" postion="70" width="26" background="Menupic\back-default|Menupic\back-hover" secbackground="Menupic\back-selected|Menupic\back-selected" />
+		<item id="1002" type="cmdid" name="" link="57740" postion="96" width="20" background="Menupic\history-dafault|Menupic\history-hover" />
+		<item id="1003" type="cmdid" link="43306" postion="140" />
+		<item id="101" type="buttongroup" postion="1024">
+			<buttongroup id="10101" parent="101">
+				<button id="1010101" type="cmdid" name="" link="57744" width="32" background="Menupic\close|Menupic\close1"/>
+				<button id="1010102" type="cmdid" name="" link="57745" width="32" background="Menupic\max|Menupic\max1" secbackground="Menupic\medium-default|Menupic\medium-hover"/>
+				<button id="1010103" type="cmdid" name="" link="57746" width="31" background="Menupic\min|Menupic\min1" secbackground="Menupic\medium-default|Menupic\medium-hover"/>
+				<button id="1010104" type="cmdid" name="" link="57747" width="26" background="Menupic\A-default|Menupic\A-hover"/>
+				<button id="1010105" type="cmdid" name="" link="57748" width="26" background="Menupic\1-default|Menupic\1-hover"/>
+			</buttongroup>
+		</item>
+		<item id="103" parent="1" type="cmdid" link="57741" postion="600" width="100" background="Menupic\dzh365bk5|Menupic\dzh365bk5"/>
+		<item id="104" parent="1" type="firstbig" name="" postion="840" width="0" background="Menupic\line1backg|Menupic\line1backg" select="true"/>
+		<item id="117" parent="1" type="cmdid" link="57761" width="60" name="在线客服"  background="Menupic\level1btn-default|Menupic\level1btn-hover" postion="0"/>
+		<item id="106" parent="1" type="cmdid" link="57738" width="40" name="菜单"  background="Menupic\level1btn-default|Menupic\level1btn-hover" postion="0"/>
+		<item id="108" parent="1" type="cmdid" link="57759" width="40" name="常用"  background="Menupic\level1btn-default|Menupic\level1btn-hover" postion="0"/>
+		<item id="105" parent="1" type="cmdid" link="57762" width="40" name="委托" background="Menupic\level1btn-default|Menupic\level1btn-hover" postion="0"/>
+	</navigatebar>
+
+	<navigatebar id="2" background="Menupic\line2backg">
+		<item id="201" type="buttongroup" postion="1">
+			<buttongroup id="20102" parent="104">
+				<button id="200" type="pic" name=""  postion="1" width="65" background="Menupic\logo-2|Menupic\logo-2"/>
+				<button id="2001" type="pic" name="" postion="66" width="5" background="Menupic\line2backg|Menupic\line2backg"/>
+				<button id="2002" parent="-1" type="secondsmall" name="" width="26"  background="Menupic\home|Menupic\home1" />
+				<button id="201010100" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010101" parent="-1" type="secondsmall" name=" 沪深京" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9" select="true"/>
+				<button id="201010101" width="12" name="" type="murl" link="root://Pages/stock.html" background="Menupic\more-straight-default|Menupic\more-straight-hover"/>
+				<button id="201010102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010801" parent="-1" type="secondsmall" name=" 自选股" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9" />
+				<button id="201080102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010111" parent="-1" type="secondsmall" name=" 科创板" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9" />
+				<button id="201011102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010201" parent="-1" type="secondsmall" name=" 指  数" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9" />
+				<button id="201020102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010901" parent="-1" type="secondsmall" name=" 港美英" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9" />
+				<button id="201090101" width="12" name="" type="murl" link="root://Pages/stock_02.html" background="Menupic\more-straight-default|Menupic\more-straight-hover"/>
+				<button id="201090102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010301" parent="-1" type="secondsmall" name=" 基  金" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9" />
+				<button id="201030102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010401" parent="-1" type="secondsmall" name=" 商  品" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9"/>
+				<button id="201040101" width="12" name="" type="murl" link="root://Pages/commodity.html" background="Menupic\more-straight-default|Menupic\more-straight-hover"/>
+				<button id="201040102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010112" parent="-1" type="secondsmall" name=" 期  权" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9" />
+				<button id="201011202" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010501" parent="-1" type="secondsmall" name=" 债  券" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9"/>
+				<button id="201050102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010601" parent="-1" type="secondsmall" name=" 外  汇"  width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9"/>
+				<button id="201060102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2011001" parent="-1" type="secondsmall" name=" 资  讯" width="60" background="Menupic\scc1|Menupic\scc2" textleft="10" texttop="9"/>
+				<button id="201100101" width="12" name="" type="murl" link="root://Pages/news.html" background="Menupic\more-straight-default|Menupic\more-straight-hover"/>
+				<button id="201100102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="2010701" name=" 慧  信" parent="-1" width="60" type="secondsmall" background="Menupic\scc1|Menupic\scc2"  textleft="10" texttop="9"/>
+				<button id="201070102" parent="-1" type="pic" name="" width="2" background="Menupic\right-level1btn-default-margin|Menupic\right-level1btn-default-margin"/>
+				<button id="2011501" name="技术讲堂" type="cmd" link="XBROWSE?URL='http://ke.dzh.com.cn/'"  background="Menupic\scc1|Menupic\scc2" />
+				<button id="201150102" parent="-1" type="pic" name="" width="2" background="Menupic\level1btn-default-margin|Menupic\level1btn-default-margin"/>
+				<button id="201301" parent="-1" type="cmdid" name="" link="43168" width="68" background="Menupic\return|Menupic\return" postion="-1"/>
+			</buttongroup>
+		</item>
+	</navigatebar>
+	
+	<navigatebar id="3" background="Menupic\fenge3">
+		<item id="3010001" type="buttongroup" postion="5">
+			<buttongroup id="301000100" parent="2002">
+				<button id="30100011003" width="80" name="首页" type="cmd" link="CHROME?URL='root://stock/365complex/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true"/>
+				<button id="30100011002" width="80" name="近期浏览" type="cmd" link="VIEWLIST?MARKET2=jqll/近期浏览/近期浏览" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+
+				
+			</buttongroup>
+			<buttongroup id="301000101" parent="2010101">
+				<button id="30100010101" width="80" name="沪深京A" type="cmd" link="VIEWLIST?MARKET=@C沪深京A股+SH上证A股+SH上证主板+SH上证主板注册+SH上证主板核准+SH上证创新+SH科创板+SH科创成长层+SH上证CDR+SH沪伦通CDR+SH上证主板风险+SH科创板风险+SZ深证A股+SZ深证主板+SZ创业板+SZ创业板CDR+SZ深证创新+SZ深证主板CDR+SZ创业板注册+SZ创业板核准+SZ深证主板注册+SZ深证主板核准+SZ深证主板风险+SZ创业板风险+BJ北证A股&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"  select="true"/>
+				<button id="30100010112" width="80" name="板块监控" type="cmd" link="SHORTKEY?31" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100010104" width="70" name="次新股" type="cmd" link="MARKETGROUP?次新股" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100010105" width="80" name="新股申购" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/jt-html/zx-xgsg/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100010119" width="80" name="涨停分析" type="cmd" link="VIEWLIST?MARKET2=drzdt/当日涨跌停/当日涨停" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100010113" width="80" name="龙虎榜" type="cmd" link="CHROME?URL='http://lhbpcengine.dzh.com.cn/pc/pages/home.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<!-- <button id="30100010116" width="80" name="股市日历" type="cmd" link="CHROME?URL='root://stock/stockCalendarOne/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" /> -->
+				<button id="30100010109" width="80" name="股指期货" type="cmd" link="VIEWLIST?MARKET=SF金期指&amp;page=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010117" width="80" name="新三板" type="cmd" link="VIEWLIST?MARKET=SO挂牌公司&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010127" width="80" name="转债比价" type="cmd" link="CHROME?URL='https://pmd.dzh.com.cn/kzzyj/index.html?type=bjb'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" />
+				<button id="30100010114" width="80" name="业绩预告" type="cmd" link="CHROME?URL='https://ztbb.dzh.com.cn/yjyg_stock'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010120" width="60" name="慧搜" type="cmd" link="CHROME?URL='https://datadigger.dzh.com.cn/'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010121" width="80" name="大数据掘金" type="cmd" link="CHROME?URL='https://datadigger.dzh.com.cn/'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" />
+				<button id="30100010110" width="40" type="murl" name="更多" link="root://Pages/stock.html" background="Menupic\level1btn-default|Menupic\level1btn-hover"/>
+			</buttongroup>
+			
+			<buttongroup id="301000111" parent="2010111">
+				<button id="30100011101" width="70" name="行情" type="cmd" link="SHORTKEY?KCB" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red"  select="true"/>				
+				<button id="30100011104" width="70" name="资讯" type="cmd" link="CHROME?URL='https://pmd.dzh.com.cn/pmd/kcblist.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100011105" width="80" name="科创IPO" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/jt-html/zx-xgsg/index.html?checkbox=kcb'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100011108" width="70" name="受益股" type="cmd" link="CHROME?URL='https://webrelease.dzh.com.cn/sygpc/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100011110" width="70" name="学堂" type="cmd" link="XBROWSE?URL='https://webrelease.dzh.com.cn/kcbxc/pc.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+			</buttongroup>
+			<buttongroup id="301000102" parent="2010201">
+				<button id="30100010209" width="80" name="常用指数" type="cmd" link="VIEWLIST?MARKET2=cyzs/常用指数/常用指数" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true"/>
+				<button id="30100010201" width="80" name="全球指数" type="cmd" link="MARKETGROUP?指数" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010210" width="80" name="中金所" type="cmd" link="MARKETGROUP?中国金融期货交易所" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010213" width="80" name="主力合约" type="cmd" link="VIEWLIST?MARKET2=sphq_zlhy/商品/主力合约&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010211" width="80" name="富时A50期指" type="cmd" link="VIEWLIST?MARKET=SM中国A50期指&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010212" width="80" name="MSCI中国A50" type="cmd" link="VIEWLIST?MARKET=HFMSCI中国A50&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010207" width="80" name="恒生指数" type="cmd" link="VIEWLIST?MARKET=HI恒生指数&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010202" width="80" name="上证系列" type="cmd" link="VIEWLIST?MARKET2=indextree/指数系列/上证系列" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010203" width="80" name="深证系列" type="cmd" link="VIEWLIST?MARKET2=indextree/指数系列/深证系列" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010204" width="80" name="中证系列" type="cmd" link="VIEWLIST?MARKET2=indextree/指数系列/中证系列" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010205" width="80" name="巨潮指数" type="cmd" link="VIEWLIST?MARKET2=indextree/指数系列/巨潮系列" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010214" width="80" name="国证指数" type="cmd" link="VIEWLIST?MARKET=GZ&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010208" width="80" name="自定义指数" type="cmd" link="VIEWLIST?MARKET=$$&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+			</buttongroup>
+			<buttongroup id="301000103" parent="2010301">
+				<button id="30100010304" width="80" name="ETF基金" type="cmd" link="VIEWLIST?MARKET=@GETF基金+SHETF基金+SZETF基金&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true"/>
+				<button id="30100010303" width="80" name="封闭基金" type="cmd" link="VIEWLIST?MARKET=@G封闭基金+SH上证基金+SZ深证基金&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010305" width="80" name="LOF基金" type="cmd" link="VIEWLIST?MARKET=@GLOF基金+SH上证LOF+SZ深证LOF&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010312" width="80" name="T+0基金" type="cmd" link="VIEWLIST?MARKET2=jjbk_T/基金板块/T+0基金&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010301" width="80" name="沪深REITs" type="cmd" link="VIEWLIST?MARKET=@G沪深REITs+SH基础设施REITs+SZ基础设施REITs&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<!-- <button id="30100010306" width="80" name="基金净值" type="cmd" link="CHROME?URL='root://fund/npv/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010307" width="80" name="基金排行" type="cmd" link="CHROME?URL='root://fund/npv/ranking.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010310" width="80" name="基金公告" type="cmd" link="CHROME?URL='root://platform/bulletin/index.html?type=fund'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010311" width="80" name="基金研究" type="cmd" link="CHROME?URL='root://stock/yjbg-112/index.html?treeid=zxbg_type-jjyj&amp;name=%E6%8C%89%E7%B1%BB%E5%9E%8B_%E5%9F%BA%E9%87%91%E7%A0%94%E7%A9%B6'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010308" width="80" name="宝类产品排行" type="cmd" link="CHROME?URL='root://fund/npv/chart.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/> -->
+				<button id="30100010309" width="80" name="基金资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/qtfl_news/index.html?id=3'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				
+			</buttongroup>
+			<buttongroup id="301000104" parent="2010501">
+				<button id="30100010401" width="80" name="债券行情" type="cmd" link="MARKETGROUP?债券" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true"/>
+				<button id="30100010407" width="80" name="转债比价" type="cmd" link="CHROME?URL='https://pmd.dzh.com.cn/kzzyj/index.html?type=bjb'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" />
+				<button id="30100010408" width="80" name="申购一览" type="cmd" link="CHROME?URL='https://pmd.dzh.com.cn/kzzyj/index.html'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" />
+				<button id="30100010409" width="80" name="上市首日表现" type="cmd" link="CHROME?URL='https://pmd.dzh.com.cn/kzzyj/index.html?type=srbx'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" />
+				<button id="30100010402" width="80" name="债券资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/qtfl_news/index.html?id=5'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<!-- <button id="30100010403" width="80" name="债券公告" type="cmd" link="CHROME?URL='root://platform/bulletin/index.html?type=bond'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010404" width="80" name="债券研究" type="cmd" link="CHROME?URL='root://stock/yjbg-112/index.html?treeid=zxbg_zxbg-A10010&amp;name=%E6%8C%89%E7%B1%BB%E5%9E%8B-%E5%9B%BA%E5%AE%9A%E6%94%B6%E7%9B%8A'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/> -->
+				<button id="30100010405" width="80" name="可转债行情" type="cmd" link="marketgroup?可转债" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<!-- <button id="30100010406" width="80" name="可债券研究" type="cmd" link="shortkey?BDCB" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" /> -->
+			</buttongroup>
+			<buttongroup id="301000105" parent="2010401">
+				<button id="30100010501" width="80" name="中金所" type="cmd" link="MARKETGROUP?中国金融期货交易所" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true"/>
+				<button id="30100010502" width="80" name="上海期货" type="cmd" link="VIEWLIST?MARKET=SC上海期货&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010514" width="80" name="能源中心" type="cmd" link="VIEWLIST?MARKET=NC能源中心&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010503" width="80" name="郑州商品" type="cmd" link="VIEWLIST?MARKET=ZC郑州商品&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010504" width="80" name="大连商品" type="cmd" link="VIEWLIST?MARKET=DC大连商品&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010510" width="80" name="广期所" type="cmd" link="VIEWLIST?MARKET=GF广期所&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010505" width="80" name="上海黄金" type="cmd" link="VIEWLIST?MARKET=SG上海黄金&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010507" width="80" name="主力合约" type="cmd" link="VIEWLIST?MARKET2=sphq_zlhy/商品/主力合约&amp;PAGE=品种相关" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red"/>
+				<button id="30100010506" width="80" name="海外商品" type="cmd" link="MARKETGROUP?国外商品" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100010509" width="40" type="murl" name="更多" link="root://Pages/commodity.html" background="Menupic\level1btn-default|Menupic\level1btn-hover"/>
+			</buttongroup>
+			<buttongroup id="301000301" parent="2010101">
+				<button id="30100030101" width="80" name="股指期货" type="cmd" link="VIEWLIST?MARKET=SF金期指&amp;page=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030102" width="80" name="全球指数" type="cmd" link="VIEWLIST?MARKET=@G全球指数+XM美洲指数+XA亚太指数+XE欧洲指数&amp;page=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030103" width="80" name="恒生指数" type="cmd" link="VIEWLIST?MARKET=HI恒生指数&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030104" width="80" name="富时A50期指" type="cmd" link="VIEWLIST?MARKET=SM中国A50期指&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030105" width="40" type="cmd" name="返回" link="shortkey?60" background="Menupic\level1btn-default|Menupic\level1btn-hover"/>
+			</buttongroup>
+			<buttongroup id="301300123" parent="2010112">
+				<button id="30130012301" width="80" name="期权T报价" type="cmd" link="CMD?OPENDOCUMENT&amp;TYPE=OPTIONT" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true"/>
+				<button id="30130012302" width="80" name="多空比率" type="cmd" link="CMD?OPENDOCUMENT&amp;TYPE=OPTIONHOLDER" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30130012303" width="80" name="上证期权" type="cmd" link="VIEWLIST?MARKET=HO上证期权&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30130012304" width="80" name="深证期权" type="cmd" link="VIEWLIST?MARKET=ZO&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30130012305" width="80" name="股指期权" type="cmd" link="VIEWLIST?MARKET=SF股指期权&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30130012306" width="80" name="上期期权" type="cmd" link="VIEWLIST?MARKET=AO上期期权&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30130012307" width="80" name="大连期权" type="cmd" link="VIEWLIST?MARKET=DO大连期权&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30130012311" width="80" name="广州期权" type="cmd" link="VIEWLIST?MARKET=GT广州期权&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30130012308" width="80" name="郑州期权" type="cmd" link="VIEWLIST?MARKET=EO郑州期权&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30130012310" width="120" name="能源中心期权" type="cmd" link="VIEWLIST?MARKET=EP能源中心&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30130012309" width="80" name="期权ABC" type="cmd" link="XBROWSE?URL='http://edu.sse.com.cn/best/video/optionABC/'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+			</buttongroup>
+			<buttongroup id="301000303" parent="2010101">
+				<button id="30100030301" width="80" name="新三板行情" type="cmd" link="VIEWLIST?MARKET=SO挂牌公司&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030312" width="80" name="创新层" type="cmd" link="VIEWLIST?MARKET=SO创新层&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030313" width="80" name="基础层" type="cmd" link="VIEWLIST?MARKET=SO基础层&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030309" width="80" name="三板指数" type="cmd" link="VIEWLIST?MARKET=SO三板指数&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030310" width="80" name="三板申购" type="cmd" link="VIEWLIST?MARKET=SO发行申购&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100030311" width="80" name="三板要约" type="cmd" link="VIEWLIST?MARKET=SO三板要约&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<!-- <button id="30100030304" width="80" name="新三板研究" type="cmd" link="CHROME?URL='root://stock/yjbg-112/index.html?treeid=zxbg_zxbg-A10024&amp;name=%E6%96%B0%E4%B8%89%E7%89%88%E7%A0%94%E6%8A%A5'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/> -->
+				<button id="30100030307" width="40" type="cmd" name="返回" link="shortkey?60" background="Menupic\level1btn-default|Menupic\level1btn-hover"/>
+			</buttongroup>
+			<buttongroup id="301000403" parent="2010901">
+				<button id="30100040311" width="80" name="港股通" type="cmd" link="MARKETGROUP?港股通" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" select="true"/>
+				<button id="30100040302" width="80" name="沪深通" type="cmd" link="MARKETGROUP?沪深通" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red"/>
+				<button id="30100040309" width="80" name="港股通额度" type="cmd" link="CHROME?URL='https://xwzz.dzh.com.cn/sgt/index.php'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red"/>
+				<button id="30100040303" width="80" name="港股通资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/hgt_news/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040301" width="80" name="港股行情" type="cmd" link="VIEWLIST?MARKET=HK香港主板&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040315" width="80" name="港股板块" type="cmd" link="VIEWLIST?MARKET=K$HK行业板块&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<!-- <button id="30100040312" width="80" name="AH股比价分析" type="cmd" link="CHROME?URL='root://stock/ah/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/> -->
+				<button id="30100040304" width="70" name="中概股" type="cmd" link="VIEWLIST?MARKET=@C中国概念股+@B中国概念股0106547" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040305" width="80" name="知名美股" type="cmd" link="VIEWLIST?MARKET=@C知名美股+@B知名美股0107663" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040307" width="80" name="全部美股" type="cmd" link="VIEWLIST?MARKET=@C全部美股+NY纽交所+NS纳斯达克&amp;PAGE=品种相关" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040306" width="80" name="全球指数" type="cmd" link="VIEWLIST?MARKET=@G全球指数+XM美洲指数+XA亚太指数+XE欧洲指数&amp;page=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040314" width="80" name=" 沪伦通GDR" type="cmd" link="VIEWLIST?MARKET=LT&amp;page=行情" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" />
+				<button id="30100040308" width="40" type="murl" name="更多" link="root://Pages/stock_02.html" background="Menupic\level1btn-default|Menupic\level1btn-hover"/>
+			</buttongroup>	
+			<buttongroup id="301000401" parent="2010901">
+				<button id="30100040101" width="80" name="港股通" type="cmd" link="MARKETGROUP?港股通" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true"/>
+				<button id="30100040107" width="80" name="沪深通" type="cmd" link="MARKETGROUP?沪深通" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040109" width="80" name="港股通额度" type="cmd" link="CHROME?URL='https://xwzz.dzh.com.cn/sgt/index.php'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040102" width="80" name="港股通资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/hgt_news/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040103" width="80" name="港股全行情" type="cmd" link="VIEWLIST?MARKET=HK香港主板&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<!-- <button id="30100040104" width="80" name="港股通研究" type="cmd" link="CHROME?URL='root://stock/yjbg-112/index.html?treeid=type_gsyj-gsyj_hgt&amp;name=沪港通'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100040105" width="80" name="AH股比价分析" type="cmd" link="CHROME?URL='root://stock/ah/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/> -->
+			</buttongroup>	
+			<buttongroup id="301000501" parent="2010801">
+				<button id="30100050101" width="80" name="自选股" type="cmd" link="MARKETGROUP?自选股" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" select="true"/>
+				<button id="30100050102" width="80" name="自选股公告" type="cmd" link="CHROME?URL='https://ztbb.dzh.com.cn/ggdqhz_gp_stock?navType=ggdq_stock&amp;jsonKey=stock&amp;key=zxggg&amp;token=#V3TOKEN#'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100050103" width="80" name="自选股资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/zxg_news/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100050104" width="80" name="自选股研报" type="cmd" link="CHROME?URL='https://ztbb.dzh.com.cn/ybdqhz_gp_stock?navType=ybdq_stock&amp;jsonKey=stock&amp;key=zxgyb&amp;token=#V3TOKEN#'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100050106" width="80" name="自选股导入" type="cmd" link="STKTRANSPORT?" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100050107" width="80" name="近期浏览" type="cmd" link="VIEWLIST?MARKET2=jqll/近期浏览/近期浏览" background="Menupic\level3recom-default-yellow|Menupic\level3recom-hover-yellow"/>
+			</buttongroup>
+			<buttongroup id="301000601" parent="2011001">
+				<button id="30100060101" width="80" name="最新资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/zxzx_news/index.html'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" select="true"/>
+				<button id="30100060102" width="80" name="股票资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/zx_news/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100060103" width="80" name="大报资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/qtfl_news/index.html?id=1'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100060105" width="80" name="政策动态" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/qtfl_news/index.html?id=6'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100060106" width="80" name="经济资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/qtfl_news/index.html?id=2'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100060110" width="80" name="行业资讯" type="cmd" link="CHROME?URL='http://pcengine.dzh.com.cn/pcnews/hy_news/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100060112" width="80" name="科创板资讯" type="cmd" link="CHROME?URL='https://pmd.dzh.com.cn/pmd/kcblist.html'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red"/>
+				<button id="30100060109" width="40" type="murl" name="更多" link="root://Pages/news.html" background="Menupic\level1btn-default|Menupic\level1btn-hover"/>
+			</buttongroup>
+			<buttongroup id="301000802" parent="2010601">
+				<button id="30100080201" width="85" name="人民币系列" type="cmd" link="VIEWLIST?MARKET=FX人民币系列&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true"/>
+				<button id="30100080204" width="95" name="人民币中间价" type="cmd" link="VIEWLIST?MARKET=IB人民币中间价&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080206" width="105" name="香港人民币期货" type="cmd" link="VIEWLIST?MARKET=HF货币期货&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080205" width="80" name="主要外汇" type="cmd" link="VIEWLIST?MARKET=FX主要外汇&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080202" width="80" name="外汇资讯" type="cmd" link="CHROME?URL='root://news/112news/news_list.html?menuid=00900E000&amp;dataSelect=37014&amp;prefix=false#'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+			</buttongroup>
+			<buttongroup id="301000801" parent="2010101">
+				<button id="30100080101" width="80" name="板块综合" type="cmd" link="VIEWLIST?MARKET=B$板块指数&amp;PAGE=行情&amp;sorton=14" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" select="true" />
+				<button id="30100080102" width="80" name="行业板块" type="cmd" link="VIEWLIST?MARKET=B$行业板块&amp;PAGE=行情&amp;sorton=14" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100080103" width="80" name="概念板块" type="cmd" link="VIEWLIST?MARKET=B$概念板块&amp;PAGE=行情&amp;sorton=14" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" /> 
+				<button id="30100080104" width="80" name="其它概念" type="cmd" link="VIEWLIST?MARKET=B$其它概念&amp;PAGE=行情&amp;sorton=14" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+				<button id="30100080105" width="80" name="申万行业" type="cmd" link="VIEWLIST?MARKET2=gphq_swhy/申万行业&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080109" width="80" name="港股板块" type="cmd" link="VIEWLIST?MARKET2=gg_hy/港股行业&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080110" width="80" name="美股板块" type="cmd" link="VIEWLIST?MARKET2=qbmg_mghy/美股行业&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080111" width="80" name="中概股板块" type="cmd" link="MARKETGROUP?全部中概股" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080106" width="80" name="自选股" type="cmd" link="VIEWLIST?MARKET=@S&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080107" width="80" name="全部板块" type="cmd" link="VIEWLIST?MARKET=@B&amp;PAGE=行情" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue"/>
+				<button id="30100080108" width="40" type="cmd" name="返回" link="shortkey?60" background="Menupic\level1btn-default|Menupic\level1btn-hover"/>
+			</buttongroup>
+			<buttongroup id="301000803" parent="2010701">
+				<button id="30100080302" width="80" name="首 页" type="cmd"  link="CHROME?URL='pcworkstation.dzh.com.cn/index/home?token=#V3TOKEN#'" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red" select="true"/>
+				<button id="30100080303" width="80" name="慧 信" type="cmd" link="CMD?GWCHAT&amp;TYPE=SHOW" background="Menupic\level3recom-default-red|Menupic\level3recom-hover-red"/>
+				<button id="30100080301" width="80" name="财富俱乐部" type="cmd"  link="CHROME?URL='https://gmxx.dzh.com.cn/gmxx/index.html'" background="Menupic\level3recom-default-blue|Menupic\level3recom-hover-blue" />
+			</buttongroup>
+		</item>
+	</navigatebar>		
+
+</navigatebars>

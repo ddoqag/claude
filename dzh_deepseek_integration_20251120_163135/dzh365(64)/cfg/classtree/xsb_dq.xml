@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="新三板地区" local="1">
+                <subclass name="安徽" node="101675" scriptfile="gpfl"/>
+                <subclass name="北京" node="101676" scriptfile="gpfl"/>
+                <subclass name="福建" node="101677" scriptfile="gpfl"/>
+                <subclass name="甘肃" node="101678" scriptfile="gpfl"/>
+                <subclass name="广东" node="101679" scriptfile="gpfl"/>
+                <subclass name="广西" node="101680" scriptfile="gpfl"/>
+                <subclass name="贵州" node="101681" scriptfile="gpfl"/>
+                <subclass name="河北" node="101682" scriptfile="gpfl"/>
+                <subclass name="河南" node="101683" scriptfile="gpfl"/>
+                <subclass name="黑龙江" node="101684" scriptfile="gpfl"/>
+                <subclass name="湖北" node="101685" scriptfile="gpfl"/>
+                <subclass name="湖南" node="101686" scriptfile="gpfl"/>
+                <subclass name="江苏" node="101687" scriptfile="gpfl"/>
+                <subclass name="江西" node="101688" scriptfile="gpfl"/>
+                <subclass name="辽宁" node="101689" scriptfile="gpfl"/>
+                <subclass name="宁夏" node="101690" scriptfile="gpfl"/>
+                <subclass name="山东" node="101691" scriptfile="gpfl"/>
+                <subclass name="陕西" node="101692" scriptfile="gpfl"/>
+                <subclass name="上海" node="101693" scriptfile="gpfl"/>
+                <subclass name="四川" node="101694" scriptfile="gpfl"/>
+                <subclass name="天津" node="101695" scriptfile="gpfl"/>
+                <subclass name="新疆" node="101696" scriptfile="gpfl"/>
+                <subclass name="云南" node="101697" scriptfile="gpfl"/>
+                <subclass name="浙江" node="101698" scriptfile="gpfl"/>
+                <subclass name="重庆" node="101699" scriptfile="gpfl"/>
+                <subclass name="海南" node="101701" scriptfile="gpfl"/>
+                <subclass name="吉林" node="101702" scriptfile="gpfl"/>
+                <subclass name="内蒙古" node="101703" scriptfile="gpfl"/>
+                <subclass name="青海" node="101704" scriptfile="gpfl"/>
+                <subclass name="山西" node="101705" scriptfile="gpfl"/>
+                <subclass name="西藏" node="101706" scriptfile="gpfl"/>
+	</class>
+</classes>

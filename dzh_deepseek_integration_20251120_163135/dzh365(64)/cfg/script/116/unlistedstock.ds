@@ -1,0 +1,72 @@
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+function InsertStaticColor(colname, id, type, width,color)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width,color,4294967295); 
+end
+
+
+{设置列元素值
+matrixdata 列数据
+colname    列名
+id         识别码
+start      起始数据行号，从1开始}
+function SetStatic(matrixdata, colname, id, start)
+	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end
+
+function unlistedstock()
+	this.DeleteAllColumn();
+	this.ResetStocks();
+	{插入数据列}
+	InsertQuotation('序号','',37);
+	InsertStaticColor('代码',13,'S',70,16777042);
+	InsertStaticColor('名称',14,'S',90,5439487);
+	InsertStatic('申购代码',1,'S',70);
+	InsertStatic('申购日期',2,'S',90);
+	InsertStatic('证监会行业',3,'S',90);
+	InsertStatic('发行价',4,'S',70);
+	InsertStatic('发行后市盈率',5,'S',110);
+	InsertStatic('申购上限(万股)',6,'S',120);
+	InsertStatic('申购资金上限(万元)',7,'S',150);
+	InsertStatic('发行总数(万股)',8,'S',120);
+	InsertStatic('网上发行(万股)',9,'S',120);
+	InsertStatic('中签公布',10,'S',90);
+	InsertStatic('中签率',11,'S',90);
+	InsertStatic('上市日期',12,'S',90);
+	table = data::RequestData('/stock/Stock/clientCfg/IpoShares/getUnlistIPOsInfo.mod');
+	this.SetStocks(table(:,1),1);
+	SetStatic(table(:, 3), '代码', 13,0);
+	SetStatic(table(:, 4), '名称', 14,0);
+	SetStatic(table(:, 5), '申购代码', 1,0);
+	SetStatic(table(:, 6), '申购日期', 2,0);
+	SetStatic(table(:, 7), '证监会行业', 3,0);
+	SetStatic(table(:, 8), '发行价', 4,0);
+	SetStatic(table(:, 9), '发行后市盈率', 5,0);
+	SetStatic(table(:, 10), '申购上限(万股)',6,0);
+	SetStatic(table(:, 11), '申购资金上限(万元)',7,0);
+	SetStatic(table(:, 12), '发行总数(万股)',8,0);
+	SetStatic(table(:, 13), '网上发行(万股)',9,0);
+	SetStatic(table(:, 14), '中签公布',10,0);
+	SetStatic(table(:, 15), '中签率',11,0);
+	SetStatic(table(:, 16), '上市日期',12,0);
+	
+end
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="上证债券" local="1">
+		<subclass name="上证债券" node="1" scriptfile="hq_szzq"/>
+		<subclass name="深证债券" node="1" scriptfile="hq_szzq2"/>
+	</class>
+</classes>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="全球主要汇率" local="1">
+		<subclass name="基本汇率" node="114010" scriptfile="qqzyhl_zyhl"/>
+		<subclass name="交叉汇率" node="114011" scriptfile="qqzyhl_zyjchl"/>
+		<subclass name="小币种汇率" node="114012" scriptfile="qqzyhl_zyxbz"/>
+	</class>  
+</classes>

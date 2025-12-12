@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="纽约COMEX" local="1">
+		<subclass name="纽约COMEX" node="112912" scriptfile="nyCOMEX"/>
+		<subclass name="COMEX黄金" node="112913" scriptfile="spbk"/>
+		<subclass name="COMEX白银" node="112915" scriptfile="spbk"/>
+		<subclass name="COMEX精铜" node="112917" scriptfile="spbk"/>
+	</class>
+</classes>

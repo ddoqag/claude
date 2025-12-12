@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="其他市场" scriptfile="defaultMarket" >  
+ 		  <subclass name="南非约翰内斯堡证券交易所" node="107386"  />
+		  <subclass name="埃及证券交易所" node="107372"  />
+	  <subclasses name="南非" node="107385" >
+		  <subclass name="博茨瓦纳证券交易所" node="107387"  />
+		  <subclass name="马拉维证券交易所" node="107388"  />
+		  <subclass name="纳米比亚证券交易所" node="107389"  />
+		  <subclass name="斯威士兰证券交易所" node="107390"  />
+		  <subclass name="津巴布韦证券交易所" node="107391"  />
+	  </subclasses>
+	  <subclasses name="北非" node="107363" >
+		  <subclass name="佛得角证券交易所" node="107364"  />
+		  <subclass name="加纳证券交易所" node="107365"  />
+		  <subclass name="科特迪瓦证券交易所" node="107366"  />
+		  <subclass name="卡萨布兰卡证券交易所" node="107367"  />
+		  <subclass name="尼日利亚证券交易所" node="107368"  />
+		  <subclass name="突尼斯证券交易所" node="107369"  />
+		  <subclass name="阿尔及尔证券交易所" node="107370"  />
+		  <subclass name="巴林证券交易所" node="107371"  />
+		  <subclass name="黎巴嫩贝鲁特证券交易所" node="107373"  />
+		  <subclass name="阿曼马斯喀特证券交易所" node="107374"  />
+		  <subclass name="尼罗河证券交易所" node="107378"  />
+	  </subclasses>
+	  <subclasses name="中非" node="107379" >
+		  <subclass name="喀麦隆杜阿拉证券交易所" node="107380"  />
+		  <subclass name="坦桑尼亚证券交易所" node="107381"  />
+		  <subclass name="乌干达证券交易所" node="107382"  />
+		  <subclass name="赞比亚证券交易所" node="107383"  />
+		  <subclass name="肯尼亚内罗毕证券交易所" node="107384"  />
+	  </subclasses>       
+  </class>
+</classes>

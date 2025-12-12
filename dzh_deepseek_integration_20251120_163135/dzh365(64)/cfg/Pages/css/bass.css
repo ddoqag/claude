@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+html, body{margin:0px; padding:0px; height:100%; background: #f9f9f9;}
+
+html, body, div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td , img, a{ margin: 0; padding: 0;  border:none;}
+body{color:#333;}
+html{overflow-y:scroll; }
+table{border-collapse:collapse;}
+img { border: 0 none; vertical-align: top; }
+ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size:12px; font-family:"宋体";  }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+a{color:#444; text-decoration:none;}
+a:visited {text-decoration:none; }
+
+a:active, a:hover {color:#ba2636;text-decoration:underline;}
+a:focus { outline: none; }
+.mt1{height:1px; overflow:hidden;}
+.mt3{height:3px; overflow:hidden;}
+.mt5{height:5px; overflow:hidden;}
+.mt6{height:6px; overflow:hidden;}
+.mt8{ height:8px; overflow:hidden;}
+.mt10{ height:10px; overflow:hidden;}
+.mt13{ height:13px; overflow:hidden;}
+.mt15{ height:15px; overflow:hidden;}
+.mt20{ height:20px; overflow:hidden;}
+.mt30{ height:30px; overflow:hidden;}
+.mt40{height:37px; overflow:hidden;}
+.mb10{margin-bottom:10px;}
+.ml5{margin-left:5px;}
+.mr{margin-right:80px;}
+.mr5{margin-right:5px;}
+.pl2{padding:2px;}
+.pl1{padding-left:1px;}
+.p2{padding:2px;}
+.p5{padding:5px;}
+.p6{padding:6px;}
+.p8{padding:8px;}
+.p9{padding:9px;}
+.p10{padding:10px;}
+.p12{padding:12px;}
+.p14{padding:14px;}
+.p15{padding:15px;} 
+.p20{padding:20px;}
+.p30{padding:30px;}
+.pl3{padding-left:3px;}
+.pl10{padding-left:10px;}
+.pl13{padding-left:13px;}
+.pl20{padding-left:20px;}
+.pb0{padding-bottom:0px;}
+.pb5{padding-bottom:5px;}
+.pt5{padding-top:5px;}
+
+.f12{font-size:12px;}
+.f14{font-size:14px; }
+.fl{float:left;}
+.f16{font-size:16px;}
+.fb{font-weight:bold;}
+.red{color:#b80000;}
+.redb{color:#b80000; font-weight:bold;}
+.green{ color:#1f8b06;}
+.c666{color:#666;}
+.c999{color:#999;}
+.cfff{color:#fff;}
+.blue{color:#005ab9;}
+.wid125{width:125px; overflow:hidden;}
+.wid80{width:80px; overflow:hidden;}
+.wid78{width:75px;}
+.wid116{width:116px;}
+.wid50{width:50px;}
+.photo{border:1px solid #e6e6e6; }
+.photo1{border:1px solid #e6e6e6; padding:2px; background:#fff;}
+.photo2{border:1px solid #e6e6e6; padding:1px; background:#fff; }
+.photo3{border:4px solid #e8e8e8;}
+.photo4{ border:1px solid #e8e8e8; padding:4px; background:#fff;}
+.photo5{ border:1px solid #ddd; padding:1px; background:#fff;}
+.photo6{ border:1px solid #bbdbfa; padding:4px; background:#fff;}
+.cl{clear:both; font-size:0px; line-height:0px; overflow:hidden; height:0px;}
+.underline{ text-decoration:underline;}
+.fl{float:left;}
+.fr{float:right;}
+.maincontain{width:1000px; margin:0 auto;}
+
+
+
+
+
+
+.nav {
+ 
+  background: url(../images/navbgrepeat.png) repeat-x;
+  height: 43px;position: relative;
+  z-index: 5;
+
+}
+.nav ul { position: relative;
+  z-index: 5;}
+.nav ul li {
+  float: left;
+  text-align: center;
+  line-height: 34px;
+}
+.nav ul li a {
+  color: #fff;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  background: url(../images/img3.png) -338px -626px;
+  width: 114px;
+  height: 37px;
+}
+.nav ul li a:hover {
+  color: #fff;
+  background: url(../images/img1.png) -318px -538px;
+}
+.nav ul .li1 {
+  _display: inline;
+  margin-top:-9px;
+  z-index:1500;
+  position:relative;width: 142px;
+  position:absolute; right:0;
+}
+.nav ul .li1 a {
+  width: 142px;
+
+  display: block;
+  color:#ff0; 
+  font-weight:900;  
+/*  background: url(../images/img1.png) -296px -362px; */
+  font-size:16px;
+}
+.nav ul .li1 a:hover {
+  width: 142px;
+  background:none;
+  
+}
+
+
+.top {
+  background: url(../images/topimgrepeat.jpg) repeat-x;
+  height: 28px;
+  overflow: hidden;
+}
+.top .top950 {
+  color: #666;
+  line-height: 26px;
+  width: 950px;
+  margin: 0 auto;
+}
+.top .top950 p {
+  float: right;
+  font-family: arial;
+}
+.top .top950 p span {
+  display: inline-block;
+  background: url(../images/img1.png) 0 -1103px no-repeat;
+  padding-left: 33px;
+  margin-left: 5px;
+}
+.logoArea {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 950px;
+  margin: 0 auto;
+}
+.logoArea .tel {
+  display: inline-block;
+  background: url(../images/img1.png) -295px -1744px;
+  width: 322px;
+  height: 48px;
+  float: right;
+}
+.logoArea .logo {
+  display: inline-block;
+  background: url(../images/jince-logo1.png) no-repeat ;
+  width:500px;
+  height: 51px;
+}

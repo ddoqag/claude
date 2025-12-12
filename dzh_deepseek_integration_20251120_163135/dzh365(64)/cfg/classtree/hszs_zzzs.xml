@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="中证指数" local="1">
+                <subclass name="中证行业" node="112482" scriptfile="gpfl"/>
+                <subclass name="中证风格" node="112480" scriptfile="gpfl"/>
+                <subclass name="中证规模" node="112478" scriptfile="gpfl"/>
+                <subclass name="中证主题" node="112481" scriptfile="gpfl"/>
+                <subclass name="中证策略" node="112479" scriptfile="gpfl"/>
+                <subclass name="中证定制" node="112489" scriptfile="gpfl"/>
+                <subclass name="AMAC行业" node="112486" scriptfile="gpfl"/>
+                <subclass name="300一级行业" node="112483" scriptfile="gpfl"/>
+                <subclass name="300二级行业" node="112484" scriptfile="gpfl"/>
+                <subclass name="中证基金" node="100645" scriptfile="gpfl"/>
+                <subclass name="中证债券" node="100644" scriptfile="gpfl"/>
+                <subclass name="中证海外" node="112488" scriptfile="gpfl"/>
+	</class>
+</classes>

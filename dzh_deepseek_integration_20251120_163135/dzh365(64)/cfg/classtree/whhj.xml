@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="外汇黄金"  local="1">
+		<subclass name="外汇" node="1" scriptfile="whhj_wh"/>
+		<subclass name="国际贵金属" node="1" scriptfile="whhj_gjgjs"/>
+	</class>  
+</classes>

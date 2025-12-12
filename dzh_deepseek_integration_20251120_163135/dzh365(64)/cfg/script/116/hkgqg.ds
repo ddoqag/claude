@@ -1,0 +1,34 @@
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width, 4294967295, 0); 
+end
+
+function hkgqg()
+	this.ResetStocks();
+	if this.ColCount() == 0 
+		InsertQuotation('序号','',35);   
+		InsertQuotation('代码','',50);
+		InsertQuotation('名称','',165);
+		InsertQuotation('最新','',70);
+		InsertQuotation('涨幅','',70);
+		InsertQuotation('总手','',80);
+		InsertQuotation('现手','',80);
+		InsertQuotation('总额','',80);
+		InsertQuotation('昨收','',80);
+		InsertQuotation('今开','',80);
+		InsertQuotation('最高','',80);
+		InsertQuotation('最低','',80);
+		InsertQuotation('委买价','',80);
+		InsertQuotation('委卖价','',80);
+		InsertQuotation('涨速','',80);
+		InsertQuotation('振幅','',80);
+		InsertQuotation('量比','',80);
+		InsertQuotation('委比','',80);
+		InsertQuotation('委差','',80);
+	end
+	this.SetStocks(['HIHSCEI'],1);
+	this.AddStringLine('国企股');
+	table = data::RequestData('service=blockinfo&type=leaf&source=local&block=国企股&depth=-1&response_times=1&response_mode=0');
+	Print(table);
+	this.SetStocks(table(:,1),1);
+end

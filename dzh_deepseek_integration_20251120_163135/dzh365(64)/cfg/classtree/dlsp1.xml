@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+	<class name="品种报价" local="1"  scriptfile="gs12">
+		<subclass name="豆粕" node="109728" />
+		<subclass name="棕榈油" node="109722" />
+		<subclass name="豆油" node="109730" />
+		<subclass name="聚乙烯" node="109726" />
+		<subclass name="玉米" node="109723" />
+		<subclass name="焦炭" node="109724" />
+		<subclass name="焦煤" node="111328" />
+		<subclass name="豆一" node="109729" />
+		<subclass name="聚氯乙烯" node="109725" />
+		<subclass name="豆二" node="109727" />
+		<subclass name="铁矿石" node="107499" />
+		<subclass name="鲜鸡蛋" node="107538" />
+		<subclass name="纤维板" node="107547" />
+		<subclass name="胶合板" node="107548" />
+	</class>
+</classes>
+
+

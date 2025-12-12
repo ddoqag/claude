@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="外围市场中概股" scriptfile="sp1" local="1">
+		<subclass name="NYSE中国" node="800010" scriptfile="nyselp">
+		</subclass>
+		<subclass name="Nasdaq中国" node="800009" scriptfile="nasdaqlp">
+		</subclass>
+	</class>  
+</classes>

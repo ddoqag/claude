@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="黄金" local="1">
+		<subclass name="COMEX黄金" node="112913" scriptfile="spbk"/>
+	</class>
+</classes>

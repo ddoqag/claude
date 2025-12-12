@@ -1,0 +1,17 @@
+function hkggtPush()
+	table1 = this.GetPushData('hkggtLoad1');
+	str = '   总额度:   2500  亿元';
+    if(system::IsNull(table1) == 0)
+        if(util::GetRows(table1) ~= 0)
+			if(table1(1,1) == 'HKHSI.index')
+				str = '   总额度:   2500  亿元'+'         今日额度:    '+table1(1,5)/'100000000.000'+'  亿元'+'         今日余额:    '+table1(1,6)/'100000000.000'+'  亿元';
+				this.ChangeStringLine(0, str);
+				return;
+			else
+			end
+        end
+    end
+	hkggtLoad();
+	
+end
+

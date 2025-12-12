@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="贵金属"  local="1">
+		<subclass name="LME" node="109687" scriptfile="gjs_lem"/>
+		<subclass name="上海期货" node="109690" scriptfile="gjs_shqh"/>
+		<subclass name="行情总览" node="109692" scriptfile="gjs_gjs"/>
+		<subclass name="外汇" node="109692" scriptfile="gjs_wh"/>
+	</class>  
+</classes>

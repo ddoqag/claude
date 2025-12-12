@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="全部中概股" local="1">
+                <subclass name="全部中概股" node="106547" scriptfile="gpfl"/>
+	</class>
+</classes>

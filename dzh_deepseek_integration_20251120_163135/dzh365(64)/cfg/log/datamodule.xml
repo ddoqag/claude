@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312"?>
+<DzhLog>
+<!--要加载的category的name是C1和C2-->
+<Load>DataService</Load>
+
+<!--name是DataService的category-->
+<category name="DataService">
+<!--category要加载的Appender的name是DataService-->
+<Appender>DataService</Appender>
+</category>
+
+<category name="DataProxy_DZH2">
+<Appender>DataProxy_DZH2</Appender>
+</category>
+
+<!--name是DataService的Appender，类型是File，路径是log\dataservice.txt， 大小是2M-->
+<appender name="DataService" type="File" path="datamodule\DataService.txt" size="10"/>
+<appender name="DataProxy_DZH2" type="File" path="datamodule\DataProxy_DZH2.txt" size="10"/>
+</DzhLog>

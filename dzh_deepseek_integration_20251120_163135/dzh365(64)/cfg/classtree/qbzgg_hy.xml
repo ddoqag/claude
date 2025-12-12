@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="中概股行业" local="1">
+                <subclass name="能源" node="107667" scriptfile="gpfl"/>
+                <subclass name="原材料" node="107668" scriptfile="gpfl"/>
+                <subclass name="工业" node="107669" scriptfile="gpfl"/>
+                <subclass name="非日常生活" node="107670" scriptfile="gpfl"/>
+                <subclass name="日常消费品" node="107671" scriptfile="gpfl"/>
+                <subclass name="医疗保健" node="107672" scriptfile="gpfl"/>
+                <subclass name="金融" node="107673" scriptfile="gpfl"/>
+                <subclass name="信息技术" node="107674" scriptfile="gpfl"/>
+                <subclass name="电信业务" node="107675" scriptfile="gpfl"/>
+                <subclass name="公用事业" node="107676" scriptfile="gpfl"/>
+	</class>
+</classes>

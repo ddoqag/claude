@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+  <class name="期权"  local="1">
+      <subclasses name="股指期权" node="700000"  scriptfile="ioall" >
+        <subclass name="股指期权" node="700001" scriptfile="ioall" />
+		<subclass name="股指看涨" node="700002"  scriptfile="iolookup" />
+		<subclass name="股指看跌" node="700003"  scriptfile="iolookdown" />
+      </subclasses>
+
+  </class>
+ </classes>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GB2312"?>
+<blocks>
+	<block Name="万得" fdir="" ftype="1">
+		<file path="\WWT\users\LocalUserSectors.xml" depth="2" />
+	</block>
+	<block Name="钱龙新一代" fdir="" ftype="2">
+		<file path="\UsrCfg\4XGUEST*\block\userblkcomm.ini" depth="2" />
+	</block>
+	<block Name="钱龙旗舰" fdir="" ftype="2">
+		<file path="\qlusrcfg\block\selfblk.ini" depth="2" />
+	</block>
+	<block Name="通达信" fdir="" ftype="3">
+		<file path="\T0002\blocknew\ZXG.blk" depth="2" />
+	</block>
+	<block Name="东方财富通" fdir="" ftype="4">
+		<file path="\config\user\lastuser.ini" depth="2" />
+	</block>
+	<block Name="大智慧" fdir="" ftype="5">
+		<file path="\userdata\block\自选股.blk" depth="2" />
+	</block> 
+	<block Name="益盟操盘手" fdir="" ftype="6">
+		<file path="\Group\自定义板块\自选股.blk" depth="2" />
+	</block>
+	<block Name="同花顺" fdir="" ftype="7">
+		<file path="\users.ini" depth="2" />
+	</block>
+</blocks>

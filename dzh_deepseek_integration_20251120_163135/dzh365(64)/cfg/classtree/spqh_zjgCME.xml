@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="芝加哥CME" local="1">
+		<subclass name="芝加哥CME" node="19" scriptfile="zjgCME"/>
+		<subclass name="棕榈油" node="112759" scriptfile="spbk"/>
+		<subclass name="饲牛" node="112760" scriptfile="spbk"/>
+		<subclass name="活牛" node="112761" scriptfile="spbk"/>
+	</class>
+</classes>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Config>
+  <menu code="NEWTABLE" disp="新建数据表(&amp;A)" />
+  <menu code="TABLEOPEN" disp="打开数据表(&amp;B)" />
+  <menu code="FILENEW" disp="新建文件(&amp;N)" />
+  <menu code="FILEOPEN" disp="打开文件(&amp;O)" />
+  <menu code="FILESAVE" disp="保存文件(&amp;S)" />
+  <menu code="FILESAVEAS" disp="另存文件(&amp;A)" />
+  <menu code="FILECLOSE" disp="关闭文件(&amp;C)" />  
+  <menu code="SEPARATOR" />
+  <menu code="EDITCOPY" disp="复制到剪切板(&amp;F)" />
+  <menu code="SAVEBITMAP" disp="保存屏幕图形" />
+  <menu code="STOCKCREATE" disp="打开新窗口" />
+  <submenu name="打印">
+    <menu code="FILEPRINT" disp="打印..." />
+    <menu code="PRINTPRE" disp="打印预览" />
+    <menu code="PRISETUP" disp="打印设置..." />
+  </submenu>
+  <menu code="SEPARATOR" />
+  <!-- <menu code="SELSTOCK" disp="选择股票(&amp;L)" />
+  <!--“选择股票”快捷键由S改为L-->
+  <!-- <menu code="PREVDATE" disp="打开历史回忆(&amp;H)" /> -->
+  
+  
+  
+  <!--“复制到剪切板”快捷键由C改为F-->
+  <!-- <menu code="SEPARATOR" />
+  <menu code="APPEXIT" disp="退出(&amp;X)" /> --> -->
+</Config>	  

@@ -1,0 +1,13 @@
+function listNews(obj)
+	params = '{"stocks":"'+obj+'","fids":"C1,C2,C3,C16,C8","dcategory":"1","sort":"C16:-1","skip":0,"amount":20}';
+	params = util::Base64Encode(params);
+
+	req = 'service=rpc&so=jso-ui-zhpnews.jar&function=gw.sh.func.MyOptionalStocksNewsRequest&paraencode=base64&parameter=';
+	req = req + params;
+	req = req + '&response_times=1&response_mode=0';
+	data = data::RequestData(req);
+	result = data(2);
+
+	this.Send(result);
+end
+

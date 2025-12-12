@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="GB2312"?>
+<rules target="quote_dyna">
+  <rule id="rule_dyna1">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=open</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">开盘价</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna2">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=sellprice</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">五档卖价</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna3">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=high</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">最高价</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna4">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=low</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">最低价</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna4">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=new</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">最新价</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna5">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=volume</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_volume</action>           
+      <action type="new_name">总手</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna6">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=amount</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_amount</action>           
+      <action type="new_name">总额</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna7">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=nowvol</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_nowvol</action>           
+      <action type="new_name">现手</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna8">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=avgbuy</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">委买均价</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna9">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=allbuyvol</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_volume</action>           
+      <action type="new_name">总买</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna10">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=avgsell</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">委卖均价</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna11">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=allsellvol</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_volume</action>           
+      <action type="new_name">总卖</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna12">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=tickcount</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_tickcount</action>           
+      <action type="new_name">成交笔数</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna13">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=advstop</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">涨停</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna14">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=decstop</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">跌停</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna15">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=inner</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_inner</action>           
+      <action type="new_name">内盘</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna16">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=t_dyna</condition>
+      <condition>colname=outter</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_outter</action>           
+      <action type="new_name">外盘</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna17">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=avgprice</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_price</action>           
+      <action type="new_name">均价</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna18">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=sellvol</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_volume</action>           
+      <action type="new_name">五档卖量</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna19">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=updnratio</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_updnrat</action>           
+      <action type="new_name">涨幅</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna20">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=exchange</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_exratio</action>           
+      <action type="new_name">换手</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna21">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=volratio</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_volratio</action>           
+      <action type="new_name">量比</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna22">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=updn</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_updn</action>           
+      <action type="new_name">涨跌</action>
+    </actions>
+  </rule>
+  <rule id="rule_dyna23">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+      <condition>colname=volpertick</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="fmt_func">cfmt_volpertick</action>           
+      <action type="new_name">每笔</action>
+    </actions>
+  </rule>
+  <rule id="rule_tick">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tabletype=t_tick</condition>
+      <condition>colname=amount|buyprice</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">0</action>
+    </actions>
+  </rule>
+</rules>

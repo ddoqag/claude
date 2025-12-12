@@ -1,0 +1,26 @@
+function listNotice(obj,category)
+	{Category意义如下：
+		3公司公告，4历史公告，5权证公告，6港股公告，
+		7基金公告，8机构公告，10债券公告，14集合理财公告，
+		15信托计划公告，16保险产品公告，17银行个人理财公告
+	}
+	params = '{"type":'+category+',"pageNum":1,"pageSize":20,"objCode":"'+obj+'","bdate":"","edate":""}';
+	params = util::Base64Encode(params);
+
+	req = 'service=rpc&so=jso-ui-notice_new.jar&function=gw.sh.func.NoticeSearchRequest&paraencode=base64&parameter=';
+	req = req + params;
+	req = req + '&response_times=1&response_mode=0';
+	data = data::RequestData(req);
+	result = data(2);
+	rows = system::LineNum(result);
+
+	display = table::Create('Id:s;Category:s;Title:s;Time:s;Org:s', rows, 'data');
+	for i=1:1:rows
+		display(i,1) = result(i,3); {取字段3:C1}
+		display(i,2) = result(i,1); {取字段1:TYPE}
+		display(i,3) = result(i,5); {取字段5:C3}
+		display(i,4) = result(i,4); {取字段4:C2}
+		display(i,5) = result(i,6); {取字段6:C4}
+	end
+	this.Send(display);
+end

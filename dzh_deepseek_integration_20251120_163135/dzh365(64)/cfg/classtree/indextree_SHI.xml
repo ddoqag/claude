@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1" scriptfile="index_s" >
+               		<subclass name="上证综合指数" node="104427" />
+        			<subclass name="上证成份指数" node="104428" />
+        			<subclass name="上证风格指数" node="104429" />
+        			<subclass name="上证主题指数" node="104430" />
+        			<subclass name="上证策略指数" node="104431" />
+        			<subclass name="上证基金指数" node="104432" />
+        			<subclass name="上证债券指数" node="104433" />
+        			<subclass name="上证定制指数" node="104434" />
+        			<subclass name="上证行业指数" node="104435" />
+				    <subclass name="上证重点指数" node="108781"  />
+   
+  </class>
+</classes>

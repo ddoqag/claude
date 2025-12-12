@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GB2312"?>
+<stockmarks version="1">
+    <priority abh="10" default="10"/>
+    <blks>
+        <blk labels='HK' filepath="\USERDATA\block\全部港股通0119243.blk" iconpath="\img\stockmarks\T.png" property="0x01"   str="T" priority="0" tip="港股通标的"/>
+	<blk labels='SH' filepath="\USERDATA\block\沪股通0101843.blk" iconpath="\img\stockmarks\T.png" property="0x08"   str="T" tip="沪股通标的"/>
+	<blk labels='SZ' filepath="\USERDATA\block\深股通0118850.blk" iconpath="\img\stockmarks\T.png" property="0x800"   str="T" tip="深股通标的"/>
+	<blk labels='SH,SZ,BJ' filepath="\data\B$\block\993752.blk" iconpath="\img\stockmarks\R.png" property="0x04" str="R" tip="融资融券标的"/>
+	<blk labels='SH,SZ' filepath="\data\B$\block\994345.blk" iconpath="\img\stockmarks\M.png" property="0x20" str="M" tip="明晟中国（MSCI）指数成分股"/>
+	<blk labels='SH,SZ' filepath="\USERDATA\block\GDR基础券0107734.BLK" iconpath="\img\stockmarks\G.png" property="0x100" str="G" tip="全球互联互通市场存托凭证的基础券"/>
+	<blk labels='SH,SZ' filepath="\USERDATA\block\注册制主题基金0130797.BLK" iconpath="\img\stockmarks\20.png" property="0x1000" str="±20%" tip="涨跌幅为正负20%"/>
+	<blk labels='SH,SZ' filepath="\USERDATA\block\融资融券基金.BLK" iconpath="\img\stockmarks\R.png" property="0x200" str="R" tip="融资融券标的"/>
+	<blk labels='SH' filepath="\USERDATA\block\科创成长层(存量)0135992.BLK" iconpath="\img\stockmarks\CH1.png" property="0x10000" str="成1" tip="存量科创成长层股票"/>
+	<blk labels='SH' filepath="\USERDATA\block\科创成长层(增量)0135993.BLK" iconpath="\img\stockmarks\CH.png" property="0x20000" str="成" tip="新注册科创成长层股票"/>
+    </blks>
+    <subtypes>
+        <subtype label="SH" subtype="15" iconpath="\img\stockmarks\Q.png" property="0x8000" str="Q"/>
+        <subtype label="SZ" subtype="15" iconpath="\img\stockmarks\Q.png" property="0x10" str="Q"/>
+		<subtype label="SH" subtype="20" iconpath="\img\stockmarks\K.png" property="0x40" str="K" tip="上交所科创板个股"/>
+		<subtype label="SZ" subtype="16" iconpath="\img\stockmarks\C.png" property="0x02" str="C" tip="深交所CDR"/>
+    <subtype label="SZ" subtype="17" iconpath="\img\stockmarks\C.png" property="0x4000" str="C" tip="深交所CDR"/>
+	<subtype label="BJ" subtype="0" iconpath="\img\stockmarks\BJ.png" property="0x80" str="BJ" tip="北证A股"/>
+	<subtype label="SH" subtype="25" iconpath="\img\stockmarks\Z.png" property="0x2000" str="Z" tip="注册制下发行的股票"/>
+	<subtype label="HK" subtype="8" iconpath="\img\stockmarks\双.png" property="0x400" str="双" tip="双柜台-此柜台为人民币交易柜台"/>
+    </subtypes>
+</stockmarks>

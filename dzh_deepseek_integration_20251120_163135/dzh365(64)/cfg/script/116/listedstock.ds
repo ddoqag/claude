@@ -1,0 +1,65 @@
+{在列尾插入一列行情，无返回值
+colname 列名
+type    数据类型，例如：'S'
+width   列宽}
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+{设置列元素值
+matrixdata 列数据
+colname    列名
+id         识别码
+start      起始数据行号，从1开始}
+function SetStatic(matrixdata, colname, id, start)
+	this.SetStaticData(matrixdata, this.FindStatic(colname , id, 0), start);
+end
+
+function listedstock()
+	this.DeleteAllColumn();
+	this.ResetStocks();
+	{插入数据列}
+	InsertQuotation('序号','',37);
+	InsertQuotation('代码','S',70);
+	InsertQuotation('名称','S',90);
+	InsertQuotation('最新','',65);
+	InsertQuotation('涨跌','',70);
+	InsertQuotation('涨幅','',70);
+	InsertQuotation('总手','',75);
+	InsertQuotation('市盈率','',72);
+	InsertQuotation('换手率','',75);
+	InsertQuotation('现手','',70);
+	InsertQuotation('总额','',70);
+	InsertQuotation('上市日期','',90);
+	InsertStatic('发行价',2, 'S',70);
+	InsertStatic('发行市盈率',3, 'S',80);
+	InsertQuotation('昨收','',70);
+	InsertQuotation('今开','',70);
+	InsertQuotation('最高','',70);
+	InsertQuotation('最低','',70);
+	InsertQuotation('市净率','',70);
+	InsertQuotation('量比','',70);
+	InsertStatic('发行总数(万股)',4,'S',110);
+	InsertStatic('网上发行(万股)',5,'S',110);
+	InsertStatic('打新收益',6,'S',90);
+	table = data::RequestData('/stock/Stock/clientCfg/IpoShares/getListedIPOsInfo.mod');
+	this.SetStocks(table(:,1),1);
+	SetStatic(table(:, 5), '发行价', 2,0);
+	SetStatic(table(:, 6), '发行市盈率', 3,0);
+	SetStatic(table(:, 7), '发行总数(万股)', 4,0);
+	SetStatic(table(:, 8), '网上发行(万股)', 5,0);
+	SetStatic(table(:, 9), '打新收益',6,0);
+	
+end
+

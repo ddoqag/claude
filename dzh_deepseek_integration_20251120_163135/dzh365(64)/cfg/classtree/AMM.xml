@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="美洲市场" scriptfile="defaultMarket" >
+      <subclass name="多伦多证券交易所" node="107296"  />
+	  <subclass name="墨西哥证券交易所" node="107298"  />     
+	  <subclass name="布宜诺斯艾利斯证券交易所" node="107301"  />
+	  <subclass name="智利证券交易所" node="107300"  />
+	  <subclass name="哥伦比亚证券交易所" node="107309"  />
+      <subclasses name="北美洲" node="107278" >
+        <subclass name="美国证券交易所" node="107279"  />
+        <subclass name="美国OTC市场" node="107280" />
+	    <subclasses name="波士顿证券交易所">
+		<subclass name="波士顿股票交易所 A-H" node="108751" />
+		<subclass name="波士顿股票交易所 I-T" node="108752" />
+		<subclass name="波士顿股票交易所 U-Z" node="108753" />						 
+	</subclasses>			  
+	<subclasses name="芝加哥期权交易所">
+		<subclass name="芝加哥期权交易所 A-H" node="108754" />
+		<subclass name="芝加哥期权交易所 I-T"  node="108755" />
+		<subclass name="芝加哥期权交易所 U-Z" node="108756" />
+	</subclasses>		 
+	<subclasses name="Direct Edge(EDGA)">
+		<subclass name="Direct Edge(EDGA) A-H" node="108757" />
+		<subclass name="Direct Edge(EDGA) I-T"  node="108758" />
+		<subclass name="Direct Edge(EDGA) U-Z" node="108759" />
+	</subclasses>        
+	<subclasses name="Direct Edge (EDGX)">
+		<subclass name="Direct Edge(EDGX) A-H" node="108763" />
+		<subclass name="Direct Edge(EDGX) I-T"  node="108764" />
+		<subclass name="Direct Edge(EDGX) U-Z" node="108765" />
+	</subclasses> 
+	   <subclass name="芝加哥证券交易所" node="107286"  />
+        <subclass name="国际证券交易所" node="107287"  />      
+	<subclasses name="NYSE Arca">
+		<subclass name="NYSE Arca A-H" node="108766" />
+		<subclass name="NYSE Arca I-T"  node="108767" />
+		<subclass name="NYSE Arca U-Z" node="108768" />
+	</subclasses>	  	
+	<subclasses name="BATS">
+		<subclass name="BATS A-H" node="108748" />
+		<subclass name="BATS I-T"  node="108749" />
+		<subclass name="BATS U-Z" node="108750" />
+	</subclasses>
+	<subclass name="纳斯达克ADF" node="107290"  />
+        <subclass name="纳斯达克OMX" node="107291"  />
+   	<subclasses name="BATS-Y">
+		<subclass name="BATS-Y A-H" node="108760" />
+		<subclass name="BATS-Y I-T"  node="108761" />
+		<subclass name="BATS-Y U-Z" node="108762" />
+	</subclasses>
+	    <subclass name="费城证券交易所" node="107293"  />
+        <subclass name="美国OTC市场(电子公告栏)" node="107294"  />
+        <subclass name="辛辛那提国家证券交易所" node="107295"  />
+        <subclass name="加拿大国家证券交易所" node="107297"  />
+        <subclass name="百慕大证券交易所" node="107305"  />
+      </subclasses>
+      <subclasses name="拉丁美洲" node="107299" >
+        <subclass name="巴哈马国际证券交易所" node="107303"  />
+        <subclass name="巴巴多斯证券交易所" node="107304"  />
+		<subclass name="圣保罗证券交易所" node="107302"  />
+        <subclass name="开曼群岛证券交易所" node="107307"  />
+        <subclass name="智利电子交易所" node="107308"  />
+        <subclass name="瓜亚基尔证券交易所" node="107310"  />
+        <subclass name="基多证券交易所" node="107311"  />
+        <subclass name="萨尔瓦多证券交易所" node="107312"  />
+        <subclass name="牙买加证券交易所" node="107313"  />
+        <subclass name="巴拿马证券交易所" node="107314"  />
+        <subclass name="利马证券交易所" node="107315"  />
+        <subclass name="特立尼达和多巴哥证券交易所" node="107316"  />
+        <subclass name="蒙得维的亚证券交易所" node="107317"  />
+        <subclass name="加拉加斯证券交易所" node="107318"  />
+        <subclass name="东加勒比证券交易所" node="107319"  />
+	    <subclass name="哥斯达黎加证券交易所" node="107336"  />
+	  </subclasses>
+
+ 
+  </class>
+</classes>

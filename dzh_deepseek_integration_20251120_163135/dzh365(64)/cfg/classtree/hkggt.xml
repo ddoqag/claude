@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="港股通"  local="1">
+		<subclass name="港股通额度" node="900001" scriptfile="hkggt"/>
+	</class>  
+</classes>

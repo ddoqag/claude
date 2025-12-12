@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="申万行业" local="1">
+                <subclass name="SW农林牧渔" node="113281" scriptfile="gpfl"/>
+                <subclass name="SW采掘" node="113303" scriptfile="gpfl"/>
+                <subclass name="SW化工" node="113314" scriptfile="gpfl"/>
+                <subclass name="SW钢铁" node="113352" scriptfile="gpfl"/>
+                <subclass name="SW有色金属" node="113356" scriptfile="gpfl"/>
+                <subclass name="SW电子" node="113372" scriptfile="gpfl"/>
+                <subclass name="SW汽车" node="113389" scriptfile="gpfl"/>
+                <subclass name="SW家用电器" node="113400" scriptfile="gpfl"/>
+                <subclass name="SW食品饮料" node="113410" scriptfile="gpfl"/>
+                <subclass name="SW纺织服装" node="113423" scriptfile="gpfl"/>
+                <subclass name="SW轻工制造" node="113438" scriptfile="gpfl"/>
+                <subclass name="SW医药生物" node="113450" scriptfile="gpfl"/>
+                <subclass name="SW公用事业" node="113464" scriptfile="gpfl"/>
+                <subclass name="SW交通运输" node="113477" scriptfile="gpfl"/>
+                <subclass name="SW房地产" node="113494" scriptfile="gpfl"/>
+                <subclass name="SW商业贸易" node="113499" scriptfile="gpfl"/>
+                <subclass name="SW休闲服务" node="113511" scriptfile="gpfl"/>
+                <subclass name="SW银行" node="113523" scriptfile="gpfl"/>
+                <subclass name="SW非银金融" node="113526" scriptfile="gpfl"/>
+                <subclass name="SW建筑材料" node="113536" scriptfile="gpfl"/>
+                <subclass name="SW建筑装饰" node="113545" scriptfile="gpfl"/>
+                <subclass name="SW电气设备" node="113563" scriptfile="gpfl"/>
+                <subclass name="SW机械设备" node="113582" scriptfile="gpfl"/>
+                <subclass name="SW国防军工" node="113606" scriptfile="gpfl"/>
+                <subclass name="SW计算机" node="113615" scriptfile="gpfl"/>
+                <subclass name="SW传媒" node="113621" scriptfile="gpfl"/>
+                <subclass name="SW通信" node="113633" scriptfile="gpfl"/>
+                <subclass name="SW综合" node="113533" scriptfile="gpfl"/>
+	</class>
+</classes>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="贵金属"  local="1">
+		<subclass name="天津贵金属" node="109693" scriptfile="gjs_tjgjs"/>
+	</class>  
+</classes>

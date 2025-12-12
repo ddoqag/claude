@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="GB2312"?>
+<newspages>
+	<!-- type的词典：
+		0:指数 1:股票 2:基金 3:债券 4:其它股票 5:选择权 6:外汇 7:期货 8:期指 9:认购证
+		10:ETF 11:LOF 12:可转债 13:信托 14:权证 15:回购 16:商品现货 17:股票基金 18:债券型基金 19:混合型基金
+		20:保本型基金 21:货币一般基金 22:货币净值基金 23:短期理财基金 24:QDII基金 25:拆借 26:利率
+	-->
+	<newspage>
+		<market>SH{type=1},SZ{type=1},SO,BJ</market>
+		<item name="公告" key="listNoticeByStock" obj="stk" request="http://mnews.dzh.com.cn/wap/data/ipad/stock/#MARKET#/#LABEL2#/#LABEL#/gsgg/1.json" link="CHROME?URL='https://ztbb.dzh.com.cn/ggdqhz_gp_stock?navType=ggdq_stock&amp;jsonKey=stock&amp;key=hsjag_1001'" type=2/>
+		<item name="公司新闻" key="listNewsByStock" obj="stk" request="http://mnews.dzh.com.cn/wap/data/ipad/stock/#MARKET#/#LABEL2#/#LABEL#/gsxw/1.json" link="CHROME?URL='http://mnews.dzh.com.cn/pczixun/quicknews/index.html?obj=#UNILABEL#'" type=2/>
+		<item name="研究报告" key="listReportByStock" obj="stk" request="http://mnews.dzh.com.cn/wap/data/ipad/stock/#MARKET#/#LABEL2#/#LABEL#/yjbg/1.json" link="CHROME?URL='https://ztbb.dzh.com.cn/ybdqhz_gp_stock?navType=ybdq_stock&amp;jsonKey=stock&amp;key=lxfl_101'" type=2/>
+	</newspage>
+	<!-- <newspage>
+		<market>SH{type=3},SH{type=12},SZ{type=3},SZ{type=12}</market>
+		<item name="公告" key="listNoticeByBond" obj="stk" request="/rpc?so=jso-ui-notice_new.jar&amp;function=gw.sh.func.NoticeSearchRequest&amp;paraencode=base64&amp;response_times=1&amp;response_mode=0&amp;parameter=##BASE64{{&quot;type&quot;:10,&quot;pageNum&quot;:1,&quot;pageSize&quot;:20,&quot;objCode&quot;:&quot;##stk##&quot;,&quot;bdate&quot;:&quot;&quot;,&quot;edate&quot;:&quot;&quot;}}##" link="CHROME?URL='root://platform/bulletin/index.html?type=bond&amp;obj=#OBJ#'&amp;NAVBARID=30100011106" type=1 dict="2,0,4,3,5"/>
+		<item name="公司新闻" key="listNewsByBond" obj="stk" request="http://mnews.dzh.com.cn/wap/data/ipad/stock/#MARKET#/#LABEL2#/#LABEL#/gsgg/1.json" link="CHROME?URL='root://news/zongheping/news_list.html?forward=true&amp;menuid=00100200A&amp;search_Stocks=true&amp;stock_code=#OBJ#'" type=2/>
+		<item name="研究报告" key="listReportByBond" obj="stk" request="service=script&amp;script=listReport(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+	<newspage>
+		<market>FX{type=6},IB{type=6}</market>
+		<item name="外汇观察" key="whgcfxib" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.OtherKLineNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;20&quot;,&quot;flag&quot;:&quot;4&quot;}}##"/>
+		<item name="外汇要闻" key="whywfxib" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.OtherKLineNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;20&quot;,&quot;flag&quot;:&quot;3&quot;}}##"/>
+	</newspage>
+	<newspage>
+		<market>SH{type=0},SZ{type=0}</market>
+		<item name="新闻" key="xwshsz" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.CompetitiveProductsNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;30&quot;}}##" type=1/>
+		<item name="晨报" key="cbshsz" obj="" request="/rpc?so=jso-html5-stockrr.jar&amp;function=gw.sh.func.StockRRTreeRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;treeid&quot;:&quot;A10002&quot;,&quot;page&quot;:&quot;1&quot;,&quot;pagesize&quot;:&quot;20&quot;}}##" type=1 dict="18,&quot;9&quot;,4,8,3"/>
+		<item name="数据" key="sjshsz" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.SSECompositeIndexDataNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;30&quot;,&quot;flag&quot;:&quot;1&quot;}}##" type=1/>
+	</newspage>
+	<newspage>
+		<market>SH{type=15},SZ{type=15}</market>
+		<item name="新闻" key="listNewsOfHbsc" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.SearchNewsFromSolrRequest&amp;paraencode=base64&amp;response_times=1&amp;response_mode=0&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C4,C16,C31,CC98,CC99,C8&quot;,&quot;dcategory&quot;:&quot;1&quot;,&quot;sort&quot;:&quot;C16:-1&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:20,&quot;menuid&quot;:&quot;000001000&quot;}}##" type=1 dict="0,1,2,4,8"/>
+	</newspage>
+	<newspage>
+		<market>OF,00{marketlabel=OF}</market>
+		<item name="基金公告" key="listNoticeByFund" obj="stk" request="/rpc?so=jso-ui-notice_new.jar&amp;function=gw.sh.func.NoticeSearchRequest&amp;paraencode=base64&amp;response_times=1&amp;response_mode=0&amp;parameter=##BASE64{{&quot;type&quot;:7,&quot;pageNum&quot;:1,&quot;pageSize&quot;:20,&quot;objCode&quot;:&quot;##stk##&quot;,&quot;bdate&quot;:&quot;&quot;,&quot;edate&quot;:&quot;&quot;}}##" link="CHROME?URL='root://platform/bulletin/index.html?type=fund&amp;obj=#OBJ#'" type=1 dict="2,0,4,3,5"/>
+		<item name="市场新闻" key="scxwof" obj="stk" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.OtherKLineNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;20&quot;,&quot;flag&quot;:&quot;2&quot;}}##"/>
+	</newspage>
+	<newspage>
+		<market>SH{type=2},SH{type=10},SZ{type=2},SZ{type=10},SZ{type=11}</market>
+		<item name="基金公告" key="listNoticeByFund" obj="stk" request="/rpc?so=jso-ui-notice_new.jar&amp;function=gw.sh.func.NoticeSearchRequest&amp;paraencode=base64&amp;response_times=1&amp;response_mode=0&amp;parameter=##BASE64{{&quot;type&quot;:7,&quot;pageNum&quot;:1,&quot;pageSize&quot;:20,&quot;objCode&quot;:&quot;##stk##&quot;,&quot;bdate&quot;:&quot;&quot;,&quot;edate&quot;:&quot;&quot;}}##" link="CHROME?URL='root://platform/bulletin/index.html?type=fund&amp;obj=#OBJ#'" type=1 dict="2,0,4,3,5"/>
+		<item name="市场新闻" key="scxwshsz" obj="stk" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.OtherKLineNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;20&quot;,&quot;flag&quot;:&quot;2&quot;}}##"/>
+	</newspage> -->
+	<newspage>
+		<market>HK</market>                                                              
+		<item name="公告" key="listNoticeByHkStock" obj="stk" request="http://mnews.dzh.com.cn/wap/data/ipad/stock/#MARKET#/#LABEL2#/#LABEL#/gsgg/1.json" link="CHROME?URL='https://ztbb.dzh.com.cn/ggdqhz_gp_stock?navType=ggdq_stock&amp;jsonKey=stock&amp;key=hsjag_1001'" type=2/>
+		<item name="公司新闻" key="listNewsByHkStock" obj="stk" request="http://mnews.dzh.com.cn/wap/data/ipad/stock/#MARKET#/#LABEL2#/#LABEL#/gsxw/1.json" link="CHROME?URL='http://mnews.dzh.com.cn/pczixun/quicknews/index.html?obj=#UNILABEL#'" type=2/>
+		<item name="港股研究" key="listReportByHkStock" obj="stk" request="http://mnews.dzh.com.cn/wap/data/ipad/stock/#MARKET#/#LABEL2#/#LABEL#/yjbg/1.json" link="CHROME?URL='https://ztbb.dzh.com.cn/ybdqhz_gp_stock?navType=ybdq_stock&amp;jsonKey=stock&amp;key=lxfl_101'" type=2/>
+	</newspage>
+	<!-- <newspage>
+		<market>SC,DC,ZC</market>
+		<item name="品种资讯" key="pzzxscdczc" obj="stk" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.OtherKLineNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;20&quot;,&quot;flag&quot;:&quot;1&quot;,&quot;objs&quot;:&quot;##stk##&quot;}}##"/>
+		<item name="机构研究" key="jgyjscdczc" obj="stk" request="service=script&amp;script=listspqhjgyj(&apos;##stk##&apos;);&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+	<newspage>
+		<market>SF{type=8}</market>
+		<item name="最新动态" key="zxdtsf" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.SSECompositeIndexDataNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;30&quot;,&quot;flag&quot;:&quot;3&quot;}}##"/>
+		<item name="机构观点" key="jggdsf" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.SSECompositeIndexDataNewsRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C6,C8&quot;,&quot;skip&quot;:&quot;0&quot;,&quot;amount&quot;:&quot;30&quot;,&quot;flag&quot;:&quot;4&quot;}}##"/>
+	</newspage>
+	<newspage>
+		<market>SF{type=7}</market>
+		<item name="国债期货" key="gzqhsf" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.SearchNewsFromSolrRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C16,C8&quot;,&quot;dcategory&quot;:&quot;1&quot;,&quot;skip&quot;:0,&quot;amount&quot;:20,&quot;menuid&quot;:&quot;000001006&quot;}}##"/>
+		<item name="货币市场" key="hbscsf" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.SearchNewsFromSolrRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C16,C8&quot;,&quot;dcategory&quot;:&quot;1&quot;,&quot;skip&quot;:0,&quot;amount&quot;:20,&quot;menuid&quot;:&quot;000001007&quot;}}##"/>
+	</newspage>
+	<newspage>
+		<market>WI</market>
+		<item name="债券新闻" key="zqxw" obj="" request="service=script&amp;script=getzqxw();&amp;response_times=1&amp;cache_timeout=0"/>
+		<item name="货币市场" key="hbscsf" obj="" request="/rpc?so=jso-ui-zhpnews.jar&amp;function=gw.sh.func.SearchNewsFromSolrRequest&amp;paraencode=base64&amp;parameter=##BASE64{{&quot;fids&quot;:&quot;C1,C2,C3,C16,C8&quot;,&quot;dcategory&quot;:&quot;1&quot;,&quot;skip&quot;:0,&quot;amount&quot;:20,&quot;menuid&quot;:&quot;000001007&quot;}}##"/>
+	</newspage>
+	<newspage>
+		<market>00{marketLabel=IB}{type=3}</market>
+		<item name="公告" key="ggib" obj="stk" request="service=script&amp;script=getggib();&amp;response_times=1&amp;cache_timeout=0"/>
+		<item name="公司新闻" key="gsxwib" obj="stk" request="service=script&amp;script=getgsxwib();&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+	<newspage>
+		<market>CX,SG</market>
+		<item name="金属新闻" key="jsxwcxsg" obj="" request="service=script&amp;script=getjsxwcxsg();&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage>
+	<newspage>
+		<market>HF</market>
+		<item name="国际经济" key="gjjjhf" obj="" request="service=script&amp;script=getgjjjhf();&amp;response_times=1&amp;cache_timeout=0"/>
+	</newspage> -->
+	
+</newspages>

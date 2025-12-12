@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import url("core.css"); */
+
+.popup_frm {
+	height: 463px;
+	width: 730px;
+	background-color: #f3f3f1;
+}
+.popup_frm .top {
+	height: 110px;
+	background-color: #3380d0;
+}
+.popup_frm .title {
+	margin-top: 25px;
+	background-image: url(../image/title.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 50px;
+}
+.popup_frm .msg {
+	height: 110px;
+	width: 608px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	color: #222222;
+	font-size: 16px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+	line-height: 30px;
+	letter-spacing: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.popup_frm .msg span {
+	font-size: 16px;
+	color: #b51010;
+}
+.popup_frm .info {
+	display: block;
+	width: 590px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: 100px;
+	padding-top: 20px;
+}
+.popup_frm .info li {
+	height: 30px;
+	width: 295px;
+	float: left;
+	font-size: 16px;
+	overflow: hidden;
+}

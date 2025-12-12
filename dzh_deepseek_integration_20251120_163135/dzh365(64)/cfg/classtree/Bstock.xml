@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="B股行情"  local="1">
+		<subclass name="上证B股" node="900000" scriptfile="B_sh"/>
+		<subclass name="深证B股" node="900002" scriptfile="B_sz"/>
+	</class>  
+</classes>

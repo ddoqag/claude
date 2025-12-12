@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<logincommands>
+	<logincommand sequencenumber=1 cmd="WINDOW?1;navigate?'file://#DZH2#/cfg/pages/notice.html#DZHPOPUP(240,240,600,420)#'"/>
+</logincommands>

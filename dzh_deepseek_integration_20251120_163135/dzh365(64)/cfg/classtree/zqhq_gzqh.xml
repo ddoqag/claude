@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="国债期货" local="1">
+		<subclass name="国债期货" node="1" scriptfile="sp_gzqh"/>
+		<subclass name="国债期货仿" node="1" scriptfile="hq_gzqhf"/>
+	</class>
+</classes>

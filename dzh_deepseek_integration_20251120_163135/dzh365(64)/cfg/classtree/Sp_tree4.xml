@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+  <class name="商品指数"  local="1"   scriptfile="ec4">
+      <subclass name="全球商品指数" node="107604">
+        <group name="商品" node="107605" />
+        <group name="农业" node="107609" />
+        <group name="能源" node="107612" />
+        <group name="金属" node="107615" />
+      </subclass>
+  </class>
+</classes>

@@ -1,0 +1,35 @@
+function InsertQuotation(colname, type, width)
+	index = this.InsertQuotation(-1, colname);
+	this.SetColumnAttributes(index, type, width, 4294967295, 0); 
+end
+
+
+{在列尾插入一列静态数据，无返回值
+colname 列名
+id      识别码
+type    数据类型，例如：'S'
+width   列宽}
+function InsertStatic(colname, id, type, width)
+	index = this.InsertStatic(-1, colname, id);
+	this.SetColumnAttributes(index, type, width,4294967295,4294967295); 
+end
+
+function hkggtLoad()
+	this.ResetStocks();
+	this.DeleteAllColumn();
+	if this.ColCount() == 0 
+	
+		InsertStatic('港股通额度',4,'S',1440); 
+		
+	end 
+	str = '   总额度:   2500  亿元';
+	table1 = data::RequestData('service=did&did=100041&response_times=1&ds_wait_sync=2&fullmarket=1&where=obj=HKHSI&request_timeout=1');
+    if(system::IsNull(table1) == 0)
+        if(util::GetRows(table1) ~= 0)
+		str = '   总额度:   2500  亿元'+'         今日额度:    '+table1(1,5)/'100000000.000'+'  亿元'+'         今日余额:    '+table1(1,6)/'100000000.000'+'  亿元';
+        end
+    end
+	this.RegPushService2('service=did&did=100041&response_times=-1&ds_wait_sync=2&fullmarket=1&where=obj=HKHSI&timeout=1','hkggtLoad1',0,'hkggtPush();','116\\');
+    this.AddStringLine(str);
+
+end

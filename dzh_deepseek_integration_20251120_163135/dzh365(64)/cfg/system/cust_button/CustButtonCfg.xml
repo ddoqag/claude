@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<custbuttons>
+	<images>
+		<Image id="STKVIEW_BUTTON_IMAGE2" value="delay.png"/> 
+		<Image id="STKVIEW_BUTTON_IMAGE3" value="chuxiao.png"/>
+		<Image id="STKVIEW_BUTTON_IMAGE4" value="qxdx.png"/> 
+		<Image id="STKVIEW_BUTTON_IMAGE5" value="qxpk.png"/> 
+	</images>
+	<buttons>
+<!--NS市场股票-->
+		<button symbol="SH60*" imageid="STKVIEW_BUTTON_IMAGE5" cmd="navigate?'http://mnews.gw.com.cn/wap/style/pc/0616/page/qxpk.html#DZHPOPUP(220,220,815,626)#'"/>
+		<button symbol="SH68*" imageid="STKVIEW_BUTTON_IMAGE5" cmd="navigate?'http://mnews.gw.com.cn/wap/style/pc/0616/page/qxpk.html#DZHPOPUP(220,220,815,626)#'"/>
+		<button symbol="SZ00*" imageid="STKVIEW_BUTTON_IMAGE5" cmd="navigate?'http://mnews.gw.com.cn/wap/style/pc/0616/page/qxpk.html#DZHPOPUP(220,220,815,626)#'"/>
+		<button symbol="SZ30*" imageid="STKVIEW_BUTTON_IMAGE5" cmd="navigate?'http://mnews.gw.com.cn/wap/style/pc/0616/page/qxpk.html#DZHPOPUP(220,220,815,626)#'"/>	
+
+		
+<!--IX市场26个指数-->
+		<button symbol="IXCBN" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXCFI" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXCIN" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXCIS" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXCTR" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXDIVQ" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXDVQT" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXIXCO" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXIXF" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXIXHC" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXIXTC" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXNBI" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXNDX100" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXNDXE" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXNDXT" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXNDXX" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXNQGM" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXQCOL" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXQGLD" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>	
+		<button symbol="IXQIV" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXQMEA" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXQMI" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXQNET" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXQOMX" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>
+		<button symbol="IXRCO" imageid="STKVIEW_BUTTON_IMAGE2" cmd="browse?''"/>		
+
+	</buttons>
+</custbuttons>

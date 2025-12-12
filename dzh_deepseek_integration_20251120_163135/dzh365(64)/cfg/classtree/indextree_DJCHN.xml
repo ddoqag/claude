@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1"  >
+				<subclass name="道琼斯中国指数" scriptfile="index_m" node="109075" />
+				<subclass name="道琼斯CBN" scriptfile="index_l" node="109076" />
+  </class>
+</classes>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="黄金" local="1">
+		<subclass name="贵金属" node="1" scriptfile="hjall"/>
+		<subclass name="上期所黄金" node="112657" scriptfile="spbk"/>
+		<subclass name="上海黄金" node="112945" scriptfile="spbk"/>
+		<subclass name="COMEX黄金" node="112913" scriptfile="spbk"/>
+	</class>
+</classes>

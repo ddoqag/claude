@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="上期所" local="1">
+		<subclass name="上期所" node="112652" scriptfile="sqs"/>
+		<subclass name="铜" node="112653" scriptfile="spbk"/>
+		<subclass name="铝" node="112654" scriptfile="spbk"/>
+		<subclass name="锌" node="112655" scriptfile="spbk"/>
+		<subclass name="铅" node="112656" scriptfile="spbk"/>
+		<subclass name="黄金" node="112657" scriptfile="spbk"/>
+		<subclass name="白银" node="112658" scriptfile="spbk"/>
+		<subclass name="螺纹钢" node="112659" scriptfile="spbk"/>
+		<subclass name="线材" node="112660" scriptfile="spbk"/>
+		<subclass name="热轧卷板" node="101823" scriptfile="spbk"/>
+		<subclass name="燃料油" node="112661" scriptfile="spbk"/>
+		<subclass name="石油沥青" node="112662" scriptfile="spbk"/>
+		<subclass name="天然橡胶" node="112663" scriptfile="spbk"/>
+		<subclass name="镍" node="107635" scriptfile="spbk"/>
+		<subclass name="锡" node="107636" scriptfile="spbk"/>
+	</class>
+</classes>

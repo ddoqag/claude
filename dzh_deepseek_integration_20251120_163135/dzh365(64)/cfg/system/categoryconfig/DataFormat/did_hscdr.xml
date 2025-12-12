@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GB2312"?>
+<rules target="quote_dyna">
+  <rule id="rule_dyna1">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+	  <condition>colname=type</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="func_param">{"0":" ","1":"CDR","2":"创新股票"}</action>
+      <action type="fmt_func">cfmt_directory</action>           
+      <action type="new_name">分类标志</action>
+    </actions>
+  </rule>
+    <rule id="rule_dyna2">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+	  <condition>colname=noprofit</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="func_param">{"0":"已盈利","1":"未盈利"}</action>
+      <action type="fmt_func">cfmt_directory</action>           
+      <action type="new_name">非盈利标志</action>
+    </actions>
+  </rule>
+      <rule id="rule_dyna3">
+    <conditions>
+      <condition>matchtype=col</condition>
+      <condition>tablename=.*</condition>
+      <condition>tabletype=.*</condition>
+	  <condition>colname=voteright</condition>
+    </conditions>
+    <actions>
+      <action type="need_fmt">1</action>
+      <action type="func_param">{"0":"无差异","1":"存在差异"}</action>
+      <action type="fmt_func">cfmt_directory</action>           
+      <action type="new_name">投票权标志</action>
+    </actions>
+  </rule>
+</rules>

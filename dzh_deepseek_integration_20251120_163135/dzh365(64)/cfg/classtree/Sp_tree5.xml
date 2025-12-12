@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+  <class name="商品指数"  local="1"   scriptfile="ec4">
+      <subclass name="大智慧中国商品指数" node="107618" >
+        <group name="大连商品交易所-期指" node="107619" />
+        <group name="上海期货交易所-期指" node="107629" />
+        <group name="郑州商品交易所-期指" node="107639" />
+      </subclass>
+  </class>
+</classes>

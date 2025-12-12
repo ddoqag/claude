@@ -1,0 +1,74 @@
+{请求EDX日线，获取数据表并发回客户端
+参数：
+	obj				股票代码，例如'SH510300.fnd'
+	period 			周期，例如'1d'
+	starttime 		起始时间,例如'20130507103028000000'
+	endtime 		结束时间,例如'20130807103028000000'
+测试请求：/script?script=RequestMingNianEPE('SH600000.stk','','','');&response_times=-1&timer=300
+公式：x:RUNSCRIPT('RequestMingNianEPE','','' );
+}
+
+function SetRunning()
+	key = 'run_key';
+	t_run = table::Create('r:s',1,'run_key');
+	t_run(1,1) = 'running';
+	this.SaveBuffer(t_run, key);
+end
+
+function ClearRunning()
+	key = 'run_key';
+	t_run = table::Create('r:s',1,'run_key');
+	t_run(1,1) = 'run_end';
+	this.SaveBuffer(t_run, key);
+end
+
+function TestAndSetRunning()
+	brunning = 0;
+	key = 'run_key';
+	t_run = this.LoadBuffer(key);
+	if(util::GetRows(t_run) == 0)
+		SetRunning();
+	else
+		srunning = t_run(1,1);
+		if srunning == 'running'
+			brunning = 1;
+		else
+			SetRunning();
+		end
+	end
+	return brunning;
+end
+
+function SendData(dkey)
+	t = kv::TestKV(dkey);
+	if t==1
+		rdata = kv::GetKV(dkey);
+		this.Send(rdata);
+	end
+end
+
+function RequestMingNianEPE(obj, period, starttime, endtime)
+	if  TestAndSetRunning() == 0
+		sobj = StringUtil::trimsuffix(obj);
+		skey = 'yiziyuqi'+sobj+'SMingNianEPE';
+		dkey = 'yiziyuqi'+sobj+'MingNianEPE';
+		t = kv::TestKV(skey);
+		if t==1
+			rdata = kv::GetKV(skey);
+			if this.FirstLoad()
+				rdata(1,1) = 1;
+				kv::SetKV(skey,rdata);
+				SendData(dkey);
+			else
+				if rdata(1,1) == 0
+					rdata(1,1) = 1;
+					kv::SetKV(skey,rdata);
+					SendData(dkey);
+				end
+			end
+		end
+		ClearRunning();
+	end
+end
+
+

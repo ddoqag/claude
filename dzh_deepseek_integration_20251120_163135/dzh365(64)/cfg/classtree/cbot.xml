@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+	<class name="品种报价" local="1" scriptfile="gs13">
+		<subclass name="CBOT大豆" node="109782" />
+		<subclass name="CBOT玉米" node="109776" />
+		<subclass name="CBOT玉米" node="109776" />
+		<subclass name="CBOT豆粕" node="109779" />
+		<subclass name="CBOT豆油" node="109778" />
+		<subclass name="CBOT小麦" node="109784" />
+		<subclass name="CBOT稻米" node="109781" />
+		<subclass name="CBOT燕麦" node="109780" />
+		<subclass name="CBOT乙醇" node="109786" />
+	</class>
+</classes>

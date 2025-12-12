@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Config>
+	<menu code="COMMAND" cmd="CHROME?URL='http://pchd.dzh.com.cn:8080/hengtai/'" disp="恒泰开户"/>
+	<menu code="COMMAND" cmd="CHROME?URL='http://pchd.dzh.com.cn:8080/gyzq/'" disp="国元开户"/>
+</Config>

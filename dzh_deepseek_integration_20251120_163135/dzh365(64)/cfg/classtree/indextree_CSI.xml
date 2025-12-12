@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+  <class name="指数系列" local="1" scriptfile="index_s" >
+ 				<subclass name="中证行业指数" node="100641" />
+				<subclass name="中证风格指数" node="100642" />
+				<subclass name="中证海外指数" node="100643" />
+				<subclass name="中证债券指数" node="100644" />
+				<subclass name="中证基金指数" node="100645" />
+				<subclass name="中证规模指数" node="104448" />
+				<subclass name="中证主题指数" node="104449" />
+				<subclass name="中证策略指数" node="104450" />
+				<subclass name="中证定制指数" node="104451" />
+				<subclass name="SAC行业指数" node="104453" />
+	<subclasses name="300行业" node="100067">
+				<subclass name="沪深300一级行业指数" node="104454" />
+				<subclass name="沪深300二级行业指数" node="104455" />
+				<subclass name="沪深300三级行业指数" node="104456" />
+	</subclasses>		 
+  </class>
+</classes>

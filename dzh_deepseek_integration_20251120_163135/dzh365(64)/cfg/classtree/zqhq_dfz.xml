@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="地方债" local="1">
+		<subclass name="地方债" node="107685" scriptfile="zqbk"/>
+		<subclass name="上证地方债" node="107686" scriptfile="zqbk"/>
+		<subclass name="深证地方债" node="107687" scriptfile="zqbk"/>
+	</class>
+</classes>

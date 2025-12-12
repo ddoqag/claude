@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="GB2312"?>
+<classes>
+	<class name="大智慧行业" local="1">
+                <subclass name="农林牧渔" node="600019" scriptfile="gpfl"/>
+                <subclass name="酿酒食品" node="600018" scriptfile="gpfl"/>
+                <subclass name="纺织服装" node="600007" scriptfile="gpfl"/>
+                <subclass name="煤炭石油" node="600017" scriptfile="gpfl"/>
+                <subclass name="工程建筑" node="600002" scriptfile="gpfl"/>
+                <subclass name="钢铁" node="600008" scriptfile="gpfl"/>
+                <subclass name="有色金属" node="600030" scriptfile="gpfl"/>
+                <subclass name="建材" node="600021" scriptfile="gpfl"/>
+                <subclass name="机械" node="600024" scriptfile="gpfl"/>
+                <subclass name="供水供气" node="600009" scriptfile="gpfl"/>
+                <subclass name="交通设施" node="600014" scriptfile="gpfl"/>
+                <subclass name="交通工具" node="600023" scriptfile="gpfl"/>
+                <subclass name="运输物流" node="600036" scriptfile="gpfl"/>
+                <subclass name="化工化纤" node="600010" scriptfile="gpfl"/>
+                <subclass name="造纸印刷" node="600031" scriptfile="gpfl"/>
+                <subclass name="仪电仪表" node="600029" scriptfile="gpfl"/>
+                <subclass name="电力" node="600003" scriptfile="gpfl"/>
+                <subclass name="电器" node="600012" scriptfile="gpfl"/>
+                <subclass name="计算机" node="600004" scriptfile="gpfl"/>
+                <subclass name="通信" node="600035" scriptfile="gpfl"/>
+                <subclass name="电子信息" node="600005" scriptfile="gpfl"/>
+                <subclass name="旅游酒店" node="600016" scriptfile="gpfl"/>
+                <subclass name="商业连锁" node="600020" scriptfile="gpfl"/>
+                <subclass name="医药" node="600025" scriptfile="gpfl"/>
+                <subclass name="外贸" node="600027" scriptfile="gpfl"/>
+                <subclass name="教育传媒" node="600028" scriptfile="gpfl"/>
+                <subclass name="房地产" node="600006" scriptfile="gpfl"/>
+                <subclass name="银行类" node="600015" scriptfile="gpfl"/>
+                <subclass name="券商" node="600032" scriptfile="gpfl"/>
+                <subclass name="保险" node="600037" scriptfile="gpfl"/>
+                <subclass name="非银金融" node="600038" scriptfile="gpfl"/>
+                <subclass name="其他行业" node="600022" scriptfile="gpfl"/>
+	</class>
+</classes>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="gb2312"?>
+<classes>
+  <class name="波罗的海航运交易所" scriptfile="ss2">
+      <subclass name="波罗的海综合指数" node="109810" scriptfile="ss">
+        <group name="波罗的海干散货综合指数" node="109811"/>
+        <group name="波罗的海干散货各船型指数" node="109812"/>
+        <group name="波罗的海油运指数油运指数" node="109813"/>
+      </subclass>
+	<subclass name="波罗的海评估" node="109810" scriptfile="ss1">
+        <group name="波罗的海远期评估" node="109816"/>
+	<group name="其他" node="109817"/>
+      </subclass>
+      <subclass name="波罗的海期权预测" node="109818" scriptfile="ss1">
+        <group name="油运合计" node="109819" />
+        <group name="轻油油轮" node="109820" />
+        <group name="重油油轮" node="109821" />
+	<group name="干散货船合计" node="109822" />
+	<group name="好望角型船" node="109823" />
+	<group name="灵便型船" node="109824" />
+	<group name="巴拿马型船" node="109825" />
+	<group name="超灵便型船" node="109826" />
+ 	</subclass>
+      <subclasses name="重油油船" node="109827">
+	<subclass name="重油油轮TD1航线" node="109828" />
+	<subclass name="重油油轮TD2航线" node="109829" />
+	<subclass name="重油油轮TD3航线" node="109830" />
+	<subclass name="重油油轮TD4航线" node="109831" />
+	<subclass name="重油油轮TD5航线" node="109832" />
+	<subclass name="重油油轮TD6航线" node="109833" />
+	<subclass name="重油油轮TD7航线" node="109834" />
+	<subclass name="重油油轮TD8航线" node="109835" />
+	<subclass name="重油油轮TD9航线" node="109836" />
+	<subclass name="重油油轮TD10D航线" node="109837" />
+	<subclass name="重油油轮TD12航线" node="109838" />
+	<subclass name="重油油轮TD14航线" node="109839" />
+	<subclass name="重油油轮TD15航线" node="109840" />
+	<subclass name="重油油轮TD16航线" node="109841" />
+	<subclass name="重油油轮TD17航线" node="109842" />
+	<subclass name="重油油轮TD18航线" node="109843" />
+	<subclass name="重油油轮TD19航线" node="109844" />
+	<subclass name="其他" node="109845" />
+</subclasses>
+      <subclasses name="轻油油船" node="109846">
+	<subclass name="轻油油轮TC1航线" node="109847" />
+	<subclass name="轻油油轮TC2航线" node="109848" />
+	<subclass name="轻油油轮TC2_37航线" node="109849" />
+	<subclass name="轻油油轮TC3_38航线" node="109850" />
+	<subclass name="轻油油轮TC4航线" node="109851" />
+	<subclass name="轻油油轮TC5航线" node="109852" />
+	<subclass name="轻油油轮TC6航线" node="109853" />
+	<subclass name="轻油油轮TC7航线" node="109854" />
+	<subclass name="轻油油轮TC8航线" node="109855" />
+	<subclass name="轻油油轮TC9航线" node="109856" />
+	<subclass name="轻油油轮TC10航线" node="109857" />
+	<subclass name="轻油油轮TC11航线" node="109858" />
+	<subclass name="轻油油轮TC12航线" node="109859" />
+</subclasses>
+      <subclasses name="灵便型船" node="109860">
+	<subclass name="四条灵便型船期租航线均值" node="109861" />
+	<subclass name="灵便型船HS1航线" node="109862" />
+	<subclass name="灵便型船HS2航线" node="109863" />
+	<subclass name="灵便型船HS3航线" node="109864" />
+	<subclass name="灵便型船HS4航线" node="109865" />
+	<subclass name="灵便型船HS5航线" node="109866" />
+	<subclass name="灵便型船HS6航线" node="109867" />
+</subclasses>
+      <subclasses name="超灵便型船" node="109868">
+	<subclass name="四条超灵便型船期租航线均值" node="109869" />
+	<subclass name="超灵便型船S1A航线" node="109870" />
+	<subclass name="超灵便型船S1B航线" node="109871" />
+	<subclass name="超灵便型船S2航线" node="109872" />
+	<subclass name="超灵便型船S3航线" node="109873" />
+	<subclass name="超灵便型船S4A航线" node="109874" />
+	<subclass name="超灵便型船S4B航线" node="109875" />
+	<subclass name="超灵便型船S5航线" node="109876" />
+	<subclass name="超灵便型船S7航线" node="109877" />
+	<subclass name="超灵便型船S8航线" node="109878" />
+	<subclass name="超灵便型船S9航线" node="109879" />
+</subclasses>
+      <subclasses name="好望角型船" node="109880">
+	<subclass name="四条好望角期租航线均值" node="109881" />
+	<subclass name="好望角型船C2航线" node="109882" />
+	<subclass name="好望角型船C3航线" node="109883" />
+	<subclass name="好望角型船C4航线" node="109884" />
+	<subclass name="好望角型船C5航线" node="109885" />
+	<subclass name="好望角型船C7航线" node="109886" />
+	<subclass name="好望角型船C8航线" node="109887" />
+	<subclass name="好望角型船C9_03航线" node="109888" />
+	<subclass name="好望角型船C10_03航线" node="109889" />
+</subclasses>
+      <subclasses name="巴拿马型船" node="109891">
+	<subclass name="四条巴拿马期租航线均值" node="109892" />
+	<subclass name="巴拿马型船P1A航线" node="109893" />
+	<subclass name="巴拿马型船P1EA航线" node="109894" />
+	<subclass name="巴拿马型船P2A_03航线" node="109895" />
+	<subclass name="巴拿马型船P2航线" node="109896" />
+	<subclass name="巴拿马型船P2EA航线" node="109897" />
+	<subclass name="巴拿马型船P3A航线" node="109898" />
+	<subclass name="巴拿马型船P3EA" node="109899" />
+	<subclass name="巴拿马型船P4_03" node="109900" />
+	<subclass name="巴拿马型船P17A" node="109901" />
+      </subclasses>
+  </class>
+</classes>

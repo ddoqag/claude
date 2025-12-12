@@ -1,0 +1,60 @@
+function GJSQuotations()
+	this.ResetStocks();
+
+	if this.ColCount() == 0 
+		index = this.InsertQuotation(-1,'序号'); 
+		this.SetColumnAttributes(index,'',60,0,0);  
+		index = this.InsertQuotation(-1,'代码');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'名称');
+		this.SetColumnAttributes(index,'',180,0,0); 
+		index = this.InsertQuotation(-1,'最新');
+		this.SetColumnAttributes(index,'',90,0,0);  
+		index = this.InsertQuotation(-1,'涨跌');
+		this.SetColumnAttributes(index,'',70,0,0); 
+		index = this.InsertQuotation(-1,'涨幅');
+		this.SetColumnAttributes(index,'',70,0,0);
+		index = this.InsertQuotation(-1,'今开');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'昨收');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最高');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertQuotation(-1,'最低');
+		this.SetColumnAttributes(index,'',90,0,0); 
+		index = this.InsertStatic(-1, '报价单位', '');
+		this.SetColumnAttributes(index, 'S', 85, 4294967295, 0); 
+		index = this.InsertStatic(-1, '报价货币', '');
+		this.SetColumnAttributes(index, 'S', 85, 4294967295, 0); 
+	end
+	
+	{查找'报价单位'列号}
+	col = this.FindColumn('报价单位',1);
+	col2 = this.FindColumn('报价货币',1);
+	
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('天津贵金属');
+	table =['JMAG.cmdty','JMPD.cmdty','JMPT.cmdty','JMNI.cmdty','JMCU.cmdty';'元/千克','元/克','元/克','元/千克','元/吨';'人民币','人民币','人民币','人民币','人民币'];
+	this.SetStocks(table(1,:),1);
+	this.SetStaticData(table(2,:),col,start);
+	this.SetStaticData(table(3,:),col2,start);
+
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('国际贵金属');
+	table =['FXXAGUSD.cmdty','FXXAUUSD.cmdty','FXXPDUSD.cmdty','FXXPTUSD.cmdty';'美元/盎司','美元/盎司','美元/盎司','美元/盎司';'美元','美元','美元','美元'];
+	this.SetStocks(table,1);
+	this.SetStaticData(table(2,:),col,start);
+	this.SetStaticData(table(3,:),col2,start);
+	
+	{计算起始行号}
+	start = this.StockCount() + 1;
+	this.AddStringLine('其他行情');
+	table =['IXUDI.index','IPBY0.index','NXCLY0.index','CXSIY0.cmdty','CXGCY0.cmdty','SGAg(T+D)','SGAu(T+D)','SCag0001.cmdty','SCau0001.cmdty';'美元','美元/桶','美元/桶','美元/盎司','美元，美分/盎司','元/千克','元/克','元/千克','元/克';'美元','美元','美元','美元','美元','人民币','人民币','人民币','人民币'];
+	this.SetStocks(table(1,:),1);
+	this.SetStaticData(table(2,:),col,start);
+	this.SetStaticData(table(3,:),col2,start);
+	
+end
+
