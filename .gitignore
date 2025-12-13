@@ -69,3 +69,11 @@ id_ed25519.pub
 config
 !API_GUIDE.md
 !*_API_GUIDE.md
+# Claude main config specific ignores
+main-config/history.jsonl
+main-config/plugins/**/backups/
+main-config/shell-snapshots/
+main-config/debug/
+main-config/*.log
+main-config/cache/
+main-config/temp/

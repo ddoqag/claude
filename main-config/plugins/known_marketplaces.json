@@ -1,0 +1,18 @@
+{
+  "claude-code-workflows": {
+    "source": {
+      "source": "directory",
+      "path": "/home/ddo/.claude/plugins/marketplaces/wshobson-agents"
+    },
+    "installLocation": "/home/ddo/.claude/plugins/marketplaces/wshobson-agents",
+    "lastUpdated": "2025-11-13T12:17:10.056Z"
+  },
+  "claude-code-plugins-plus": {
+    "source": {
+      "source": "github",
+      "repo": "jeremylongshore/claude-code-plugins"
+    },
+    "installLocation": "/home/ddo/.claude/plugins/marketplaces/claude-code-plugins-plus",
+    "lastUpdated": "2025-12-05T12:46:41.054Z"
+  }
+}

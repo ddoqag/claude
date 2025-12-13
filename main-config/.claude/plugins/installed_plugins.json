@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "plugins": {
+    "code-documentation@claude-code-workflows": {
+      "version": "unknown",
+      "installedAt": "2025-11-13T12:24:30.257Z",
+      "lastUpdated": "2025-11-13T12:24:30.257Z",
+      "installPath": "/home/ddo/.claude/plugins/marketplaces/wshobson-agents/plugins/code-documentation",
+      "gitCommitSha": "0681ad8d192f54704c0fa519f47caba9e3b4edb4",
+      "isLocal": true
+    },
+    "project-health-auditor@claude-code-plugins-plus": {
+      "version": "1.0.0",
+      "installedAt": "2025-11-14T08:23:17.565Z",
+      "lastUpdated": "2025-11-14T08:23:17.565Z",
+      "installPath": "/home/ddo/.claude/plugins/marketplaces/claude-code-plugins-plus/plugins/mcp/project-health-auditor",
+      "gitCommitSha": "1f763017a08eaf7cc72839e2b7c66949e2efa610",
+      "isLocal": true
+    },
+    "ai-experiment-logger@claude-code-plugins-plus": {
+      "version": "1.0.0",
+      "installedAt": "2025-11-14T08:23:17.565Z",
+      "lastUpdated": "2025-11-14T08:23:17.565Z",
+      "installPath": "/home/ddo/.claude/plugins/marketplaces/claude-code-plugins-plus/plugins/mcp/ai-experiment-logger",
+      "gitCommitSha": "1f763017a08eaf7cc72839e2b7c66949e2efa610",
+      "isLocal": true
+    },
+    "workflow-orchestrator@claude-code-plugins-plus": {
+      "version": "1.0.0",
+      "installedAt": "2025-11-14T08:23:17.565Z",
+      "lastUpdated": "2025-11-14T08:23:17.565Z",
+      "installPath": "/home/ddo/.claude/plugins/marketplaces/claude-code-plugins-plus/plugins/mcp/workflow-orchestrator",
+      "gitCommitSha": "1f763017a08eaf7cc72839e2b7c66949e2efa610",
+      "isLocal": true
+    },
+    "domain-memory-agent@claude-code-plugins-plus": {
+      "version": "1.0.0",
+      "installedAt": "2025-11-14T08:23:17.565Z",
+      "lastUpdated": "2025-11-14T08:23:17.565Z",
+      "installPath": "/home/ddo/.claude/plugins/marketplaces/claude-code-plugins-plus/plugins/mcp/domain-memory-agent",
+      "gitCommitSha": "1f763017a08eaf7cc72839e2b7c66949e2efa610",
+      "isLocal": true
+    },
+    "conversational-api-debugger@claude-code-plugins-plus": {
+      "version": "1.0.0",
+      "installedAt": "2025-11-14T08:23:17.565Z",
+      "lastUpdated": "2025-11-14T08:23:17.565Z",
+      "installPath": "/home/ddo/.claude/plugins/marketplaces/claude-code-plugins-plus/plugins/mcp/conversational-api-debugger",
+      "gitCommitSha": "1f763017a08eaf7cc72839e2b7c66949e2efa610",
+      "isLocal": true
+    },
+    "ai-commit-gen@claude-code-plugins-plus": {
+      "version": "1.0.0",
+      "installedAt": "2025-11-14T08:23:17.565Z",
+      "lastUpdated": "2025-11-14T08:23:17.565Z",
+      "installPath": "/home/ddo/.claude/plugins/marketplaces/claude-code-plugins-plus/plugins/productivity/ai-commit-gen",
+      "gitCommitSha": "1f763017a08eaf7cc72839e2b7c66949e2efa610",
+      "isLocal": true
+    }
+  }
+}
