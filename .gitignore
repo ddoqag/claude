@@ -77,3 +77,8 @@ main-config/debug/
 main-config/*.log
 main-config/cache/
 main-config/temp/
+main-config/.claude/plugins/marketplaces/
+main-config/.claude/plugins/**/backups/
+main-config/.claude/plugins/**/cache/
+main-config/.claude/plugins/**/temp/
+main-config/.claude/plugins/**/node_modules/
