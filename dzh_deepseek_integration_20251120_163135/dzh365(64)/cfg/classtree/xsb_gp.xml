@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="GB2312"?>
-<classes>
-	<class name="新增股票挂牌" local="1">
-		<subclass name="新增股票挂牌" node="D" scriptfile="gp"/>
-	</class>
-</classes>

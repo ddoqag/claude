@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="GB2312"?>
-<classes>
-	<class name="我的精选" local="1">
-		<subclass name="连涨连跌" node="800006" scriptfile="lzld">
-		</subclass>
-	</class>  
-</classes>

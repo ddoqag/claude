@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="GB2312"?>
-<classes>
-	<class name="中概股" local="1">
-		<subclass name="热门中概股" node="1" scriptfile="hotzgg" />
-		<subclass name="全部中概股" node="700001" scriptfile="allzgg" />
-	</class>  
-</classes>

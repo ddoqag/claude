@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="gb2312" ?>
-<Config>
-  <menu code="DATACOLLECT" disp="F10数据采集(&amp;L)" />
-  <menu code="ALARM" disp="预警(&amp;Y)" />
-  <menu code="WATCHCLIPBOARD" disp="监控剪贴板(&amp;C)" />
-</Config>

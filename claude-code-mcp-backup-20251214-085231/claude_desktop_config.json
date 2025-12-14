@@ -1,9 +1,0 @@
-  {
-    "mcpServers": {
-      "windows-desktop": {
-        "command": "node",
-        "args": ["C:\\Tools\\mcp-windows-desktop-automation\\dist\\index.js"],
-        "env": {}
-      }
-    }
-  }

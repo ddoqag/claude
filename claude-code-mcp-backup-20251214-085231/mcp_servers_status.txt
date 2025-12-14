@@ -1,7 +1,0 @@
-Checking MCP server health...
-
-web-search-prime: https://open.bigmodel.cn/api/mcp/web_search_prime/mcp (HTTP) - ✓ Connected
-web-reader: https://open.bigmodel.cn/api/mcp/web_reader/mcp (HTTP) - ✓ Connected
-context7: https://mcp.context7.com/mcp (HTTP) - ✓ Connected
-ida-pro-mcp: C:\Users\ddo\AppData\Local\Programs\Python\Python312\python.exe D:\tools\ida-pro-mcp-main\src\ida_pro_mcp\server.py - ✓ Connected
-chrome-devtools: chrome-devtools-mcp  - ✓ Connected

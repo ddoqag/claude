@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="GB2312"?>
-<classes>
-	<class name="品种报价" local="1"  scriptfile="gs12">
-		<subclass name="上海黄金" node="109709" />
-	</class>  
-	
-</classes>

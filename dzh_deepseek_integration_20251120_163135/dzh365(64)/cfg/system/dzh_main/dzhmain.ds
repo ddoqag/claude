@@ -1,1 +1,0 @@
-system::CreateChildProcess(GetExeName()+' main=$ --log-severity=disable --enable-media-stream=1');

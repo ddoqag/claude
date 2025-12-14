@@ -1,3 +1,0 @@
-/cfg/log/dzhexception.xml
-/cfg/system/system/commoncfgutf8.xml
-/cfg/system/system/config.xml

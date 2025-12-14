@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="gb2312"?>
-<classes>
-  <class name="商品指数"  local="1"   scriptfile="ec4">
-      <subclass name="标普GSCI商品指数" node="107649"  scriptfile="ec3"/>
-  </class>
-</classes>

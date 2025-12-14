@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="gb2312" ?>
-<Config>
-	<menu code="SELFSTK" disp="自选股"/>
-    <menu code="SETSELF" disp="自选股设置" />
-    <menu code="COMMAND" disp="自选股导入" cmd="STKTRANSPORT"/>
-</Config>

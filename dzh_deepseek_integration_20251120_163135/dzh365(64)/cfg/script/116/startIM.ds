@@ -1,3 +1,0 @@
-if(MAIN::IsRunning('GwimObject') == 0)
-	system::CreateChildProcess(GetExeName()+' main=gwim/GwimShell.dll');
-end

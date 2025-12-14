@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="GB2312"?>
-<classes>
-	<class name="商品" local="1">
-		<subclass name="伦敦金属" node="19" scriptfile="sp_ldjs"/>
-	</class>
-</classes>

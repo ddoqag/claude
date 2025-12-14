@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<root name="rightdockpan">
-	<kv key="enable">0</kv>
-	<kv key="defaultwidth">504</kv>
-	<kv key="defaulturl">
-		<![CDATA[https://hxcrm.dzh.com.cn:8443/index.html]]>
-	</kv>
-	<kv key="showInnerChat">true</kv>
-</root>

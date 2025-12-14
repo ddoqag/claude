@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="GB2312"?>
-<classes>
-	<class name="板块指数" scriptfile="bkzf" local="1">
-		<subclass name="概念板块" node="700001"/>
-	</class>  
-</classes>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="GB2312"?>
-<config>
-	<mkt label="SF">
-		<item regex="IF(.*)" blocknames="沪深300" mainstks="SH000300,SZ399300" underlinestk="SH000300"/>
-		<item regex="IH(.*)" blocknames="上证50" mainstks="SH000016,ZI000016" underlinestk="SH000016"/>
-		<item regex="IC(.*)" blocknames="中证500" mainstks="SH000905,ZI000905" underlinestk="SH000905"/>
-		<item regex="IM(.*)" blocknames="中证1000" mainstks="SH000852,ZI000852" underlinestk="SH000852"/>
-	</mkt>
-</config>

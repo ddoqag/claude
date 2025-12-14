@@ -1,4 +1,0 @@
-C:\Users\ddo\AppData\Roaming\npm
-├── @anthropic-ai/claude-code@2.0.69
-└── chrome-devtools-mcp@0.12.1
-
